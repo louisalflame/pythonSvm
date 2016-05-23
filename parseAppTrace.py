@@ -73,6 +73,10 @@ class ParseUtil:
             sessionPath = os.path.join( AppPath, version, abstraction, session )
             self.parseTaaDSession( sessionPath )
 
+    def parseTaaDSession( self, sessionPath ):
+        for f in os.listdir( os.path.join( sessionPath, 'traceSet' ) ):
+            pass
+
     def saveTraces(self):
         if not self.app or not self.ver:
             raise Exception("need set traces's saving app&ver name ")
@@ -90,14 +94,10 @@ class ParseUtil:
         # save traces by automata attributes
         with open( filename, 'w' ) as f:
             for trace in self.traces:
-                trace.set_attribute( self.automata.make_attribute() )
+                trace.set_automata( self.automata )
                 vertor = trace.make_vector_string()
                 f.write(vector+'\n')
         f.close()
-
-    def parseTaaDSession( self, sessionPath ):
-        for f in os.listdir( os.path.join( sessionPath, 'traceSet' ) ):
-            pass
 
     def parseB2g( self, foldername=None ):
         # check folder path
@@ -120,7 +120,7 @@ class ParseUtil:
         automataElement = AutomataElement()
         for state in automata['state']:
             stateElement = StateElement()
-            stateElement.set_id( state['id'] )
+            stateElement.set_id( int( state['id'] ) )
             stateElement.add_keyword( 'url', state['url'] )
             '''TODO load dom and parse keyword'''
 
@@ -131,9 +131,9 @@ class ParseUtil:
             edgeElement.set_id( edge['clickable']['id'] )
             edgeElement.set_name( edge['clickable']['name'] )
             edgeElement.set_Xpath( edge['clickable']['xpath'] )
-            state_from = edge['clickable']['from']
+            state_from = int( edge['from'] )
             edgeElement.set_stateFrom( automataElement.get_state_byId( state_from ) )
-            state_to   = edge['clickable']['to']
+            state_to   = int( edge['to'] )
             edgeElement.set_stateTo( automataElement.get_state_byId( state_to ) )
 
             automataElement.add_edge( edgeElement )
@@ -141,29 +141,38 @@ class ParseUtil:
 
         for trace in traces['traces']:
             traceElement = TraceElement()
-            for edge in trace['edge']:
-                traceElement.add_edge( automataElement.get_edge_byFromTo( edge['from'], edge['to'] ) )
+            for edge in trace['edges']:
+                traceElement.add_edge( automataElement.get_edge_byFromTo( 
+                    int(edge['from']), int(edge['to']) ) )
             for state in trace['states']:
-                traceElement.add_state( automataElement.get_state_byID( state['id'] ) )
+                traceElement.add_state( automataElement.get_state_byId( int(state['id']) ) )
             self.traces.append( traceElement )
 
 
 class AutomataElement:
     def __init__(self):
+        # basic
         self.edges = []
         self.states = []
+        # vector
         self.keywords = {}
+        self.actions = {}
+        self.orders = {}
 
     def add_state(self, state):
         if state not in self.states:
             self.states.append( state )
             for key, keyword in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = keyword
+                    self.keywords[key] = [ keyword ]
+                else:
+                    self.keywords[key].append( keyword )
 
     def add_edge(self, edge):
         if edge not in self.edges:
             self.edges.append( edge )
+            # add actions
+            self.actions[]
 
     def get_state_byId(self, id):
         for state in self.states:
@@ -171,19 +180,27 @@ class AutomataElement:
                 return state
         return None
 
+    def get_edge_byFromTo(self, stateFrom, stateTo):
+        for edge in self.edges:
+            if edge.get_stateFrom().get_id() == stateFrom and \
+               edge.get_stateTo().get_id()   == stateTo:
+                return edge
+        return None
+
     def make_attribute(self):
         return {}
 
 class TraceElement:
     def __init__(self):
-        self.automata = None
+        # basic
         self.states = []
         self.edges = []
-        self.attr = {
-            'actions'     : [],
-            'keywords'    : [],
-            'actionOrders': [],
-        }
+        # vector
+        self.keywords = {}
+        self.actions = {}
+        self.orders = {}
+        # automata
+        self.automata = None
 
     def add_state(self, state):
         self.states.append( state )
@@ -191,14 +208,18 @@ class TraceElement:
     def add_edge(self, edge):
         self.edges.append(edge)
 
-    def set_attribute(self, attrs):
-        self.attr = attrs
+    def set_automata(self, automata):
+        self.automata = automata
 
     def make_vector_string(self):
-        return ""
-
-    def __str__(self):
-        return ''
+        vector = []
+        vectorStr = ""
+        # add keywords
+        # add actions
+        # add orders
+        vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
+        vectorStr = ' '.join(vector) + '\n'
+        return vectorStr
 
 class StateElement:
     def __init__(self):
@@ -224,5 +245,27 @@ class EdgeElement:
         self.id        = None
         self.name      = None
         self.xpath     = None
+        self.attr      = {}
         self.stateFrom = None
         self.StateTo   = None
+
+    def set_id(self, id):
+        self.id = id
+
+    def set_name(self, name):
+        self.name = name
+
+    def set_Xpath(self, xpath):
+        self.xpath = xpath
+
+    def set_stateFrom(self, stateFrom):
+        self.stateFrom = stateFrom
+
+    def set_stateTo(self, stateTo):
+        self.stateTo = stateTo
+
+    def get_stateFrom(self):
+        return self.stateFrom
+
+    def get_stateTo(self):
+        return self.stateTo
