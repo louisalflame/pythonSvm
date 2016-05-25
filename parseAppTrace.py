@@ -95,9 +95,14 @@ class ParseUtil:
         with open( filename, 'w' ) as f:
             for trace in self.traces:
                 trace.set_automata( self.automata )
-                vertor = trace.make_vector_string()
-                f.write(vector+'\n')
+                vector = trace.make_vector_string()
+                f.write(vector)
         f.close()
+
+        filename = os.path.join( Path.Data, self.app, self.ver, self.traceName+str(num)+'vector' )
+        with open( filename, 'w' ) as f:
+            f.write( self.automata.get_vector() )
+        f.close()            
 
     def parseB2g( self, foldername=None ):
         # check folder path
@@ -121,6 +126,8 @@ class ParseUtil:
         for state in automata['state']:
             stateElement = StateElement()
             stateElement.set_id( int( state['id'] ) )
+            stateElement.set_xml( 
+                os.path.join( Path.B2gBrowser, 'trace', foldername, 'dom', state['id']+'_nor.txt' ) )
             stateElement.add_keyword( 'url', state['url'] )
             '''TODO load dom and parse keyword'''
 
@@ -141,13 +148,12 @@ class ParseUtil:
 
         for trace in traces['traces']:
             traceElement = TraceElement()
-            for edge in trace['edges']:
+            for index, edge in enumerate( trace['edges'] ):
                 traceElement.add_edge( automataElement.get_edge_byFromTo( 
-                    int(edge['from']), int(edge['to']) ) )
+                    int(edge['from']), int(edge['to']) ), index )
             for state in trace['states']:
                 traceElement.add_state( automataElement.get_state_byId( int(state['id']) ) )
             self.traces.append( traceElement )
-
 
 class AutomataElement:
     def __init__(self):
@@ -156,7 +162,7 @@ class AutomataElement:
         self.states = []
         # vector
         self.keywords = {}
-        self.actions = {}
+        self.actions = []
         self.orders = {}
 
     def add_state(self, state):
@@ -165,14 +171,15 @@ class AutomataElement:
             for key, keyword in state.get_keywords().items():
                 if key not in self.keywords:
                     self.keywords[key] = [ keyword ]
-                else:
+                elif keyword not in self.keywords[key]:
                     self.keywords[key].append( keyword )
 
     def add_edge(self, edge):
         if edge not in self.edges:
             self.edges.append( edge )
             # add actions
-            self.actions[]
+            if edge.get_symbol() not in self.actions:
+                self.actions.append( edge.get_symbol() )
 
     def get_state_byId(self, id):
         for state in self.states:
@@ -187,8 +194,27 @@ class AutomataElement:
                 return edge
         return None
 
-    def make_attribute(self):
-        return {}
+    def get_keywords(self):
+        return self.keywords
+
+    def get_actions(self):
+        return self.actions
+
+    def get_vector(self):
+        vector = []
+        vectorStr = ""
+        # add keywords
+        for key, keywords in self.keywords.items():
+            for keyword in keywords:
+                vector.append( str(key)+'_'+str(keyword) )
+
+        # add actions
+        for action in self.actions:
+            vector.append( action )
+
+        vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
+        vectorStr = ' '.join(vector) + '\n'
+        return vectorStr        
 
 class TraceElement:
     def __init__(self):
@@ -202,21 +228,62 @@ class TraceElement:
         # automata
         self.automata = None
 
+    def reset(self):
+        self.states = []
+        self.edges = []
+        self.keywords = {}
+        self.actions = {}
+        self.orders = {}
+        self.automata = None
+
     def add_state(self, state):
         self.states.append( state )
+        for key, keyword in state.get_keywords().items():
+            if key not in self.keywords:
+                self.keywords[key] = { keyword : 1 }
+            elif keyword in self.keywords[key]:
+                self.keywords[key][keyword] += 1
+            else:
+                self.keywords[key][keyword] = 1
 
-    def add_edge(self, edge):
+    def add_edge(self, edge, index):
         self.edges.append(edge)
+        edgeSymbol = edge.get_symbol()
+        if edgeSymbol in self.actions:
+            self.actions[edgeSymbol]['count'] += 1
+            self.actions[edgeSymbol]['index'].append( index )
+        elif edgeSymbol not in self.actions:
+            self.actions[edgeSymbol] = {  'count' : 1,
+                                          'index' : [ index ] }
 
     def set_automata(self, automata):
         self.automata = automata
 
     def make_vector_string(self):
+        if not self.automata: 
+            return ""
+
         vector = []
         vectorStr = ""
         # add keywords
+        for key, keywords in self.automata.get_keywords().items():
+            for keyword in keywords:
+                if key in self.keywords and keyword in self.keywords[key]:
+                    vector.append( self.keywords[key][keyword] )
+                elif key in self.keywords and keyword not in self.keywords[key]:
+                    vector.append( 0 )
+                else:
+                    vector.append( 0 )
+
         # add actions
+        for action in self.automata.get_actions():
+            if action in self.actions:
+                vector.append( self.actions[action]['count'] )
+            else:
+                vector.append( 0 )
+
         # add orders
+
         vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
         vectorStr = ' '.join(vector) + '\n'
         return vectorStr
@@ -224,7 +291,7 @@ class TraceElement:
 class StateElement:
     def __init__(self):
         self.id = None
-        self.xml = None
+        self.xmlFile = None
         self.keywords = {}
 
     def add_keyword(self, key, keyword):
@@ -238,6 +305,13 @@ class StateElement:
         self.id = id
 
     def get_id(self):
+        return self.id
+
+    def set_xml(self, xmlFile):
+        self.xmlFile = xmlFile 
+
+    def get_symbol(self):
+        """TODO: """
         return self.id
 
 class EdgeElement:
@@ -269,3 +343,9 @@ class EdgeElement:
 
     def get_stateTo(self):
         return self.stateTo
+
+    def get_symbol(self):
+        symbolFrom = self.stateFrom.get_symbol()
+        symbolTo   = self.stateTo.get_symbol()
+        symbol = str(symbolFrom)+'>'+str(symbolTo)+'ID:'+str(self.id)+'N:'+str(self.name)+'XPath:'+str(self.xpath)
+        return symbol
