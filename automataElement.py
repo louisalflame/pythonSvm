@@ -62,8 +62,8 @@ class AutomataElement:
         for action in self.actions:
             vector.append( action )
 
-        vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
-        vectorStr = ' '.join(vector) + '\n'
+        vector = [ str(index+1)+':<'+str(value)+'>' for index, value in enumerate(vector) ]
+        vectorStr = '\n'.join(vector) + '\n'
         return vectorStr        
 
 class TraceElement:
@@ -167,20 +167,21 @@ class StateElement:
 class EdgeElement:
     def __init__(self):
         self.id        = None
-        self.name      = None
-        self.xpath     = None
         self.attr      = {}
         self.stateFrom = None
-        self.StateTo   = None
+        self.stateTo   = None
+        self.xml       = None
+        self.keywords = {}
+
+    def add_keyword(self, key, keyword):
+        if key not in self.keywords:
+            self.keywords[key] = keyword
 
     def set_id(self, id):
         self.id = id
 
-    def set_name(self, name):
-        self.name = name
-
-    def set_Xpath(self, xpath):
-        self.xpath = xpath
+    def get_id(self):
+        return self.id
 
     def set_stateFrom(self, stateFrom):
         self.stateFrom = stateFrom
@@ -194,8 +195,16 @@ class EdgeElement:
     def get_stateTo(self):
         return self.stateTo
 
+    def set_xml(self, xmlFile):
+        self.xmlFile = xmlFile 
+
     def get_symbol(self):
         symbolFrom = self.stateFrom.get_symbol()
         symbolTo   = self.stateTo.get_symbol()
-        symbol = str(symbolFrom)+'>'+str(symbolTo)+'ID:'+str(self.id)+'N:'+str(self.name)+'XPath:'+str(self.xpath)
+        symbol = str(symbolFrom)+'>'+str(symbolTo)+'ID:'+str(self.id)
+        if 'name' in self.keywords:
+            symbol += self.keywords['name']
+        if 'xpath' in self.keywords:
+            symbol += self.keywords['xpath']
+
         return symbol
