@@ -31,18 +31,38 @@ class AutomataElement:
             if edge.get_symbol() not in self.actions:
                 self.actions.append( edge.get_symbol() )
 
-    def get_state_byId(self, id):
+    def get_state_byId(self, stateID):
         for state in self.states:
-            if state.get_id() == id:
+            if str(state.get_id()) == str(stateID):
                 return state
         return None
 
-    def get_edge_byFromTo(self, stateFrom, stateTo):
+    def get_edge_byId(self, edgeID):
         for edge in self.edges:
-            if edge.get_stateFrom().get_id() == stateFrom and \
-               edge.get_stateTo().get_id()   == stateTo:
+            if str(edge.get_id()) == str(edgeID):
                 return edge
         return None
+
+
+    def get_edges_byFromTo(self, stateFrom, stateTo):
+        edges = []
+        for edge in self.edges:
+            if str(edge.get_stateFrom().get_id()) == str(stateFrom) and \
+               str(edge.get_stateTo().get_id()  ) == str(stateTo  ):
+                edges.append(edge)
+        return edges
+
+    def has_stateID(self, stateID):
+        for state in self.states:
+            if str(state.get_id()) == str(stateID):
+                return True
+        return False
+
+    def has_edgeID(self, edgeID):
+        for edge in self.edges:
+            if str(edge.get_id()) == str(edgeID):
+                return True
+        return False
 
     def get_keywords(self):
         return self.keywords
@@ -152,7 +172,7 @@ class StateElement:
         return self.keywords
 
     def set_id(self, id):
-        self.id = id
+        self.id = str(id)
 
     def get_id(self):
         return self.id
@@ -178,7 +198,7 @@ class EdgeElement:
             self.keywords[key] = keyword
 
     def set_id(self, id):
-        self.id = id
+        self.id = str(id)
 
     def get_id(self):
         return self.id
