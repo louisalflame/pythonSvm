@@ -108,8 +108,8 @@ class ParseUtil:
         webTraceReader.parseTraces( webFolderPath )
         webTraceReader.parseDomLabel()
 
-        self.automata = TaaDReader.getAutomata()
-        self.traces   = TaaDReader.getTraces()
+        self.automata = webTraceReader.getAutomata()
+        self.traces   = webTraceReader.getTraces()
 
     def saveTraces(self):
         # make dir if not exist
@@ -126,6 +126,9 @@ class ParseUtil:
             num += 1
         filename = os.path.join( Path.Data, self.app, self.ver, self.traceName+str(num) )
 
+        self.automata.use_label_dictionary()
+        self.automata.remake_keywords()
+        
         # save traces by automata attributes
         with open( filename, 'w' ) as f:
             for trace in self.traces:

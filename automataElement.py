@@ -4,6 +4,7 @@
 import os, json
 
 from tracePath import Path
+from labelDictionary import LabelDictionary
 
 class AutomataElement:
     def __init__(self):
@@ -12,24 +13,22 @@ class AutomataElement:
         self.states = []
         # vector
         self.keywords = {}
-        self.actions = []
+        self.actions = set()
         self.orders = {}
 
     def add_state(self, state):
         if state not in self.states:
             self.states.append( state )
-            for key, keyword in state.get_keywords().items():
-                if key not in self.keywords:
-                    self.keywords[key] = [ keyword ]
-                elif keyword not in self.keywords[key]:
-                    self.keywords[key].append( keyword )
 
     def add_edge(self, edge):
         if edge not in self.edges:
             self.edges.append( edge )
-            # add actions
-            if edge.get_symbol() not in self.actions:
-                self.actions.append( edge.get_symbol() )
+
+    def get_states(self):
+        return self.states
+
+    def get_edges(self):
+        return self.edges
 
     def get_state_byId(self, stateID):
         for state in self.states:
@@ -42,7 +41,6 @@ class AutomataElement:
             if str(edge.get_id()) == str(edgeID):
                 return edge
         return None
-
 
     def get_edges_byFromTo(self, stateFrom, stateTo):
         edges = []
@@ -64,11 +62,43 @@ class AutomataElement:
                 return True
         return False
 
+    def remake_keywords(self):
+        for state in self.states:
+            for key, keyword in state.get_keywords().items():
+                if key not in self.keywords:
+                    self.keywords[key] = set( [ keyword ] )
+                elif keyword not in self.keywords[key]:
+                    self.keywords[key].add( keyword )
+
+        for edge in self.edges:
+            for key, keyword in state.get_keywords().items():
+                if key not in self.keywords:
+                    self.keywords[key] = set( [ keyword ] )
+                elif keyword not in self.keywords[key]:
+                    self.keywords[key].add( keyword )
+
+            if edge.get_symbol() not in self.actions:
+                self.actions.add( edge.get_symbol() )
+
     def get_keywords(self):
         return self.keywords
 
     def get_actions(self):
         return self.actions
+
+    def use_label_dictionary(self):
+        LabelDictionary.parseLabel()
+        labels = LabelDictionary.getLabelDictionary()
+        for label in labels['screen'].keys():
+            if 'label' not in self.keywords:
+                self.keywords['label'] = set( [ label ] )
+            elif label not in self.keywords['label']:
+                self.keywords['label'].add( label )
+        for label in labels['action'].keys():
+            if 'label' not in self.keywords:
+                self.keywords['label'] = set( [ label ] )
+            elif label not in self.keywords['label']:
+                self.keywords['label'].add( label )
 
     def get_vector(self):
         vector = []
@@ -108,26 +138,43 @@ class TraceElement:
 
     def add_state(self, state):
         self.states.append( state )
-        for key, keyword in state.get_keywords().items():
-            if key not in self.keywords:
-                self.keywords[key] = { keyword : 1 }
-            elif keyword in self.keywords[key]:
-                self.keywords[key][keyword] += 1
-            else:
-                self.keywords[key][keyword] = 1
 
     def add_edge(self, edge, index):
-        self.edges.append(edge)
-        edgeSymbol = edge.get_symbol()
-        if edgeSymbol in self.actions:
-            self.actions[edgeSymbol]['count'] += 1
-            self.actions[edgeSymbol]['index'].append( index )
-        elif edgeSymbol not in self.actions:
-            self.actions[edgeSymbol] = {  'count' : 1,
-                                          'index' : [ index ] }
+        self.edges.append( (edge, index) )
 
     def set_automata(self, automata):
         self.automata = automata
+        self.remake_keywords()
+
+    def remake_keywords(self):
+        self.keywords = {}
+        self.actions = {}
+        self.orders = {}
+        for state in self.states:
+            for key, keyword in state.get_keywords().items():
+                if key not in self.keywords:
+                    self.keywords[key] = { keyword : 1 }
+                elif keyword in self.keywords[key]:
+                    self.keywords[key][keyword] += 1
+                else:
+                    self.keywords[key][keyword] = 1
+
+        for edge, index in self.edges:
+            for key, keyword in state.get_keywords().items():
+                if key not in self.keywords:
+                    self.keywords[key] = { keyword : 1 }
+                elif keyword in self.keywords[key]:
+                    self.keywords[key][keyword] += 1
+                else:
+                    self.keywords[key][keyword] = 1
+
+            edgeSymbol = edge.get_symbol()
+            if edgeSymbol in self.actions:
+                self.actions[edgeSymbol]['count'] += 1
+                self.actions[edgeSymbol]['index'].append( index )
+            elif edgeSymbol not in self.actions:
+                self.actions[edgeSymbol] = {  'count' : 1,
+                                              'index' : [ index ] }
 
     def make_vector_string(self):
         if not self.automata: 
@@ -180,6 +227,9 @@ class StateElement:
     def set_xml(self, xmlFile):
         self.xmlFile = xmlFile 
 
+    def get_xml(self):
+        return self.xmlFile
+
     def get_symbol(self):
         """TODO: """
         return self.id
@@ -221,10 +271,12 @@ class EdgeElement:
     def get_symbol(self):
         symbolFrom = self.stateFrom.get_symbol()
         symbolTo   = self.stateTo.get_symbol()
-        symbol = str(symbolFrom)+'>'+str(symbolTo)+'ID:'+str(self.id)
+        symbol = str(symbolFrom)+'=>'+str(symbolTo)+'ID:'+str(self.id)
         if 'name' in self.keywords:
             symbol += self.keywords['name']
         if 'xpath' in self.keywords:
             symbol += self.keywords['xpath']
+        if 'label' in self.keywords:
+            symbol += self.keywords['label']
 
         return symbol

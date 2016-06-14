@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*-
 
 import os, sys, json, codecs
+from abc import ABCMeta, abstractmethod
+
 import readT3A
 from automataElement import AutomataElement, TraceElement, StateElement, EdgeElement
+from labelDictionary import LabelDictionary
 
 class TraceReader:
     __metaclass__ = ABCMeta
@@ -61,6 +64,7 @@ class WebTraceReader(TraceReader):
 
         for edge in self.automataJson['edge']:
             edgeElement = EdgeElement()
+            edgeElement.set_id( str( edge['id'] ) )
             edgeElement.add_keyword( 'id', edge['clickable']['id'] )
             edgeElement.add_keyword( 'name', edge['clickable']['name'] )
             edgeElement.add_keyword( 'xpath', edge['clickable']['xpath'] )
@@ -75,14 +79,39 @@ class WebTraceReader(TraceReader):
         for trace in self.traceJson['traces']:
             traceElement = TraceElement()
             for index, edge in enumerate( trace['edges'] ):
-                traceElement.add_edge( 
-                    self.automata.get_edge_byFromTo( str(edge['from']), str(edge['to']) ), index )
+                traceElement.add_edge( self.automata.get_edge_byId( str(edge['id']) ), index )
             for state in trace['states']:
                 traceElement.add_state( self.automata.get_state_byId( str(state['id']) ) )
             self.traces.append( traceElement )
 
     def parseDomLabel(self):
-        pass
+        LabelDictionary.parseLabel()
+        labelDiction = LabelDictionary.getLabelDictionary()
+
+        for state in self.automata.get_states():
+            dom = self.getStateDom( state.get_xml() )
+
+            for label_key, labels in LabelDiction['screen'].items():
+                for label in labels:
+                    if lable in dom:
+                        state.add_keyword('label', label_key)
+
+        for edge in self.automata.get_edges():
+            symbol = edge.get_symbol()
+
+            for label_key, labels in labelDiction['action'].items():
+                for label in labels:
+                    if label in symbol:
+                        edge.add_keyword('label', label_key)
+
+    def getStateDom(self, baseDomFile):
+        dom = ""
+
+        if os.path.exists(baseDomFile):
+            baseDom = codecs.open(baseDomFile, 'r', encoding='utf-8')
+            dom = baseDom.read()
+
+        return dom
 
     def reset(self):
         self.automata     = None
@@ -122,7 +151,8 @@ class TaaDTraceReader(TraceReader):
             self.edgesJson = json.load(f)
 
     def parseSessionAutomata(self, sessionFile):
-        self.automata = AutomataElement()
+        statesList = {}
+        edgesList = {}
 
         mode = "STATE_TO_EDGE"
         for e in self.edgesJson['edges']:
@@ -131,20 +161,20 @@ class TaaDTraceReader(TraceReader):
                 stateID = e[0]
                 edgeID  = e[1]
 
-                if self.automata.has_stateID(stateID):
-                    state = self.automata.get_state_byId(stateID)
+                if stateID in statesList:
+                    state = statesList[stateID]
                 else:
                     state = StateElement()
                     state.set_id( str(stateID) )
-                    self.automata.add_state( state )
+                    statesList[stateID] = state
 
-                if not self.automata.has_edgeID(edgeID) :
+                if edgeID not in edgesList:
                     edge = EdgeElement()
                     edge.set_id( str(edgeID) )
                     edge.set_stateFrom( state )
-                    self.automata.add_edge( edge )
+                    edgesList[edgeID] = edge
                 else:
-                    edge = self.automata.get_edge_byId(edgeID)
+                    edge = edgesList[edgeID]
                     if not edge.get_stateFrom():
                         edge.set_stateFrom( state )
 
@@ -153,25 +183,31 @@ class TaaDTraceReader(TraceReader):
                 edgeID  = e[0]
                 stateID = e[1]
 
-                if self.automata.has_stateID(stateID):
-                    state = self.automata.get_state_byId(stateID)
+                if stateID in statesList:
+                    state = statesList[stateID]
                 else:
                     state = StateElement()
                     state.set_id( str(stateID) )
-                    self.automata.add_state( state )
+                    statesList[stateID] = state
 
-                if not self.automata.has_edgeID(edgeID) :
+                if edgeID not in edgesList:
                     edge = EdgeElement()
                     edge.set_id( str(edgeID) )
                     edge.set_stateTo( state )
-                    self.automata.add_edge( edge )
+                    edgesList[edgeID] = edge
                 else:
-                    edge = self.automata.get_edge_byId(edgeID)
+                    edge = edgesList[edgeID]
                     if not edge.get_stateTo():
                         edge.set_stateTo( state )
 
+        self.automata = AutomataElement()
+        for stateID, state in statesList.items():
+            self.automata.add_state( state )
+        for edgeID, edge in edgesList.items():
+            self.automata.add_edge( edge )
+
     def parseTraceSet(self, sessionFile):
-        traceAmount = int( taskJson['traceAmount'] )
+        traceAmount = int( self.taskJson['traceAmount'] )
         for i in range(traceAmount):
             # check TraceSet folder
             traceSetFile = os.path.join(sessionFile, 'traceSet', str(i+1))
@@ -182,9 +218,9 @@ class TaaDTraceReader(TraceReader):
             if not os.path.exists( traceSetFile ):
                 raise Exception('Cannot find trace.txt : ',traceTxtFile)
 
-            self.loadTraceSet(traceTxtFile)
+            self.loadTraceSet(sessionFile, traceTxtFile, i)
 
-    def loadTraceSet(self, traceTxtFile):
+    def loadTraceSet(self, sessionFile, traceTxtFile, i):
         with open(traceTxtFile, 'r') as f:
             traceLines = f.readlines()
 
@@ -200,16 +236,16 @@ class TaaDTraceReader(TraceReader):
                 # check if is state
                 if NodeFile.endswith('.xml'):
                     if self.automata.has_stateID(NodeID):
-                        state = self.automata.get_state_byId(stateID)
+                        state = self.automata.get_state_byId(NodeID)
                         state.set_xml( os.path.join(sessionFile, 'traceSet', str(i), NodeFile) )
-                        trace['states'].append( se )
+                        trace['states'].append( state )
 
                 # check if is edge
                 elif NodeFile.endswith('.json'):
                     if self.automata.has_edgeID(NodeID):
-                        edge = self.automata.get_edge_byId(edgeID)
+                        edge = self.automata.get_edge_byId(NodeID)
                         edge.set_xml( os.path.join(sessionFile, 'traceSet', str(i), NodeFile) )
-                        trace['edges'].append( ee )
+                        trace['edges'].append( edge )
             else:
                 break
 
@@ -233,11 +269,11 @@ class TaaDTraceReader(TraceReader):
         #parse Label into automata
         for node in t3a.nodes:
             for stateID in node.stateIDs:
-                if stateID in states:
-                    states[stateID].add_keyword('label', node.label)
+                if self.automata.has_stateID( stateID ):
+                    self.automata.get_state_byId(stateID).add_keyword('label', node.label)
         for branch in t3a.branches:
-            if branch.actionIdx in edges:
-                edges[ branch.actionIdx ].add_keyword('label', branch.label)
+            if self.automata.has_edgeID( branch.actionIdx ):
+                self.automata.get_edge_byId( branch.actionIdx ).add_keyword('label', branch.label)
 
     def reset(self):
         self.automata   = None

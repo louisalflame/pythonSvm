@@ -6,68 +6,74 @@ import os, json, codecs
 from tracePath import Path
 
 class LabelDictionary:
-    def __init__(self):
-        self._labels_action = {}
-        self._labels_screen = {}
+    _labels_action = {}
+    _labels_screen = {}
 
-    def parseLabel(self):
+    @classmethod
+    def parseLabel(cls):
+        cls._labels_action = {}
+        cls._labels_screen = {}
         for dirName in [ 'file_manager', 'notepad', None ]:
-            self.parseLabelDir( dirName )
+            cls.parseLabelDir( dirName )
 
-    def parseLabelDir(self, dirName=None):
+    @classmethod
+    def parseLabelDir(cls, dirName=None):
         if not dirName:
             labelPath = os.path.join( Path.Label, 'labels_action' )
             if os.path.exists( labelPath ):
                 with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
                     lines = f.readlines()
-                    self.parseLabelsAction(lines)
+                    cls.parseLabelsAction(lines)
 
             labelPath = os.path.join( Path.Label, 'labels_screen' )
             if os.path.exists( labelPath ):
                 with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
                     lines = f.readlines()
-                    self.parseLabelsScreen(lines)
+                    cls.parseLabelsScreen(lines)
         else:
             labelPath = os.path.join( Path.Label, dirName, 'labels_action' )
             if os.path.exists( labelPath ):
                 with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
                     lines = f.readlines()
-                    self.parseLabelsAction(lines)
+                    cls.parseLabelsAction(lines)
 
             labelPath = os.path.join( Path.Label, dirName, 'labels_screen' )
             if os.path.exists( labelPath ):
                 with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
                     lines = f.readlines()
-                    self.parseLabelsScreen(lines)
+                    cls.parseLabelsScreen(lines)
 
-    def parseLabelsAction(self, lines):
+    @classmethod
+    def parseLabelsAction(cls, lines):
         for i, line in enumerate(lines):
             if line.startswith('#') and i > 0:
                 label = ''.join( line[1:].split() )
                 key = ''.join( lines[i-1].split() )
-                if key in self._labels_action:
-                    self._labels_action[key].append(label)
+                if key in cls._labels_action:
+                    cls._labels_action[key].append(label)
             else:
-                if line not in self._labels_action:
+                if line not in cls._labels_action:
                     label = ''.join( line.split() )
-                    self._labels_action[ label ] = [ label ]
+                    cls._labels_action[ label ] = [ label ]
 
-    def parseLabelsScreen(self, lines):
+    @classmethod
+    def parseLabelsScreen(cls, lines):
         for i, line in enumerate(lines):
             if line.startswith('#') and i > 0:
                 label = ''.join( line[1:].split() )
                 key = ''.join( lines[i-1].split() )
-                if key in self._labels_screen:
-                    self._labels_screen[key].append(label)
+                if key in cls._labels_screen:
+                    cls._labels_screen[key].append(label)
             else:
-                if line not in self._labels_screen:
+                if line not in cls._labels_screen:
                     label = ''.join(line.split() )
-                    self._labels_screen[ label ] = [ label ]
+                    cls._labels_screen[ label ] = [ label ]
 
-    def getLabelDictionary(self):
-        return { 'action' : self._labels_action,
-                 'screen' : self._labels_screen }
+    @classmethod
+    def getLabelDictionary(cls):
+        return { 'action' : cls._labels_action,
+                 'screen' : cls._labels_screen }
 
-    def resetLabels(self):
-        self._labels_action = {}
-        self._labels_screen = {}
+    def resetLabels(cls):
+        cls._labels_action = {}
+        cls._labels_screen = {}
