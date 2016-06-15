@@ -89,28 +89,33 @@ class AutomataElement:
     def use_label_dictionary(self):
         LabelDictionary.parseLabel()
         labels = LabelDictionary.getLabelDictionary()
+
         for label in labels['screen'].keys():
             if 'label' not in self.keywords:
                 self.keywords['label'] = set( [ label ] )
             elif label not in self.keywords['label']:
                 self.keywords['label'].add( label )
+
         for label in labels['action'].keys():
             if 'label' not in self.keywords:
                 self.keywords['label'] = set( [ label ] )
             elif label not in self.keywords['label']:
                 self.keywords['label'].add( label )
 
-    def get_vector(self):
+    def get_vector(self, needs):
         vector = []
         vectorStr = ""
         # add keywords
         for key, keywords in self.keywords.items():
+            if needs and key not in needs:
+                continue
+
             for keyword in keywords:
                 vector.append( str(key)+'_'+str(keyword) )
 
         # add actions
-        for action in self.actions:
-            vector.append( action )
+        # for action in self.actions:
+        #    vector.append( action )
 
         vector = [ str(index+1)+':<'+str(value)+'>' for index, value in enumerate(vector) ]
         vectorStr = '\n'.join(vector) + '\n'
@@ -160,7 +165,7 @@ class TraceElement:
                     self.keywords[key][keyword] = 1
 
         for edge, index in self.edges:
-            for key, keyword in state.get_keywords().items():
+            for key, keyword in edge.get_keywords().items():
                 if key not in self.keywords:
                     self.keywords[key] = { keyword : 1 }
                 elif keyword in self.keywords[key]:
@@ -176,7 +181,7 @@ class TraceElement:
                 self.actions[edgeSymbol] = {  'count' : 1,
                                               'index' : [ index ] }
 
-    def make_vector_string(self):
+    def make_vector_string(self, needs ):
         if not self.automata: 
             return ""
 
@@ -184,6 +189,9 @@ class TraceElement:
         vectorStr = ""
         # add keywords
         for key, keywords in self.automata.get_keywords().items():
+            if needs and key not in needs:
+                continue
+
             for keyword in keywords:
                 if key in self.keywords and keyword in self.keywords[key]:
                     vector.append( self.keywords[key][keyword] )
@@ -193,11 +201,11 @@ class TraceElement:
                     vector.append( 0 )
 
         # add actions
-        for action in self.automata.get_actions():
-            if action in self.actions:
-                vector.append( self.actions[action]['count'] )
-            else:
-                vector.append( 0 )
+        # for action in self.automata.get_actions():
+        #    if action in self.actions:
+        #        vector.append( self.actions[action]['count'] )
+        #    else:
+        #        vector.append( 0 )
 
         # add orders
 
@@ -246,6 +254,9 @@ class EdgeElement:
     def add_keyword(self, key, keyword):
         if key not in self.keywords:
             self.keywords[key] = keyword
+            
+    def get_keywords(self):
+        return self.keywords
 
     def set_id(self, id):
         self.id = str(id)

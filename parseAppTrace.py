@@ -133,11 +133,11 @@ class ParseUtil:
         with open( filename, 'w' ) as f:
             for trace in self.traces:
                 trace.set_automata( self.automata )
-                vector = trace.make_vector_string()
+                vector = trace.make_vector_string( 'label' )
                 f.write(vector)
         f.close()
 
         filename = os.path.join( Path.Data, self.app, self.ver, self.traceName+str(num)+'vector' )
         with open( filename, 'w' ) as f:
-            f.write( self.automata.get_vector() )
+            f.write( self.automata.get_vector( 'label' ) )
         f.close()           

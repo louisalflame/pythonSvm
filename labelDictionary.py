@@ -13,7 +13,7 @@ class LabelDictionary:
     def parseLabel(cls):
         cls._labels_action = {}
         cls._labels_screen = {}
-        for dirName in [ 'file_manager', 'notepad', None ]:
+        for dirName in [ 'file_manager', 'notepad', 'nothing_demo', None ]:
             cls.parseLabelDir( dirName )
 
     @classmethod

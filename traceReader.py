@@ -56,7 +56,7 @@ class WebTraceReader(TraceReader):
             stateElement = StateElement()
             stateElement.set_id( str( state['id'] ) )
             stateElement.set_xml( 
-                os.path.join( webFolderPath, state['dom_path'] ) )
+                os.path.abspath( os.path.join( webFolderPath, state['dom_path'] ) ) )
             stateElement.add_keyword( 'url', state['url'] )
             '''TODO load dom and parse keyword'''
 
@@ -91,9 +91,9 @@ class WebTraceReader(TraceReader):
         for state in self.automata.get_states():
             dom = self.getStateDom( state.get_xml() )
 
-            for label_key, labels in LabelDiction['screen'].items():
+            for label_key, labels in labelDiction['screen'].items():
                 for label in labels:
-                    if lable in dom:
+                    if label in dom:
                         state.add_keyword('label', label_key)
 
         for edge in self.automata.get_edges():
@@ -110,6 +110,18 @@ class WebTraceReader(TraceReader):
         if os.path.exists(baseDomFile):
             baseDom = codecs.open(baseDomFile, 'r', encoding='utf-8')
             dom = baseDom.read()
+
+        listJsonPath = os.path.join( baseDomFile, os.pardir, 'iframe_list.json' )
+        if os.path.exists( listJsonPath ):
+            listJsonFile = open( listJsonPath, 'r' )
+            listJson = json.load( listJsonFile )
+
+            if listJson['num'] and int( listJson['num'] ) > 0:
+                for i in range( int( listJson['num'] ) ):
+                    dom_path = os.path.join( baseDomFile, os.pardir, str(i+1), os.path.basename(baseDomFile) )
+                    if os.path.exists(dom_path):
+                        iframedom = codecs.open(baseDomFile, 'r', encoding='utf-8')
+                        dom += iframedom.read()
 
         return dom
 
