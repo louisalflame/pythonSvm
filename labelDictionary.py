@@ -74,6 +74,7 @@ class LabelDictionary:
         return { 'action' : cls._labels_action,
                  'screen' : cls._labels_screen }
 
+    @classmethod
     def resetLabels(cls):
         cls._labels_action = {}
         cls._labels_screen = {}

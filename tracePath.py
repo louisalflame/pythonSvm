@@ -9,3 +9,5 @@ class Path:
 
     #Label
     Label      = r'C:\Users\chi-yun\Desktop\TaaD\src\SpecElicitor\Labels'
+
+    libSvm     = r''
