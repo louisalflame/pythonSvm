@@ -1,0 +1,101 @@
+
+\section{Under-approximation}\label{sec:under-approximation}
+In this section, we first introduce how to under-approximate a given function
+$\fun{f}$ with $\underline{G}^\fun{f}=\method{under}(G^\fun{f})$.
+The produced CFG $\underline{G}^\fun{f}$ should not contain any recursive calls,
+and all computations in $\underline{G}^\fun{f}$ should be valid in original CFG
+$G^\fun{f}$.
+Further, we explain how we use \method{under} combined with two unwinding
+methods to derive under-approximation of the unwound program $\prog{P}_k$.
+
+
+\subsection{Approximating Functions}
+Let $G^\fun{f} = \langle V, E, \cmd{cmd}^\fun{f}, \overline{\texttt{u}}^\fun{f},
+\overline{\texttt{r}}^\fun{f},s,e \rangle$ be a control flow graph.
+The control flow graph $\underline{G}^\fun{f} = \langle V, E,
+\underline{\cmd{cmd}}^\fun{f}, \overline{\texttt{u}}^\fun{f},
+\overline{\texttt{r}}^\fun{f},s,e \rangle$ is obtained by replacing every
+function call in $G$ with the command $\mathtt{assume\ false}$
+(Figure~\ref{figure:under-approximation}).
+That is,
+\begin{equation*}
+  \underline{\cmd{cmd}}^\fun{f} (\ell, \ell') =
+  \left\{
+    \begin{array}{ll}
+      \mathtt{assume\ false} &
+      \text{if } \cmd{cmd}^\fun{f} (\ell, \ell')
+      \text{ contains function calls}\\
+      \cmd{cmd}^\fun{f} (\ell, \ell') &
+      \text{otherwise}
+    \end{array}
+  \right.
+\end{equation*}
+
+\begin{figure}[t]
+  \centering
+    \begin{tikzpicture}[scale=1.2,->,>=stealth',shorten >=1pt,auto,
+      node distance=2cm,thick,
+      node/.style={circle,draw,minimum width=0.8cm,inner sep=0}]
+
+      \node[node] (0) at (-4, 0)  {$\ell$};
+      \node[node] (1) at (-4, -2) {$\ell'$};
+
+      \node[node] (00) at (0, 0)  {$\ell$};
+      \node[node] (01) at (0, -2) {$\ell'$};
+      \node (arrow_s) at (-2.5, -1) {};
+      \node (arrow_e) at (-0.5, -1) {};
+
+      \path
+        (arrow_s) edge [dotted]
+                  node {} (arrow_e)
+        (0) edge 
+            node {$\overline{\mathtt{x}} := \fun{g} (\overline{p})$} (1)
+
+        (00) edge 
+             node {$\mathtt{assume\ false}$} (01);
+    \end{tikzpicture}
+
+  \caption{Under-approximation}
+  \label{figure:under-approximation}
+\end{figure}
+
+\begin{proposition}
+  Let $G^\fun{f}$ be a control flow graph. $P$ and $Q$ are logic formulae with
+  free variables over program variables of $G^\fun{f}$. If $\assert{P}
+  G^\fun{f} \assert{Q}$, then 
+  $\assert{P} \underline{G}^\fun{f} \assert{Q}$.
+\end{proposition}
+The above holds because the computation of $\underline{G}^\fun{f}$ under-
+approximates the computation of $G^\fun{f}$.
+If all computation of $G^\fun{f}$ from a state satisfying $P$ always ends with
+a state satisfying $Q$,
+the same should also hold for the computation of $\underline{G}^\fun{f}$.
+
+
+\subsection{Approximating Programs from Function Inlining Method}
+Following how we do unwinding in \S~\ref{subsec:inlining}, we can under-
+approximate the program through simply computing under-approximation of
+$\fun{main}$ function as below.
+\[
+\prog{\underline{P}}_k = \{\underline{G}^\fun{main}_k\}
+\]
+$\underline{G}^\fun{main}_k$ doesn't contain any function call,
+so it is unnecessary to copy other functions from $\prog{P}_k$.
+Thus, the unwound program $\prog{\underline{P}}_k$ can contain only
+$\fun{main}$ for less memory usage.
+
+\todo[inline]{Prove that, in each iteration, the under-approximation is more
+accurate than previous one.}
+
+\subsection{Approximating Programs from Function Duplicating Method}
+Observing the derivation of $\prog{P}_k$ in \S~\ref{subsec:duplicating},
+we know that all function duplications in $DUPS_i$ for $0 \leq i < k$
+do not contain any recursive calls as they were unwound in $(i+1)$-iteration.
+With this hint, we only have to consider functions in $DUPS_k$ which may
+contain calls to recursive functions,
+and we directly under-approximate all functions in $DUPS_k$.
+\[
+\prog{\underline{P}}_k = (\prog{P}_k \setminus DUPS_k)
+             \cup \{\underline{G}^{\fun{f}_k}:G^{\fun{f}_k} \in DUPS_k\}
+\]
+

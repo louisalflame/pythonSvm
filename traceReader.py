@@ -91,18 +91,28 @@ class WebTraceReader(TraceReader):
         for state in self.automata.get_states():
             dom = self.getStateDom( state.get_xml() )
 
-            for label_key, labels in labelDiction['screen'].items():
-                for label in labels:
-                    if label in dom:
-                        state.add_keyword('label', label_key)
+            for label in labelDiction['screen']:
+                check = True
+                for key in label.getLabel().split('_'):
+                    if key not in dom:
+                        check = False
+                        break
+                if check:    
+                    print(label.getLabel(), state.get_id())
+                    state.add_keyword('label', label.getLabel())
 
         for edge in self.automata.get_edges():
             symbol = edge.get_symbol()
 
-            for label_key, labels in labelDiction['action'].items():
-                for label in labels:
-                    if label in symbol:
-                        edge.add_keyword('label', label_key)
+            for label in labelDiction['action']:
+                check = True
+                for key in label.getLabel().split('_'):
+                    if key not in symbol:
+                        check = False
+                        break
+                if check:    
+                    print(label.getLabel(), edge.get_id())
+                    edge.add_keyword('label', label.getLabel())
 
     def getStateDom(self, baseDomFile):
         dom = ""

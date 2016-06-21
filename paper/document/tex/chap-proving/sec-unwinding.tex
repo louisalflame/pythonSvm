@@ -1,0 +1,324 @@
+
+\section{Unwinding}\label{sec:unwinding}
+As introduced in Chapter~\ref{ch:overview}, our algorithm produces more and more
+accurate under-approximations through unwinding the program.
+An important feature of unwinding is that it should keep the behavior of unwound
+program being the same as the original one.
+In this section, we introduce two function unwinding methods accompanied with
+simple proofs of the equivalence between the original and unwound functions.
+We also devise different strategies to produce unwound programs when using
+different function unwinding methods.
+
+\subsection{Function Inlining Method}\label{subsec:inlining}
+The function inlining method directly follows the concept of inline function in
+C/C++ language and compiler optimizations.
+It expands the body at the location of a function call.
+We can achieve this in our program model.
+The function $\method{unwind}(G^\fun{f})$ returns a CFG $K^\fun{f}$
+obtained by replacing all function call edges in $G^\fun{f}$ with the CFGs of
+the called functions~(Figure~\ref{figure:unwinding}).
+The formal definition is given below.
+
+\begin{figure}[t]
+  \centering
+    \begin{tikzpicture}[scale=1.2,->,>=stealth',shorten >=1pt,auto,node
+      distance=2cm,thick,node/.style={circle,draw,minimum width=0.8cm,inner sep=0}]
+
+      \node[node] (0) at (-4, 0)  {$\ell$};
+      \node[node] (1) at (-4, -2) {$\ell'$};
+
+      \draw [fill=gray!10] (4, -1) ellipse (1.8 and 1.5);
+      \node (text) at (4, -1) {$\method{rename}(G_\fun{g},i)$};
+      \node[node] (00) at (0, 0)  {$\ell$};
+      \node[node] (01) at (0, -2) {$\ell'$};
+      \node[node] (10) at (4, 0)  {\smallnode{$s_i$}};
+      \node[node] (11) at (4, -2) {\smallnode{$e_i$}};
+      \node (arrow_s) at (-2.5, -1) {};
+      \node (arrow_e) at (-0.5, -1) {};
+
+      \path
+        (arrow_s) edge [dotted]
+                  node {} (arrow_e)
+        (0) edge
+            node {$\overline{\mathtt{x}} := \fun{g} (\overline{p})$} (1)
+
+        (00) edge
+             node {$\overline{\mathtt{u}}_i^\fun{g} := \overline{p}$} (10)
+
+        (11) edge
+             node {$\overline{\mathtt{x}} := \overline{\mathtt{r}}_i^\fun{g}$} (01) ;
+    \end{tikzpicture}
+
+  \caption{Unwinding Function Calls}
+  \label{figure:unwinding}
+\end{figure}
+
+We first define the function $\method{rename}(G^\fun{f},i)$.
+It returns a CFG obtained by first replacing every return command
+$\mathtt{return}\ \overline{q}$ with assignments to return variables
+$\overline{\texttt{r}}^\fun{f} := \overline{q}$ and then renaming all variables
+and locations in $G^\fun{f}$ with the given index value $i$.
+The function $\method{addindex}(c, i)$ is used to rename all variables in a
+command $c$ with index $i$.
+Formally,
+\[
+\begin{array}{l}
+\method{rename}(\langle V, E,\cmd{cmd}^\fun{f},\overline{\texttt{u}}^\fun{f},
+\overline{\texttt{r}}^\fun{f},s,e \rangle,i)
+= \langle V_i, E_i,\cmd{cmd}_i^\fun{f},\overline{\texttt{u}}_i^\fun{f},
+\overline{\texttt{r}}_i^\fun{f},s_i,e_i \rangle \text{ such that}\\
+
+V_i = \{\ell_i:\ell \in V\} \\
+
+E_i = \{(\ell_i,\ell'_i): (\ell,\ell') \in E\} \\
+
+\cmd{cmd}_i^\fun{f}(\ell_i,\ell'_i) =
+  \left\{
+  \begin{array}{ll}
+   \method{addindex}(\overline{\texttt{r}}^\fun{f}:=\overline{q}, i) &
+     \text{if }\cmd{cmd}^\fun{f}(\ell,\ell')=\mathtt{return}\ \overline{q} \\
+   \method{addindex}(\cmd{cmd}^\fun{f}(\ell,\ell'), i) &
+     \text{otherwise}
+  \end{array}
+  \right.
+\end{array}
+\]
+Then, given a CFG $G^\fun{f}=\langle V, E,\cmd{cmd}^\fun{f},
+\overline{\texttt{u}}^\fun{f}, \overline{\texttt{r}}^\fun{f},s,e \rangle$,
+we use $\hat{E} =\{(\ell, \ell')\in E: \cmd{cmd}^\fun{f} (\ell,\ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p}))\}$ to denote the set of function call edges in $E$ and define a function $\method{idx}(e)$ that maps a call edge $e$ to a unique index.
+\hide{ % TODO
+The predicate below then can be used to represent a renamed CFG $\method{rename}(G^\fun{g},i)$ according to a function call edge $(\ell, \ell')$ in $G^\fun{f}$.
+\[
+\begin{split}
+{UnwindCall}(\ell,\ell') \equiv (\ell,\ell')\in\hat{E} \wedge \cmd{cmd}^\fun{f}(\ell,\ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p}))\wedge\method{idx}(\ell, \ell')=i  \\
+  \wedge \method{rename}(G^\fun{g},i)=\langle V_i, E_i,\cmd{cmd}^\fun{g}_i, \overline{\texttt{u}}^\fun{g}_i, \overline{\texttt{r}}^\fun{g}_i,s_i,e_i\rangle
+\end{split}
+\]
+}
+Finally, we provide the definition of $\method{unwind}(G^\fun{f})$.
+\[
+\begin{array}{l}
+\method{unwind}(G^\fun{f}) = \langle V_u, E_u,\cmd{cmd}_u^\fun{f}, \overline{\texttt{u}}^\fun{f}, \overline{\texttt{r}}^\fun{f},s,e \rangle \text{ where} \\
+\end{array}
+\]
+\[
+\begin{array}{l}
+\begin{aligned}
+ V_u = V\cup\bigcup\{V_i:(\ell,\ell')\in\hat{E} \wedge \cmd{cmd}^\fun{f}(\ell,\ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p}))\wedge\method{idx}(\ell, \ell')=i  \\
+  \wedge \method{rename}(G^\fun{g},i)=\langle V_i, E_i,\cmd{cmd}^\fun{g}_i, \overline{\texttt{u}}^\fun{g}_i, \overline{\texttt{r}}^\fun{g}_i,s_i,e_i\rangle \}
+\end{aligned}\\
+
+\begin{aligned}
+ E_u = E \setminus \hat{E} \cup \bigcup\{E_i\cup\{(\ell, s_i),(e_i, \ell')\}: (\ell, \ell')\in \hat{E} \wedge \cmd{cmd}^\fun{f}(\ell, \ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p})) \\
+  \wedge \method{idx}(\ell, \ell')=i \wedge \method{rename}(G^\fun{g},i) =
+\langle V_i, E_i,\cmd{cmd}^\fun{g}_i, \overline{\texttt{u}}^\fun{g}_i, \overline{\texttt{r}}^\fun{g}_i,s_i,e_i\rangle \}
+\end{aligned}\\
+
+\cmd{cmd}_u^\fun{f} (\ell, \ell') =
+\left\{
+  \begin{array}{ll}
+  (\overline{\texttt{u}}^\fun{g}_i:=\overline{p}) &\text{if } (\ell,\ell')=(\ell,s_i)
+  \\
+  (\overline{\texttt{x}}:=\overline{\texttt{r}}^\fun{g}_i) &\text{if } (\ell,\ell')=(e_i,\ell') \\
+  \cmd{cmd}^\fun{g}_i(\ell, \ell') &\text{if } (\ell, \ell') \in E_i \\
+  \cmd{cmd}^\fun{f}(\ell,\ell') &\text{otherwise}
+  \end{array}
+\right.
+\end{array}
+\]
+
+\begin{proposition}
+  Let $G^\fun{f}$ be a control flow graph. $P$ and $Q$ are logic formulas with
+  free variables over program variables of $G^\fun{f}$. $\assert{P}\ G^\fun{f}\
+  \assert{Q}$ if and only if $\assert{P}\ \method{unwind}(G^\fun{f})\ \assert{Q}$.
+\end{proposition}
+\todo[inline]{Describe why unwound function and original function have the same
+ behavior via simple Hoare rule}
+Essentially, $G^\fun{f}$ and $\method{unwind}(G^\fun{f})$ represent the same
+function $\fun{f}$. The only difference is that the latter has more program
+variables after unwinding,
+but this does not affect the states over program variables of $G^\fun{f}$
+before and after the function.
+
+\subsubsection*{Unwinding Program}
+Considering the \method{unwind}, it transforms a single CFG into another
+single CFG with the same behavior but more program variables.
+Following our program, the program starts at $\fun{main}$ function.
+Therefore, to unwind the program in each iteration of 
+Algorithm~\ref{algorithm:overview},
+we can simply apply \method{unwind} on $G^\fun{main}$ function repeatedly.
+In other words,
+\[
+\begin{array}{l}
+\text{Initially, } \prog{P}_0 = \prog{P}
+    \therefore G^\fun{main}_0 = G^\fun{main} \\
+G^\fun{main}_k = \method{unwind}(G^\fun{main}_{k-1}) \\
+\prog{P}_k = \prog{P}_{k-1} 
+             \setminus \{G^\fun{main}_{k-1}\} \cup \{G^\fun{main}_k\}
+\end{array}
+\]
+
+
+\subsection{Function Duplicating Method}\label{subsec:duplicating}
+The previously mentioned method comes with an obvious drawback that it will
+cause exponential increase in size of the unwound program.
+Considering the McCarthy 91 function, the number of recursive calls in the
+program doubles in the unwound function at each iteration of
+Algorithm~\ref{algorithm:overview},
+and the program size doubles at next iteration since every function call is
+inlined, i.e., transformed to a copy of the function body.
+Therefore, we devised another method $\method{unwind}_\prog{P}(G^\fun{f}, k)$
+that duplicates functions in program \prog{P} instead of inlining function calls
+to prevent exponential growth.
+Note that the $\method{unwind}_\prog{P}(G^\fun{f}, k)$ also preserves the 
+behavior of original function $\fun{f}$ in the modified program \prog{P} after
+unwinding.
+
+The procedure of the new method is simple.
+We give a function body $G^\fun{f}$ which contains multiple function call edges
+to the same functions $\fun{g}$ as an example.
+In the old method, each function call to $\fun{g}$ is replaced by almost the
+same function body $G^\fun{g}$ except being indexed during unwinding,
+and therefore the program size grows exponentially.
+The new method creates a new function $\fun{g}_k$ with a given index value $k$.
+The function $\fun{g}_k$ has exactly the same function body $G^\fun{g}$.
+Those calls to $\fun{g}$ are then replaced with calls to $\fun{g}_k$.
+Only one additional function body is introduced for multiple function
+calls.
+Notice that, since there are a modified version of $G^\fun{f}$ and many 
+duplicated functions $G^{\fun{g}_k}$, $\method{unwind}_\prog{P}$ returns a pair 
+of a function and a set of functions instead of one function.
+The formal definition is given as follows.
+
+\missingfigure{Demonstrate alternative unwinding}
+
+First, we define $\method{duplicate}_\prog{P}(\fun{g}, k)$ to copy $\fun{g}$ in
+the program \prog{P}.
+Given $k$ indicating the $k$-th iteration in Algorithm~\ref{algorithm:overview},
+we create a new function $\fun{g}_k$ with the body $G^{\fun{g}_k}$ which is
+almost the same as $G^\fun{g}$ except being indexed via \method{rename}.
+\[
+  \method{duplicate}_\prog{P}(G^\fun{g}, k) = G^{\fun{g}_k} \text{ where }
+  \fun{g}_k \not\in \prog{P} \land G^{\fun{g}_k}=\method{rename}(G^\fun{g}, k)
+\]
+Then, to unwind a given CFG $G^\fun{f}$, we produce copies of the functions
+called by $\fun{f}$ and replace all call edge by calls to the duplication.
+Formally, the definition of $\method{unwind}_\prog{P}(G^\fun{f})$ is as below.
+~(Please refer to \S~\ref{subsec:inlining} for definitions of the symbols).
+\[
+\begin{array}{l}
+\method{unwind}_\prog{P}(G^\fun{f}, k)
+  = \langle G^\fun{f}_k, DUP^\fun{f}_k) \rangle \text{ where} \\
+DUP^\fun{f}_k = \{G^{\fun{g}_k} :
+    \cmd{cmd}^\fun{f}(\ell,\ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p}))
+    \land G^{\fun{g}_k} = \method{duplicate}_\prog{P}(G^\fun{g}, k)
+  \}\\
+G^\fun{f}_k = \langle V, E,\cmd{cmd}_u^\fun{f}, \overline{\texttt{u}}^\fun{f},
+      \overline{\texttt{r}}^\fun{f},s,e \rangle \\
+{%\multicolumn{2}{l}{
+\cmd{cmd}_u^\fun{f} (\ell, \ell') =
+\left\{
+  \begin{array}{ll}
+  (\overline{\texttt{x}}:=\fun{g}_k(\overline{p})) &\text{if } 
+    \cmd{cmd}^\fun{f}(\ell,\ell')=(\overline{\texttt{x}}:=\fun{g}(\overline{p})) \\[-8pt]
+  & \land\ G^{\fun{g}_k} = \method{duplicate}_\prog{P}(G^\fun{g}, k)\\
+  \cmd{cmd}^\fun{f}(\ell,\ell') &\text{otherwise}
+  \end{array}
+\right.
+}
+\end{array}
+\]
+Notice that, if function $\fun{f}$ contains multiple calls to the same function
+$\fun{g}$,
+the CFG $G^{\fun{g}_k}$ is not introduced multiple times by set union.
+This is the primary reason that leads to less increase in program size.
+
+\begin{proposition}\label{prop:unwinding-duplicate}
+  Let $\fun{f}$ be a function without self or mutual recursion and 
+  $G^\fun{f}$ be its control flow graph.
+  $P$ and $Q$ are logic formulas with free variables over program variables of
+  $G^\fun{f}$.
+  $\assert{P}\ G^\fun{f}\ \assert{Q}$ if and only if 
+  $\assert{P}\ \method{unwind}_\prog{P}(G^\fun{f}, k)\ \assert{Q}$.
+\end{proposition}
+In this method, the only difference between $G^\fun{f}$ and
+$\method{unwind}_\prog{P}(G^\fun{f}, k)$ is that each function call to
+$\fun{g}$ is substituted with call to $\fun{g}_k$.
+Hence, the proposition should trivially hold if the behavior of $\fun{g}$ and
+$\fun{g}_k$ have the same behavior.
+Under the premise that $\fun{f}$ is a function without recursion,
+$\fun{g}_k$ won't introduce new recursion since it does not belongs to original
+program \prog{P}.
+Therefore, $\fun{g}_k$ and $\fun{g}$ simply behave the same because 
+$G^{\fun{g}_k} = \method{rename}(G^\fun{g},k)$.
+Without the premise, $\fun{g}$ can directly or indirectly call $\fun{f}$,
+and introducing $\fun{g}_k$ complicates the mutual recursion further.
+Thus, proving the proposition without the premise is much harder.
+Since the stronger proposition is not necessary for our work,
+we don't provide further proof here.
+
+\subsubsection*{Unwinding Program}
+Unwinding the program with $\method{unwind}_\prog{P}$ is very different from
+the one with $\method{unwind}$ because we have to add duplication of functions
+into the program \prog{P}.
+Repeatedly applying $\method{unwind}_\prog{P}$ on $\fun{main}$ does not help
+this time since it only copies the functions called by $\fun{main}$ again
+and again.
+In our approach, we apply unwinding on $\fun{main}$ in the first iteration,
+and on only those duplications of functions in following iterations.
+This is crucial because the $\fun{main}$ function and the duplications are
+guaranteed to be not involved in recursive calls and fulfill the premise in
+Proposition~\ref{prop:unwinding-duplicate}.
+
+Since there are multiple functions being unwound in an iteration,
+we extend $\method{unwind}_\prog{P}$ to handle a set of functions by merging
+all results into a set.
+The extended method therefore returns a pair of sets of functions.
+Formally, given a set of CFGs $S$,
+\[
+\begin{array}{l}
+\method{unwind}_\prog{P}(S, k) = \langle GS_k, DUPS_k \rangle \text{ where}\\
+GS_k = \{G^\fun{f}_k : G^\fun{f} \in S
+  \land \method{unwind}_\prog{P}(G^\fun{f}, k) 
+        = \langle G^\fun{f}_k, DUP^\fun{f}_k \rangle
+  \} \\
+  
+DUPS_k = \bigcup\{
+  DUP^\fun{f}_k : G^\fun{f} \in S
+  \land \method{unwind}_\prog{P}(G^\fun{f}, k) 
+        = \langle G^\fun{f}_k, DUP^\fun{f}_k \rangle
+  \} \\
+\end{array}
+\]
+
+Then, following the simpler representation, we unwind the program \prog{P}
+via applying $\method{unwind}_\prog{P}$ on duplications $DUPS$.
+That is,
+\[
+\begin{array}{l}
+\text{Initially, } \prog{P}_0 = \prog{P}, GS_0 = \emptyset,DUPS_0 = \{G^\fun{main}\} \\
+\langle GS_k, DUPS_k \rangle = \method{unwind}_\prog{P}(DUPS_{k-1}, k)\\
+\prog{P}_k = (\prog{P}_{k-1} \setminus GS_{k-1}) \cup GS_k \cup DUPS_k\\
+\end{array}
+\]
+As defined above, $DUPS_k$ represents all those duplications of functions in
+$k$-th iteration.
+In $k$-th iteration, we only unwind functions in $DUPS_{k-1}$ because they are
+new functions and must not involve in any recursion.
+As a result, the unwound program $\prog{P}_k$ could preserve the behavior of
+original program \prog{P}.
+
+
+\todo[inline]{
+Move following words to a better section
+
+\{
+This method requires the underlying analyzers dealing with
+recursion-free functions.
+Fortunately most modern analyzers support this feature.
+\}
+\{
+It still provides more and more accurate under-approximation in each
+iteration.
+\}
+}

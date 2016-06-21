@@ -1,0 +1,1146 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{ClarkeJS05}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CEM}{%
+         family={Clarke},
+         family_i={C\bibinitperiod},
+         given={Edmund\bibnamedelima M.},
+         given_i={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JH}{%
+         family={Jain},
+         family_i={J\bibinitperiod},
+         given={Himanshu},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sinha},
+         family_i={S\bibinitperiod},
+         given={Nishant},
+         given_i={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CEMJHSN1}
+    \strng{fullhash}{CEMJHSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. the {NATO} Advanced Research Workshop on
+  Verification of Infinite State Systems with Applications to Security
+  ({VISSAS} 2005)}
+    \field{pages}{55\bibrangedash 68}
+    \field{title}{Grand Challenge: Model Check Software}
+    \list{location}{1}{%
+      {Timi{\c{s}}oara, Rom{\^{a}}nia}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{BeyerK11}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BD}{%
+         family={Beyer},
+         family_i={B\bibinitperiod},
+         given={Dirk},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=KME}{%
+         family={Keremoglu},
+         family_i={K\bibinitperiod},
+         given={M.\bibnamedelima Erkan},
+         given_i={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDKME1}
+    \strng{fullhash}{BDKME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CAV}'11}
+    \field{pages}{184\bibrangedash 190}
+    \field{title}{{CPA}checker: {A} Tool for Configurable Software
+  Verification}
+    \list{location}{1}{%
+      {Snowbird, UT, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{svcomp14}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Beyer},
+         family_i={B\bibinitperiod},
+         given={Dirk},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{tacas2014}
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'14}
+    \field{pages}{373\bibrangedash 388}
+    \field{title}{Status Report on Software Verification - (Competition Summary
+  {SV-COMP} 2014)}
+    \verb{url}
+    \verb http://sv-comp.sosy-lab.org/2014/
+    \endverb
+    \list{location}{1}{%
+      {Grenoble, France}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{ChenHTWW14}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=CY}{%
+         family={Chen},
+         family_i={C\bibinitperiod},
+         given={Yu{-}Fang},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hsieh},
+         family_i={H\bibinitperiod},
+         given={Chiao},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tsai},
+         family_i={T\bibinitperiod},
+         given={Ming{-}Hsien},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Bow{-}Yaw},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Farn},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CYHCTM+1}
+    \strng{fullhash}{CYHCTMWBWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {SAS}'14}
+    \field{pages}{118\bibrangedash 133}
+    \field{title}{Verifying Recursive Programs Using Intraprocedural Analyzers}
+    \list{location}{1}{%
+      {Munich, Germany}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{svcomp15}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Beyer},
+         family_i={B\bibinitperiod},
+         given={Dirk},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{tacas2015}
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'15}
+    \field{pages}{401\bibrangedash 416}
+    \field{title}{Software Verification and Verifiable Witnesses - (Report on
+  {SV-COMP} 2015)}
+    \verb{url}
+    \verb http://sv-comp.sosy-lab.org/2015/
+    \endverb
+    \list{location}{1}{%
+      {London, UK}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{ChenHTWW15}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=CY}{%
+         family={Chen},
+         family_i={C\bibinitperiod},
+         given={Yu{-}Fang},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hsieh},
+         family_i={H\bibinitperiod},
+         given={Chiao},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tsai},
+         family_i={T\bibinitperiod},
+         given={Ming{-}Hsien},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Bow{-}Yaw},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Farn},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{tacas2015}
+    \strng{namehash}{CYHCTM+1}
+    \strng{fullhash}{CYHCTMWBWF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'15}
+    \field{pages}{426\bibrangedash 428}
+    \field{title}{{CPArec}: {Verifying} Recursive Programs via Source-to-Source
+  Program Transformation - (Competition Contribution)}
+    \list{location}{1}{%
+      {London, UK}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{BeyerHJM07}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BD}{%
+         family={Beyer},
+         family_i={B\bibinitperiod},
+         given={Dirk},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=HTA}{%
+         family={Henzinger},
+         family_i={H\bibinitperiod},
+         given={Thomas\bibnamedelima A.},
+         given_i={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jhala},
+         family_i={J\bibinitperiod},
+         given={Ranjit},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Majumdar},
+         family_i={M\bibinitperiod},
+         given={Rupak},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BDHTAJR+1}
+    \strng{fullhash}{BDHTAJRMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5-6}
+    \field{pages}{505\bibrangedash 525}
+    \field{title}{The software model checker \textsc{Blast}}
+    \field{volume}{9}
+    \field{journaltitle}{Int. J. Software Tools for Technology Transfer}
+    \field{month}{09}
+    \field{year}{2007}
+  \endentry
+
+  \entry{AlbarghouthiLGC12}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=AA}{%
+         family={Albarghouthi},
+         family_i={A\bibinitperiod},
+         given={Aws},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         family_i={L\bibinitperiod},
+         given={Yi},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gurfinkel},
+         family_i={G\bibinitperiod},
+         given={Arie},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chechik},
+         family_i={C\bibinitperiod},
+         given={Marsha},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AALYGA+1}
+    \strng{fullhash}{AALYGACM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CAV}'12}
+    \field{pages}{672\bibrangedash 678}
+    \field{title}{\textsc{Ufo}: {A} Framework for Abstraction- and
+  Interpolation-Based Software Verification}
+    \list{location}{1}{%
+      {Berkeley, CA, USA}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{RepsHS95}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RTW}{%
+         family={Reps},
+         family_i={R\bibinitperiod},
+         given={Thomas\bibnamedelima W.},
+         given_i={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Horwitz},
+         family_i={H\bibinitperiod},
+         given={Susan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sagiv},
+         family_i={S\bibinitperiod},
+         given={Shmuel},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RTWHSSS1}
+    \strng{fullhash}{RTWHSSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {POPL}'95}
+    \field{pages}{49\bibrangedash 61}
+    \field{title}{Precise Interprocedural Dataflow Analysis via Graph
+  Reachability}
+    \list{location}{1}{%
+      {San Francisco, CA, USA}%
+    }
+    \field{year}{1995}
+  \endentry
+
+  \entry{BallR01}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BT}{%
+         family={Ball},
+         family_i={B\bibinitperiod},
+         given={Thomas},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=RSK}{%
+         family={Rajamani},
+         family_i={R\bibinitperiod},
+         given={Sriram\bibnamedelima K.},
+         given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTRSK1}
+    \strng{fullhash}{BTRSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CAV}'01}
+    \field{pages}{260\bibrangedash 264}
+    \field{title}{The {SLAM} Toolkit}
+    \list{location}{1}{%
+      {Paris, France}%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{CousotCFMMMR05}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=CP}{%
+         family={Cousot},
+         family_i={C\bibinitperiod},
+         given={Patrick},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Cousot},
+         family_i={C\bibinitperiod},
+         given={Radhia},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Feret},
+         family_i={F\bibinitperiod},
+         given={J{\'{e}}r{\^{o}}me},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Mauborgne},
+         family_i={M\bibinitperiod},
+         given={Laurent},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Min{\'{e}}},
+         family_i={M\bibinitperiod},
+         given={Antoine},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Monniaux},
+         family_i={M\bibinitperiod},
+         given={David},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=RX}{%
+         family={Rival},
+         family_i={R\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CPCRFJ+1}
+    \strng{fullhash}{CPCRFJMLMAMDRX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {ESOP}'05}
+    \field{pages}{21\bibrangedash 30}
+    \field{title}{The {ASTRE{\'{E}}} Analyzer}
+    \list{location}{1}{%
+      {Edinburgh, UK}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{CuoqKKPSY12}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=CP}{%
+         family={Cuoq},
+         family_i={C\bibinitperiod},
+         given={Pascal},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Kirchner},
+         family_i={K\bibinitperiod},
+         given={Florent},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Kosmatov},
+         family_i={K\bibinitperiod},
+         given={Nikolai},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Prevosto},
+         family_i={P\bibinitperiod},
+         given={Virgile},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Signoles},
+         family_i={S\bibinitperiod},
+         given={Julien},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=YB}{%
+         family={Yakobowski},
+         family_i={Y\bibinitperiod},
+         given={Boris},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CPKFKN+1}
+    \strng{fullhash}{CPKFKNPVSJYB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {SEFM}'12}
+    \field{pages}{233\bibrangedash 247}
+    \field{title}{{Frama-C}: {A} Software Analysis Perspective}
+    \list{location}{1}{%
+      {Thessaloniki, Greece}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{coverity}{online}{}
+    \list{organization}{1}{%
+      {Coverity, Inc.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{title}{Coverity}
+    \verb{url}
+    \verb http://www.coverity.com/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{polyspace}{online}{}
+    \list{organization}{1}{%
+      {The MathWorks, Inc.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{title}{Polyspace}
+    \verb{url}
+    \verb http://www.mathworks.com/products/polyspace/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{ClarkeKL04}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CEM}{%
+         family={Clarke},
+         family_i={C\bibinitperiod},
+         given={Edmund\bibnamedelima M.},
+         given_i={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kroening},
+         family_i={K\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lerda},
+         family_i={L\bibinitperiod},
+         given={Flavio},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CEMKDLF1}
+    \strng{fullhash}{CEMKDLF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'04}
+    \field{pages}{168\bibrangedash 176}
+    \field{title}{A Tool for Checking {ANSI-C} Programs}
+    \list{location}{1}{%
+      {Barcelona, Spain}%
+    }
+    \field{year}{2004}
+  \endentry
+
+  \entry{HeizmannCDEHLNSP13}{inproceedings}{}
+    \name{author}{9}{}{%
+      {{hash=HM}{%
+         family={Heizmann},
+         family_i={H\bibinitperiod},
+         given={Matthias},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Christ},
+         family_i={C\bibinitperiod},
+         given={J{\"u}rgen},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dietsch},
+         family_i={D\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Ermis},
+         family_i={E\bibinitperiod},
+         given={Evren},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hoenicke},
+         family_i={H\bibinitperiod},
+         given={Jochen},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lindenmann},
+         family_i={L\bibinitperiod},
+         given={Markus},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nutz},
+         family_i={N\bibinitperiod},
+         given={Alexander},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Schilling},
+         family_i={S\bibinitperiod},
+         given={Christian},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Podelski},
+         family_i={P\bibinitperiod},
+         given={Andreas},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HMCJDD+1}
+    \strng{fullhash}{HMCJDDEEHJLMNASCPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'13}
+    \field{pages}{641\bibrangedash 643}
+    \field{title}{{Ultimate Automizer} with {SMTInterpol} - (Competition
+  Contribution)}
+    \list{location}{1}{%
+      {Rome, Italy}%
+    }
+    \field{year}{2013}
+  \endentry
+
+  \entry{ErmisNDHP14}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=EE}{%
+         family={Ermis},
+         family_i={E\bibinitperiod},
+         given={Evren},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nutz},
+         family_i={N\bibinitperiod},
+         given={Alexander},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dietsch},
+         family_i={D\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hoenicke},
+         family_i={H\bibinitperiod},
+         given={Jochen},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Podelski},
+         family_i={P\bibinitperiod},
+         given={Andreas},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{tacas2014}
+    \strng{namehash}{EENADD+1}
+    \strng{fullhash}{EENADDHJPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'14}
+    \field{pages}{421\bibrangedash 423}
+    \field{title}{{Ultimate Kojak} - (Competition Contribution)}
+    \list{location}{1}{%
+      {Grenoble, France}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{AlbarghouthiGC12}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AA}{%
+         family={Albarghouthi},
+         family_i={A\bibinitperiod},
+         given={Aws},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gurfinkel},
+         family_i={G\bibinitperiod},
+         given={Arie},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chechik},
+         family_i={C\bibinitperiod},
+         given={Marsha},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAGACM1}
+    \strng{fullhash}{AAGACM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {VMCAI}'12}
+    \field{pages}{39\bibrangedash 55}
+    \field{title}{\textsc{Whale}: {An} Interpolation-Based Algorithm for
+  Inter-procedural Verification}
+    \list{location}{1}{%
+      {Philadelphia, PA, USA}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{Oheimb99}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=vOD}{%
+         prefix={von},
+         prefix_i={v\bibinitperiod},
+         family={Oheimb},
+         family_i={O\bibinitperiod},
+         given={David},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ODv1}
+    \strng{fullhash}{ODv1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. FSTTCS}
+    \field{pages}{168\bibrangedash 180}
+    \field{title}{Hoare Logic for Mutual Recursion and Local Variables}
+    \list{location}{1}{%
+      {Chennai, India}%
+    }
+    \field{year}{1999}
+  \endentry
+
+  \entry{LalR08}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LA}{%
+         family={Lal},
+         family_i={L\bibinitperiod},
+         given={Akash},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=RTW}{%
+         family={Reps},
+         family_i={R\bibinitperiod},
+         given={Thomas\bibnamedelima W.},
+         given_i={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{cav2008}
+    \strng{namehash}{LARTW1}
+    \strng{fullhash}{LARTW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CAV}'08}
+    \field{pages}{37\bibrangedash 51}
+    \field{title}{Reducing Concurrent Analysis Under a Context Bound to
+  Sequential Analysis}
+    \list{location}{1}{%
+      {Princeton, NJ, USA}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{LalR09}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LA}{%
+         family={Lal},
+         family_i={L\bibinitperiod},
+         given={Akash},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=RTW}{%
+         family={Reps},
+         family_i={R\bibinitperiod},
+         given={Thomas\bibnamedelima W.},
+         given_i={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LARTW1}
+    \strng{fullhash}{LARTW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{73\bibrangedash 97}
+    \field{title}{Reducing concurrent analysis under a context bound to
+  sequential analysis}
+    \field{volume}{35}
+    \field{journaltitle}{Formal Methods in System Design}
+    \field{month}{08}
+    \field{year}{2009}
+  \endentry
+
+  \entry{NielsonHC99}{book}{}
+    \name{author}{3}{}{%
+      {{hash=NF}{%
+         family={Nielson},
+         family_i={N\bibinitperiod},
+         given={Flemming},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=NHR}{%
+         family={Nielson},
+         family_i={N\bibinitperiod},
+         given={Hanne\bibnamedelima Riis},
+         given_i={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hankin},
+         family_i={H\bibinitperiod},
+         given={Chris},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{NFNHRHC1}
+    \strng{fullhash}{NFNHRHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Principles of Program Analysis}
+    \list{location}{1}{%
+      {Secaucus, NJ, USA}%
+    }
+    \field{year}{1999}
+  \endentry
+
+  \entry{BallR00}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BT}{%
+         family={Ball},
+         family_i={B\bibinitperiod},
+         given={Thomas},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=RSK}{%
+         family={Rajamani},
+         family_i={R\bibinitperiod},
+         given={Sriram\bibnamedelima K.},
+         given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTRSK1}
+    \strng{fullhash}{BTRSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. SPIN}
+    \field{pages}{113\bibrangedash 130}
+    \field{title}{Bebop: {A} Symbolic Model Checker for Boolean Programs}
+    \list{location}{1}{%
+      {Stanford, CA, USA}%
+    }
+    \field{year}{2000}
+  \endentry
+
+  \entry{MannaP70}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MZ}{%
+         family={Manna},
+         family_i={M\bibinitperiod},
+         given={Zohar},
+         given_i={Z\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pnueli},
+         family_i={P\bibinitperiod},
+         given={Amir},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MZPA1}
+    \strng{fullhash}{MZPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 569}
+    \field{title}{Formalization of Properties of Functional Programs}
+    \field{volume}{17}
+    \field{journaltitle}{J. ACM}
+    \field{month}{07}
+    \field{year}{1970}
+  \endentry
+
+  \entry{NielsonN07}{book}{}
+    \name{author}{2}{}{%
+      {{hash=NHR}{%
+         family={Nielson},
+         family_i={N\bibinitperiod},
+         given={Hanne\bibnamedelima Riis},
+         given_i={H\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=NF}{%
+         family={Nielson},
+         family_i={N\bibinitperiod},
+         given={Flemming},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{NHRNF1}
+    \strng{fullhash}{NHRNF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{series}{Undergraduate Topics in Computer Science}
+    \field{title}{Semantics with Applications: {An} Appetizer}
+    \list{location}{1}{%
+      {London, UK}%
+    }
+    \field{year}{2007}
+  \endentry
+
+  \entry{TanA06}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TG}{%
+         family={Tan},
+         family_i={T\bibinitperiod},
+         given={Gang},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=AAW}{%
+         family={Appel},
+         family_i={A\bibinitperiod},
+         given={Andrew\bibnamedelima W.},
+         given_i={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TGAAW1}
+    \strng{fullhash}{TGAAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {VMCAI}'06}
+    \field{pages}{80\bibrangedash 94}
+    \field{title}{A Compositional Logic for Control Flow}
+    \list{location}{1}{%
+      {Charleston, SC, USA}%
+    }
+    \field{year}{2006}
+  \endentry
+
+  \entry{NeculaMRW02}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=NGC}{%
+         family={Necula},
+         family_i={N\bibinitperiod},
+         given={George\bibnamedelima C.},
+         given_i={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McPeak},
+         family_i={M\bibinitperiod},
+         given={Scott},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=RSP}{%
+         family={Rahul},
+         family_i={R\bibinitperiod},
+         given={Shree\bibnamedelima Prakash},
+         given_i={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Weimer},
+         family_i={W\bibinitperiod},
+         given={Westley},
+         given_i={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NGCMSRSP+1}
+    \strng{fullhash}{NGCMSRSPWW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CC}'02}
+    \field{pages}{213\bibrangedash 228}
+    \field{title}{{CIL}: {Intermediate} Language and Tools for Analysis and
+  Transformation of {C} Programs}
+    \list{location}{1}{%
+      {Grenoble, France}%
+    }
+    \field{year}{2002}
+  \endentry
+
+  \entry{cil}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{C {I}ntermediate {L}anguage}
+    \verb{url}
+    \verb http://kerneis.github.io/cil/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Dolzmann97}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DA}{%
+         family={Dolzmann},
+         family_i={D\bibinitperiod},
+         given={Andreas},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sturm},
+         family_i={S\bibinitperiod},
+         given={Thomas},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DAST1}
+    \strng{fullhash}{DAST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{2\bibrangedash 9}
+    \field{title}{{REDLOG}: {Computer} Algebra Meets Computer Logic}
+    \field{volume}{31}
+    \field{journaltitle}{SIGSAM Bull.}
+    \field{month}{06}
+    \field{year}{1997}
+  \endentry
+
+  \entry{redlog}{online}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Redlog}
+    \verb{url}
+    \verb http://www.redlog.eu/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{DanglLW15}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DM}{%
+         family={Dangl},
+         family_i={D\bibinitperiod},
+         given={Matthias},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={L{\"{o}}we},
+         family_i={L\bibinitperiod},
+         given={Stefan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Wendler},
+         family_i={W\bibinitperiod},
+         given={Philipp},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{tacas2015}
+    \strng{namehash}{DMLSWP1}
+    \strng{fullhash}{DMLSWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {TACAS}'15}
+    \field{pages}{423\bibrangedash 425}
+    \field{title}{{CPAchecker} with Support for Recursive Programs and
+  Floating-Point Arithmetic - (Competition Contribution)}
+    \list{location}{1}{%
+      {London, UK}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Reynolds02}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=RJC}{%
+         family={Reynolds},
+         family_i={R\bibinitperiod},
+         given={John\bibnamedelima C.},
+         given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJC1}
+    \strng{fullhash}{RJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {LICS}'02}
+    \field{pages}{55\bibrangedash 74}
+    \field{title}{{Separation Logic}: {A} Logic for Shared Mutable Data
+  Structures}
+    \list{location}{1}{%
+      {Copenhagen, Denmark}%
+    }
+    \field{year}{2002}
+  \endentry
+
+  \entry{MagillTLT08}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MS}{%
+         family={Magill},
+         family_i={M\bibinitperiod},
+         given={Stephen},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tsai},
+         family_i={T\bibinitperiod},
+         given={Ming{-}Hsien},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lee},
+         family_i={L\bibinitperiod},
+         given={Peter},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Tsay},
+         family_i={T\bibinitperiod},
+         given={Yih{-}Kuen},
+         given_i={Y\bibinitperiod},
+      }}%
+    }
+    \strng{crossref}{cav2008}
+    \strng{namehash}{MSTMLP+1}
+    \strng{fullhash}{MSTMLPTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proc. {CAV}'08}
+    \field{pages}{428\bibrangedash 432}
+    \field{title}{{THOR}: {A} Tool for Reasoning about Shape and Arithmetic}
+    \list{location}{1}{%
+      {Princeton, NJ, USA}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{cav2008}{proceedings}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Proc. 20th Int. Conf. Computer Aided Verification ({CAV}'08)}
+    \list{location}{1}{%
+      {Princeton, NJ, USA}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{tacas2015}{proceedings}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Proc. 21st Int. Conf. Tools and Algorithms for the
+  Construction and Analysis of Systems ({TACAS}'15)}
+    \list{location}{1}{%
+      {London, UK}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{tacas2014}{proceedings}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Proc. 20th Int. Conf. Tools and Algorithms for the
+  Construction and Analysis of Systems ({TACAS}'14)}
+    \list{location}{1}{%
+      {Grenoble, France}%
+    }
+    \field{year}{2014}
+  \endentry
+\endsortlist
+\endinput

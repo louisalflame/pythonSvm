@@ -1,0 +1,36 @@
+
+I should like to thank Prof. Yu-Fang Chen and Prof. Bow-Yaw Wang at Formal
+Methods Laboratory in Academia Sinica.
+Your guidance and instructions helped me gradually develop the whole framework
+since I was a full-time research assistant in FM Lab.
+Your solid training and teaching also forced me to establish my knowledge of
+Software Verification and Formal Methods.
+In particular, the opportunity and the experience you gave me to attend
+international conferences surely is very enlightening though quite frightening.
+In addition, I am specially grateful to and surprised by the assistance from
+Dr. Ming-Hsien Tsai on the implementation.
+Your efficiency and proficiency on software programming skills are simply
+remarkable and incomparable.
+Without your assistance, I am sure I cannot finish the implementation on my own,
+let alone participating the competition.
+
+I also learned a lot and pretty enjoyed my life in Software Testing Laboratory
+in National Taiwan University.
+Prof. Farn Wang is a great role model as a academic researcher.
+His ambition on building an industrial strength software testing tool is
+respectable.
+The laboratory members and assistants are just adorable.
+You guys inspired me in a unique way.
+Even when we were both struggling for homeworks, reports, exams, and finally
+the graduation, you guys still found many ways to relax and relief the tension
+among the whole lab.
+"Work Hard, Play Hard" is the spirit I learned from you.
+You guys rock.
+
+Finally, my appreciation to my parents and siblings is beyond words.
+Thanks for your constant nagging on me about my physically and mentally
+unhealthy lifestyle as well as trying to stop my 26-year-without-girlfriend
+achievement.
+Your concerns and considerations kept reminding me that,
+even if I might fail so hard and be so frustrated, I still can go home,
+where I can relax and recover until the next challenge comes.

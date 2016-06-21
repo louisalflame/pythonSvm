@@ -64,18 +64,20 @@ class AutomataElement:
 
     def remake_keywords(self):
         for state in self.states:
-            for key, keyword in state.get_keywords().items():
+            for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = set( [ keyword ] )
-                elif keyword not in self.keywords[key]:
-                    self.keywords[key].add( keyword )
+                    self.keywords[key] = set( keywords )
+                else:
+                    for keyword in keywords:
+                        self.keywords[key].add( keyword )
 
         for edge in self.edges:
-            for key, keyword in state.get_keywords().items():
+            for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = set( [ keyword ] )
-                elif keyword not in self.keywords[key]:
-                    self.keywords[key].add( keyword )
+                    self.keywords[key] = set( keywords )
+                else:
+                    for keyword in keywords:
+                        self.keywords[key].add( keyword )
 
             if edge.get_symbol() not in self.actions:
                 self.actions.add( edge.get_symbol() )
@@ -90,17 +92,17 @@ class AutomataElement:
         LabelDictionary.parseLabel()
         labels = LabelDictionary.getLabelDictionary()
 
-        for label in labels['screen'].keys():
+        for label in labels['screen']:
             if 'label' not in self.keywords:
-                self.keywords['label'] = set( [ label ] )
-            elif label not in self.keywords['label']:
-                self.keywords['label'].add( label )
+                self.keywords['label'] = set( [ label.getLabel() ] )
+            elif label.getLabel() not in self.keywords['label']:
+                self.keywords['label'].add( label.getLabel() )
 
-        for label in labels['action'].keys():
+        for label in labels['action']:
             if 'label' not in self.keywords:
-                self.keywords['label'] = set( [ label ] )
-            elif label not in self.keywords['label']:
-                self.keywords['label'].add( label )
+                self.keywords['label'] = set( [ label.getLabel() ] )
+            elif label.getLabel() not in self.keywords['label']:
+                self.keywords['label'].add( label.getLabel() )
 
     def get_vector(self, needs):
         vector = []
@@ -156,22 +158,30 @@ class TraceElement:
         self.actions = {}
         self.orders = {}
         for state in self.states:
-            for key, keyword in state.get_keywords().items():
+            for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = { keyword : 1 }
-                elif keyword in self.keywords[key]:
-                    self.keywords[key][keyword] += 1
+                    self.keywords[key] = {}
+                    for keyword in keywords:
+                        self.keywords[key][keyword] = 1
                 else:
-                    self.keywords[key][keyword] = 1
+                    for keyword in keywords:
+                        if keyword in self.keywords[key]:
+                            self.keywords[key][keyword] += 1
+                        else:
+                            self.keywords[key][keyword] = 1
 
         for edge, index in self.edges:
-            for key, keyword in edge.get_keywords().items():
+            for key, keywords in edge.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = { keyword : 1 }
-                elif keyword in self.keywords[key]:
-                    self.keywords[key][keyword] += 1
+                    self.keywords[key] = {}
+                    for keyword in keywords:
+                        self.keywords[key][keyword] = 1
                 else:
-                    self.keywords[key][keyword] = 1
+                    for keyword in keywords:
+                        if keyword in self.keywords[key]:
+                            self.keywords[key][keyword] += 1
+                        else:
+                            self.keywords[key][keyword] = 1
 
             edgeSymbol = edge.get_symbol()
             if edgeSymbol in self.actions:
@@ -221,7 +231,9 @@ class StateElement:
 
     def add_keyword(self, key, keyword):
         if key not in self.keywords:
-            self.keywords[key] = keyword
+            self.keywords[key] = [ keyword ]
+        else:
+            self.keywords[key].append( keyword )
 
     def get_keywords(self):
         return self.keywords
@@ -253,7 +265,9 @@ class EdgeElement:
 
     def add_keyword(self, key, keyword):
         if key not in self.keywords:
-            self.keywords[key] = keyword
+            self.keywords[key] = [ keyword ]
+        else:
+            self.keywords[key].append( keyword )
             
     def get_keywords(self):
         return self.keywords
@@ -283,11 +297,10 @@ class EdgeElement:
         symbolFrom = self.stateFrom.get_symbol()
         symbolTo   = self.stateTo.get_symbol()
         symbol = str(symbolFrom)+'=>'+str(symbolTo)+'ID:'+str(self.id)
-        if 'name' in self.keywords:
-            symbol += self.keywords['name']
-        if 'xpath' in self.keywords:
-            symbol += self.keywords['xpath']
-        if 'label' in self.keywords:
-            symbol += self.keywords['label']
+
+        for w in [ 'name', 'xpath', 'label' ]:
+            if w in self.keywords:
+                for v in self.keywords[w]:
+                    symbol += str( v )
 
         return symbol
