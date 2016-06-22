@@ -1,0 +1,43 @@
+TITLE
+
+致謝
+
+ABSTRACT
+摘要
+
+CONTENTS
+
+INTRODUCTION
+-motivation
+-purpose
+
+RELATED WORKS
+-
+
+PRELIMINARIES
+-crawler, trace generator
+-selenium
+-SVM
+
+CHAPTER===
+trace generator
+-web crawler
+-TaaD
+
+trace evaluation
+-predict pass/fail
+
+trace parser
+-common sense
+-vector
+
+model trainging
+-libsvm
+
+
+
+EXPERIMENTS
+
+CONCLUSION
+
+REFERENCE

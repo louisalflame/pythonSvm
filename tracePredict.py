@@ -93,7 +93,7 @@ class SvmUtil:
         self._model = svm_train( self._trainLabel , self._trainSet, self._param )
 
     def getAccuracy(self):
-        _, acc, vals = svm_predict( self._testLabel, self._testSet, self._model, '-b 0' )
+        _, acc, vals = svm_predict( self._testLabel, self._testSet, self._model )
         return acc, vals
 
     def saveTempFile(self, traces, labels):
