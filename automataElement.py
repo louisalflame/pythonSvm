@@ -13,7 +13,7 @@ class AutomataElement:
         self.states = []
         # vector
         self.keywords = {}
-        self.actions = set()
+        self.actions = []
         self.orders = {}
 
     def add_state(self, state):
@@ -66,21 +66,23 @@ class AutomataElement:
         for state in self.states:
             for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = set( keywords )
+                    self.keywords[key] = keywords
                 else:
                     for keyword in keywords:
-                        self.keywords[key].add( keyword )
+                        if keyword not in self.keywords[key]:
+                            self.keywords[key].append( keyword )
 
         for edge in self.edges:
             for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
-                    self.keywords[key] = set( keywords )
+                    self.keywords[key] = keywords
                 else:
                     for keyword in keywords:
-                        self.keywords[key].add( keyword )
+                        if keyword not in self.keywords[key]:
+                            self.keywords[key].append( keyword )
 
             if edge.get_symbol() not in self.actions:
-                self.actions.add( edge.get_symbol() )
+                self.actions.append( edge.get_symbol() )
 
     def get_keywords(self):
         return self.keywords
@@ -94,15 +96,15 @@ class AutomataElement:
 
         for label in labels['screen']:
             if 'label' not in self.keywords:
-                self.keywords['label'] = set( [ label.getLabel() ] )
+                self.keywords['label'] = [ label.getLabel() ]
             elif label.getLabel() not in self.keywords['label']:
-                self.keywords['label'].add( label.getLabel() )
+                self.keywords['label'].append( label.getLabel() )
 
         for label in labels['action']:
             if 'label' not in self.keywords:
-                self.keywords['label'] = set( [ label.getLabel() ] )
+                self.keywords['label'] = [ label.getLabel() ]
             elif label.getLabel() not in self.keywords['label']:
-                self.keywords['label'].add( label.getLabel() )
+                self.keywords['label'].append( label.getLabel() )
 
     def get_vector(self, needs):
         vector = []
@@ -126,6 +128,7 @@ class AutomataElement:
 class TraceElement:
     def __init__(self):
         # basic
+        self.label = TraceLabel.UNKNOWN
         self.states = []
         self.edges = []
         # vector
@@ -142,6 +145,9 @@ class TraceElement:
         self.actions = {}
         self.orders = {}
         self.automata = None
+
+    def set_label(self, label):
+        self.label = label
 
     def add_state(self, state):
         self.states.append( state )
@@ -220,7 +226,9 @@ class TraceElement:
         # add orders
 
         vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
-        vectorStr = ' '.join(vector) + '\n'
+                 # Unlabel
+        vectorStr = str(self.label) + ' ' + ' '.join(vector) + '\n'
+
         return vectorStr
 
 class StateElement:
@@ -304,3 +312,26 @@ class EdgeElement:
                     symbol += str( v )
 
         return symbol
+
+class TraceLabel:
+    UNLABELED = 0
+    PASS      = 1
+    UNKNOWN   = 2
+    CRASH     = 3
+    WRONG     = 4
+
+    @classmethod            
+    def parse(cls, key):
+        key = ''.join(key.split()).upper() 
+        if key == 'UNLABELED':
+            return cls.UNLABELED
+        elif key == 'PASS':
+            return cls.PASS
+        elif key == 'UNKNOWN':
+            return cls.UNKNOWN
+        elif key == 'CRASH':
+            return cls.CRASH
+        elif key == 'WRONG':
+            return cls.WRONG
+        else:
+            return cls.UNKNOWN

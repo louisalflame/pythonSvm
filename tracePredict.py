@@ -16,28 +16,45 @@ from tracePath import Path
 
 class SvmUtil:
     def __init__(self):
+        #load raw traces
+        self._traces = []
+        self._labels = []
+
+        #get params
         self._tracesSet   = []
         self._tracesLabel = []
+
+        #make sample
         self._trainSet    = []
         self._trainLabel  = []
         self._testSet     = []
         self._testLabel   = []
+
+        #train model
         self._model       = None
         self._param       = None
         pass
 
     def loadTraces(self, fname):
         y, x = svm_read_problem(fname)
-        return y, x
+        vectors = []
+        for t in x:
+            vectors.append( [ v for k, v in t.items() ] )
+        self._traces += vectors
+        self._labels += y
 
     def getArray(self, fname):
         vectors, labels = load_svmlight_file(fname)
         return vectors.toarray(), list(labels)
 
-    def getParams(self, fname):
-        X, Y = self.getArray(fname)
-        X_scaled = preprocessing.scale(X)
+    def getParams(self):
+        tmpFile = self.saveTempFile( self._traces, self._labels )
 
+        X, Y = self.getArray(tmpFile.name)
+
+        os.unlink(tmpFile.name)
+
+        X_scaled = preprocessing.scale(X)
         X_pca = PCA().fit_transform(X_scaled)
         
         tmpFile = self.saveTempFile(X_pca, Y)
@@ -57,10 +74,19 @@ class SvmUtil:
 
         for i in range( int( len(self._tracesSet)/5) ):
             sampleID = random.sample( range( len(self._testSet) ) ,1 )[0]
-            print(sampleID)
             self._trainSet.append( self._testSet[sampleID] )
             self._testSet.remove( self._testSet[sampleID] )
-            self._trainLabel.append( self._testLabel[sampleID] )
+            self._trainLabel.append( self._testLab
+            tmpFile.write( string.encode() )
+        
+        tmpFile.close()
+        return tmpFile
+    
+    def list2vec(self, l):
+        s = ''
+        for i in range(len(l)):
+            s += str(i + 1) + ':' + str(l[i]) + ' '
+        return sel[sampleID] )
             self._testLabel.remove( self._testLabel[sampleID] )
 
     def trainModel(self):
@@ -75,13 +101,3 @@ class SvmUtil:
 
         for i in range(len(traces)):
             string = str(labels[i]) + ' ' + self.list2vec(traces[i]) + '\n' 
-            tmpFile.write( string.encode() )
-        
-        tmpFile.close()
-        return tmpFile
-    
-    def list2vec(self, l):
-        s = ''
-        for i in range(len(l)):
-            s += str(i + 1) + ':' + str(l[i]) + ' '
-        return s

@@ -5,7 +5,7 @@ import os, sys, json, codecs
 from abc import ABCMeta, abstractmethod
 
 import readT3A
-from automataElement import AutomataElement, TraceElement, StateElement, EdgeElement
+from automataElement import AutomataElement, TraceElement, StateElement, EdgeElement, TraceLabel
 from labelDictionary import LabelDictionary
 
 class TraceReader:
@@ -78,6 +78,11 @@ class WebTraceReader(TraceReader):
     def parseTraces(self, webFolderPath):
         for trace in self.traceJson['traces']:
             traceElement = TraceElement()
+            try:
+                traceElement.set_label( TraceLabel.parse( trace['label'] ) )
+            except:
+                pass
+
             for index, edge in enumerate( trace['edges'] ):
                 traceElement.add_edge( self.automata.get_edge_byId( str(edge['id']) ), index )
             for state in trace['states']:
@@ -98,7 +103,6 @@ class WebTraceReader(TraceReader):
                         check = False
                         break
                 if check:    
-                    print(label.getLabel(), state.get_id())
                     state.add_keyword('label', label.getLabel())
 
         for edge in self.automata.get_edges():
@@ -111,7 +115,6 @@ class WebTraceReader(TraceReader):
                         check = False
                         break
                 if check:    
-                    print(label.getLabel(), edge.get_id())
                     edge.add_keyword('label', label.getLabel())
 
     def getStateDom(self, baseDomFile):

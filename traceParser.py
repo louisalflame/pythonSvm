@@ -36,7 +36,7 @@ class ParseUtil:
             self.saveTraces()
         self.traces = []
 
-    def parseTaaD( self, user=None, App=None, version=None, abstraction=None ):
+    def parseTaaD( self, user=None, App=None, version=None, abstraction=None, session=None ):
         #check User folder, App folder
         if not user:
             raise Exception("TaaD traces need 'user' data!")
@@ -65,25 +65,16 @@ class ParseUtil:
             raise Exception("there's no TaaD abstraction folder")
         AbsPath = os.path.join( AppPath, version, abstraction )
 
-        '''
         if not session:
-            for folder in os.listdir( os.path.join( AppPath, version, abstraction ) ):
-                if os.path.isdir( os.path.join( AppPath, version, abstraction, folder ) ):
-                    sessionPath = os.path.join( AppPath, version, abstraction, folder )
-                    self.parseTaaDSession( sessionPath )
-        elif not os.path.isdir( os.path.join( AppPath, version, abstraction, session ) ):
             raise Exception("there's no TaaD abstraction folder")
-        else:
-            sessionPath = os.path.join( AppPath, version, abstraction, session )
-            self.parseTaaDSession( sessionPath )
-        '''
+        elif not os.path.isdir( os.path.join( AbsPath, session ) ):
+            raise Exception("there's no TaaD abstraction folder")
 
-        TaaDReader = TaaDTraceReader()
-        # use session 1
-        sessionNum = 1
-        sessionPath = os.path.join( AbsPath, 'session'+str(sessionNum) )
+        sessionPath = os.path.join( AbsPath, session )
+        sessionNum = int( session.strip('session') )
         t3aPath = os.path.join( AbsPath, 'T3A', str(sessionNum)+'.t3a' )
 
+        TaaDReader = TaaDTraceReader()
         TaaDReader.loadJson( sessionPath )
         TaaDReader.parseSessionAutomata( sessionPath )
         TaaDReader.parseTraceSet( sessionPath )
