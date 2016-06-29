@@ -1,0 +1,47 @@
+
+\chapter{Trace Collector}\label{ch:traceCollector}
+
+\section{SpecElicitor}
+
+Our LAb 建立了一個工具SpecElicitor
+
+使用者可以在GUI介面下一邊建立APP的trace, 同時標記該畫面/動作的label
+
+使用完後會產生含有 XML, 截圖, label的traces
+
+\section{WebTraceCollector}
+
+this paper 用python 和 seleium為基底建立一個可以自動explore website的trace collector
+
+此工具用DOM tree來做state-base的finite state machine
+
+\subsection{framework}
+
+此工具一邊使用selenium來操縱web browser,
+一邊建立state(DOM), edge(click ,inputs) 的automata
+
+此工具使用event list的形式，選擇一個algorithm,每次pop out一個待辦的event
+依據event執行click和inputs
+
+要執行click action時，會先對所有的input 填值，會連上database進行input,clickable的tag等feature的字串處理，找出推薦的適當的值填入
+
+
+\subsection{algorithm}
+
+根據不同的algorithm,此工具面對可按的clickables
+
+\subsubsection{Monkey}
+
+
+
+\subsubsection{Depth First Search}
+
+\subsection{automata}
+
+一個state
+
+一個edge
+
+一個trace
+
+\subsection{traces}

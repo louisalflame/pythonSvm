@@ -7,6 +7,7 @@ from tracePath import Path
 from automataElement import AutomataElement, TraceElement, StateElement, EdgeElement
 from traceReader import WebTraceReader, TaaDTraceReader
 
+
 class ParseUtil:
     def __init__( self, app=None, ver=None ):
         self.app = app

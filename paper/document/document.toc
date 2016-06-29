@@ -8,12 +8,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}motivation}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}purpose}{1}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}organization}{1}{section.1.3}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Related Works}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Web testing}{2}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Android testing}{2}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}test evaluation}{2}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Preliminaries}{3}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Overview}{4}{chapter.4}
+\contentsline {section}{\numberline {3.1}Common Sense Model}{3}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiments}{5}{chapter.5}
+\contentsline {section}{\numberline {3.2}Support Vector Machine}{3}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{6}{chapter.6}
+\contentsline {chapter}{\numberline {4}Trace Collector}{4}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}SpecElicitor}{4}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}WebTraceCollector}{4}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}framework}{4}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}algorithm}{5}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Monkey}{5}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Depth First Search}{5}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}automata}{5}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}traces}{5}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Experiments}{6}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{7}{chapter.6}
