@@ -44,8 +44,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.3}automata}{5}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}traces}{5}{subsection.4.2.4}
+\contentsline {chapter}{\numberline {5}Trace Evaluate}{6}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiments}{6}{chapter.5}
+\contentsline {chapter}{\numberline {6}Experiments}{7}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{7}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{8}{chapter.7}
