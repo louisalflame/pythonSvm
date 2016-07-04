@@ -1,47 +1,204 @@
 
 \chapter{Trace Collector}\label{ch:traceCollector}
 
+To testing Websites and Mobile Applications, 
+we use some devices to automatically generate traces.
+The SpecElicitor is used for generating traces of Mobile Applications
+and The WebTraceCollector is used for generating traces of Websites.
+%為了測試APP和WEB,our lab使用了一些工具來產生traces
+
 \section{SpecElicitor}
 
-Our LAb 建立了一個工具SpecElicitor
+SpecElicitor is a tool made by Yuan-Hong Lo, 
+which can help user test Mobile Application with friendly GUI interface.
 
-使用者可以在GUI介面下一邊建立APP的trace, 同時標記該畫面/動作的label
+When user start using SpecElicitor,
+each time user do an action on the Mobile Application, 
+the tool will ask for labeling the action and the screen shown on the interface.
+The interface is shown in Fig[].
+By using SpecElicitor, we can choose the specified action at every step and label the meaning of the action,
+label the exception situation if it happen and stop the trace at any time we need.
 
-使用完後會產生含有 XML, 截圖, label的traces
+The traces made by SpecElicitor include automata, screenshots, XML files and labels.
+The automata is a json file record every states and edges on the traces.
+A state has a screenshot and a XML file dumped from the Mobile.
+A edge records the action user did such as clicking element, typing text or exiting the Application.
+The traces also record labels on every states and edges,
+so we can recognize how many label we focus on happened on the trace.
+An example trace of XXX Application made by SpecElicitor is shown in Fig[].
+
+%Our LAb 建立了一個工具SpecElicitor
+%使用者可以在GUI介面下一邊建立APP的trace, 同時標記該畫面/動作的label
+%使用完後會產生含有 XML, 截圖, label的traces
 
 \section{WebTraceCollector}
 
-this paper 用python 和 seleium為基底建立一個可以自動explore website的trace collector
+We make a tool named WebTraceCollector for automatically generating traces of Websites.
+WebTraceCollector is write on Python and using Selenium as Library.
+WebTraceCollector can explore the Website automatically with different algorithm,
+generate traces with a finite state machine, which use the DOM tree of the web pages to construct.
+WebTraceCollector can also work fine on the websites with Ajax Application,
+and input texts on every input text fields with the fitting data.
 
-此工具用DOM tree來做state-base的finite state machine
+%this paper 用python 和 seleium為基底建立一個可以自動explore website的trace collector
+%此工具用DOM tree來做state-base的finite state machine
 
-\subsection{framework}
+\subsection{Framework}
 
-此工具一邊使用selenium來操縱web browser,
-一邊建立state(DOM), edge(click ,inputs) 的automata
+WebTraceCollector gets the URL of the Website as an input.
+By setting configuration, User can make detailed rules like the max depths to explore on the Websites, the type of browser or the abstraction style of the DOM tree to explore the Websites precisely.
 
-此工具使用event list的形式，選擇一個algorithm,每次pop out一個待辦的event
-依據event執行click和inputs
+To manage all works, WebTraceCollector use a event list which records all events should be done.
+WebTraceCollector pops out an event and implement the action of the event on the browser until there is no event on the event list.
+After the action, it will check the current state of the browser by loading page source.
+With the algorithm chosen by user, WebTraceCollector has different reaction with different situations.
+The situations are entering a new state, entering an old state, keeping the same state and going out of the domain.
+The algorithm of WebTraceCollector is shwon in Fig[].
 
-要執行click action時，會先對所有的input 填值，會連上database進行input,clickable的tag等feature的字串處理，找出推薦的適當的值填入
+\begin{algorithm}[htb]
+	\begin{doublespace}		
+		\KwIn{ URL, Config }
+		Algorithm $\gets$ Config.getAlgorithm()\;
+		Executor $\gets$ Config.getBrowser()\;
+		InitialState $\gets$ Executor.initial(URL)\;
+		\While{ EventList $\neq$ Empty }
+		{
+			Action $\gets$ EventList.getEvent()\;
+			Executor.do(Action)\;
+			NextState $\gets$ Executor.getState()\;
+			\Switch{ NextState }
+			{
+				\Case{ SameState }
+				{ Algorithm.staySameState() }
+				\Case{ NewState }
+				{ Algorithm.GotoNewState() }
+				\Case{ OldState }
+				{ Algorithm.GotoOldtate() }
+				\Case{ OutOfDomain }
+				{ Algorithm.OutOfDomain() }
+			}			
+		}		
+	\end{doublespace}
+	\caption{Overview}
+	\label{algorithm:overview}
+\end{algorithm} 
+
+%此工具一邊使用selenium來操縱web browser,
+%一邊建立state(DOM), edge(click ,inputs) 的automata
+%此工具使用event list的形式，選擇一個algorithm,每次pop out一個待辦的event
+%每次update:若是新的state，就將所有的clickables排入events，若是舊的state就無視
+
+\subsection{Automata}
+
+We construct an automata to represent the Website.
+The state is defined based on the DOM tree of the web page.
+If the URL, DOM tree or any element on the web page changes, we will recognize that it goes to other state.
+The edge records one state goes to another state by an action,
+which clicks the specific clickable tag with values written in all form elements.
+The web page of automata is shown in Fig[].
+
+\begin{figure}[h]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{automata_overview.png}
+	\end{center}
+	\caption{ Overview of Automata }
+	\label{AutomataOverview}
+\end{figure}
+
+As the test result, WebTraceCollector generates traces information in different types of files. 
+There are JSON files of traces and automata, screenshots of every state, DOM tree and detail information of every state and a web page of overview automata.
+Automata.json records all states, which have URL, ID, screenshot and DOM tree of the web page, and edges.
+Traces.json records the states and edges with the order
+The example of the test result is shown in Fig[].
+
+\begin{figure}[h]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[ ]{web_result.png}
+	\end{center}
+	\caption{An Example of Web Traces }
+	\label{TestResult}
+\end{figure}
+
+%一個element:有clickable,input,radio,checkbox,select
+%一個state:有ID,dom list,all elements,all clickable
+%其中DOM又含有iframe的結構
+%一個edge:有ID,from to state,all elements with value,one clickable
+%一個trace:有states edges照order排
+
+\subsection{Action}
+
+During the testing, WebTraceCollector repeats getting an event from the event list and implement the action of the event until the event list is empty.
+An event consists of action, state and depth.
+The action implies which clickable element should be clicked.
+The state implies where the element locates in.
+The depth implies how deep this event is in the automata.
+Before the action, WebTraceCollector checks the current state on th browser is equal to the state recorded on the event.
+If not, the automata finds a simple path to the target state and make the browser go to the correct state.
+
+To work fine on the websites that not only have buttons to click but also have form elements,
+WebTraceCollector needs to insert values into those elements when it implements the clicking action.
+The elements are inputs, selects, radios and checkboxes.
+Because the Website may only accept certain words as input values likes , we cannot just make random string to test the Website,
+we construct a database to analysis the element and find the most suitable string.
+The database has some example values of the common inputs we generalize from websites.
+Considering the element's tag, id, name and other siblings tags,
+WebTraceCollector will use the most similar string to the examples as the input value of the element.
+The algorithm of implementing the action is shwon in Fig[].
 
 
-\subsection{algorithm}
+\begin{algorithm}[htb]
+	\begin{doublespace}		
+		\KwIn{ action, state, depth }
+		\If{ CurrentState $\neq$ state }
+		{
+			BackTrack( state )\;
+		}
+		Clickable $\gets$ action.getClickable()\;
+		Inputs, Selects, Radios, Checkboxes $\gets$ state.getFormElements()\;
+		\ForEach{ Element in Inputs, Selects, Radios, Checkboxes }
+		{
+			Value = Database.findValue( Element )\;
+			Executor.setValue( Element, Value )\;
+		}
+		Executor.click( Clickable )\;
+		
+	\end{doublespace}
+	\caption{mplementing the action}
+	\label{algorithm:action}
+\end{algorithm} 
+%要執行click action時，會先對所有的input 填值，會連上database進行input,clickable的tag等feature的字串處理，找出推薦的適當的值填入
 
-根據不同的algorithm,此工具面對可按的clickables
+\subsection{normalization}
+
+After the action, WebTraceCollector will check what happens on the browser by comparing the current state of the web page and other states in the automata.
+The states have the information of DOM tree loading from the browser by Selenium.
+However, ther are some problems if we just take two DOM trees as strings to compare.
+For example, there may be advertising applications, calender, popularity or catalogs shown on the website.
+Each time user visits the website, the DOM tree of the website may be different.
+To prevent recognizing a wrong state, we must preprocess the DOM tree.
+
+The work of preprocessing is removing the elements that may confuse us and remain the elements we want to focus on.
+We remove the tags that are unvisible on the web page, the javascripts code, the HEAD of the html and the css style.
+We construct a class named normalizer, which can scan the DOM tree, find the target element and remove it.
+For specific website, User can set the specific normalizer to normalize the DOM tree by his own style.
+The examples of DOM tree and normalized DOM tree are shown in Fig[].
+
+%state用DOM比較，但有問題需要省略
+%省略的方式有config
+
+\subsection{Algorithm}
+
+WebTraceCollector can explore the website with algorithm set by user.
+We make Three algorithm for WebTraceCollector: Monkey, DFS and CrossBrowser.
+User can choose the algorithm and set to the config as an input before starting the test.
+WebTraceCollector will switch it's reaction by the algorithm at every stage after action during the test.
+
+%根據不同的algorithm,此工具面對可按的clickables
 
 \subsubsection{Monkey}
 
-每次update:
+%每次update:在length max以前，在現在state可見的clickables中隨機挑一個排入events
 
 \subsubsection{Depth First Search}
-
-每次
-
-\subsection{automata}
-
-一個state
-
-一個edge
-
-一個trace

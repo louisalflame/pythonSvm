@@ -1,2 +1,22 @@
 
 \chapter{Trace Evaluate}\label{ch:traceEvaluate}
+
+自動化產生traces後，evaluate仍需要大量人力
+為此設計一套能predict trace的framework
+
+\section{Normalized word}
+
+為了要能將trace表現呈可運算的vector
+建立一個Common sense 的label 資料庫
+
+將APP和WEB的trace 轉換成label的 vector
+
+\section{SVM}
+
+利用SVM cluster datas的能力
+將traces分成train set 和test set
+train set 先把trace的結果(pass/fail) label好
+然後用SVM train出一個model
+
+當收集越多的traces，train出來的model就會越準
+接著就可以用model來自動化evaluate traces

@@ -32,20 +32,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}SpecElicitor}{4}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}WebTraceCollector}{4}{section.4.2}
+\contentsline {section}{\numberline {4.2}WebTraceCollector}{5}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}framework}{4}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Framework}{5}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}algorithm}{5}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Automata}{5}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Monkey}{5}{section*.7}
+\contentsline {subsection}{\numberline {4.2.3}Action}{6}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Depth First Search}{5}{section*.8}
+\contentsline {subsection}{\numberline {4.2.4}normalization}{8}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}automata}{5}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.5}Algorithm}{8}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Trace Evaluate}{6}{chapter.5}
+\contentsline {subsubsection}{Monkey}{9}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{7}{chapter.6}
+\contentsline {subsubsection}{Depth First Search}{9}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{8}{chapter.7}
+\contentsline {chapter}{\numberline {5}Trace Evaluate}{10}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Normalized word}{10}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}SVM}{10}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Experiments}{11}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}APP trace}{11}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}web trace}{11}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}label vector}{11}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}evaluate}{11}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{12}{chapter.7}

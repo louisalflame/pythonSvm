@@ -15,9 +15,17 @@
 \BOOKMARK [0][-]{chapter.4}{Trace Collector}{}% 15
 \BOOKMARK [1][-]{section.4.1}{SpecElicitor}{chapter.4}% 16
 \BOOKMARK [1][-]{section.4.2}{WebTraceCollector}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.2.1}{framework}{section.4.2}% 18
-\BOOKMARK [2][-]{subsection.4.2.2}{algorithm}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.3}{automata}{section.4.2}% 20
-\BOOKMARK [0][-]{chapter.5}{Trace Evaluate}{}% 21
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 22
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{Framework}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.2}{Automata}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.3}{Action}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.4}{normalization}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.5}{Algorithm}{section.4.2}% 22
+\BOOKMARK [0][-]{chapter.5}{Trace Evaluate}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Normalized word}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{SVM}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 26
+\BOOKMARK [1][-]{section.6.1}{APP trace}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.2}{web trace}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.3}{label vector}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.4}{evaluate}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 31
