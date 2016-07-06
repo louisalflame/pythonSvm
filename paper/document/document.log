@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  5 JUL 2016 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  6 JUL 2016 11:30
 entering extended mode
 **./document.tex
 (document.tex
@@ -2281,75 +2281,123 @@ Chapter 2.
 
  (tex/ch-preliminaries.tex
 Chapter 3.
-) [3
+<pic/SpecElicitorInterface.png, id=344, 569.12625pt x 436.63126pt>
+File: pic/SpecElicitorInterface.png Graphic file (type png)
+
+<use pic/SpecElicitorInterface.png>
+Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 34.
+(pdftex.def)             Requested size: 341.43437pt x 261.96078pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pic/SpecElicitorTraces.png, id=345, 685.05937pt x 593.96906pt>
+File: pic/SpecElicitorTraces.png Graphic file (type png)
+
+<use pic/SpecElicitorTraces.png>
+Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 43.
+(pdftex.def)             Requested size: 341.43437pt x 296.04121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3
+
+
+
+] [4 <./pic/SpecElicitorInterface.png> <./pic/SpecElicitorTraces.png>])
+[5
 
 ]
 \openout2 = `tex/ch-traceCollector.aux'.
 
  (tex/ch-traceCollector.tex
 Chapter 4.
-[4
+[6
 
 
 
 ]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
-LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 46.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 81.
- <pic/automata_overview.png, id=333, 631.60968pt x 697.8572pt>
+(Font)              scaled to size 12.0pt on input line 55.
+ [7] [8
+
+] <pic/automata_overview.png, id=379, 631.60968pt x 697.8572pt>
 File: pic/automata_overview.png Graphic file (type png)
 
 <use pic/automata_overview.png>
-Package pdftex.def Info: pic/automata_overview.png used on input line 103.
-(pdftex.def)             Requested size: 170.71393pt x 188.61563pt.
+Package pdftex.def Info: pic/automata_overview.png used on input line 87.
+(pdftex.def)             Requested size: 256.07741pt x 282.93942pt.
 
+<pic/webTraceResult.png, id=380, 837.88031pt x 386.94562pt>
+File: pic/webTraceResult.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use pic/webTraceResult.png>
+Package pdftex.def Info: pic/webTraceResult.png used on input line 96.
+(pdftex.def)             Requested size: 341.43437pt x 157.67451pt.
+ [9
 
-[5] <pic/web_result.png, id=340, 196.48407pt x 161.85469pt>
-File: pic/web_result.png Graphic file (type png)
+ <./pic/automata_overview.png> <./pic/webTraceResult.png>] [10
 
-<use pic/web_result.png>
-Package pdftex.def Info: pic/web_result.png used on input line 118.
-(pdftex.def)             Requested size: 196.48358pt x 161.85428pt.
+] <pic/DOMvsNorDOM.png, id=394, 1018.55531pt x 459.96844pt>
+File: pic/DOMvsNorDOM.png Graphic file (type png)
 
+<use pic/DOMvsNorDOM.png>
+Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 176.
+(pdftex.def)             Requested size: 341.43437pt x 154.19038pt.
+ [11
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ <./pic/DOMvsNorDOM.png>]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 193.
+LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 193.
 
-[6] [7 <./pic/automata_overview.png> <./pic/web_result.png>] [8]) [9]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 193.
+
+<pic/MonkeyAutomata.png, id=401, 1021.56656pt x 491.58656pt>
+File: pic/MonkeyAutomata.png Graphic file (type png)
+
+<use pic/MonkeyAutomata.png>
+Package pdftex.def Info: pic/MonkeyAutomata.png used on input line 207.
+(pdftex.def)             Requested size: 341.43437pt x 164.29434pt.
+ [12
+
+ <./pic/MonkeyAutomata.png>]
+<pic/DFSautomata.png, id=407, 1020.06094pt x 496.10344pt>
+File: pic/DFSautomata.png Graphic file (type png)
+
+<use pic/DFSautomata.png>
+Package pdftex.def Info: pic/DFSautomata.png used on input line 240.
+(pdftex.def)             Requested size: 341.43437pt x 166.05374pt.
+ [13 <./pic/DFSautomata.png>])
 \openout2 = `tex/ch-traceEvaluate.aux'.
 
 
 (tex/ch-traceEvaluate.tex
 Chapter 5.
-
-Overfull \hbox (14.88062pt too wide) in paragraph at lines 4--6
-\C70/bkai/m/n/12/81 Í \C70/bkai/m/n/12/52 ’ \C70/bkai/m/n/12/53  \C70/bkai/m/n
-/12/75 " \T1/ntxtlf/m/n/12 traces\C70/bkai/m/n/12/5f å \C70/bkai/m/n/12/ff \T
-1/ntxtlf/m/n/12 evaluate\C70/bkai/m/n/12/4e Õ \C70/bkai/m/n/12/97   \C70/bkai/m
-/n/12/89 Å \C70/bkai/m/n/12/59 ' \C70/bkai/m/n/12/91 œ \C70/bkai/m/n/12/4e ∫ \C
-70/bkai/m/n/12/52 õ \C70/bkai/m/n/12/70 ∫ \C70/bkai/m/n/12/6b d \C70/bkai/m/n/1
-2/8a -  \C70/bkai/m/n/12/4e   \C70/bkai/m/n/12/59 W \C70/bkai/m/n/12/80 ˝\T1/n
-txtlf/m/n/12 predict trace\C70/bkai/m/n/12/76 Ñ\T1/ntxtlf/m/n/12 framework 
- []
-
-) [10
+[14
 
 
 
-]
+
+] <pic/EvaluateProcedure.png, id=417, 875.52094pt x 378.66469pt>
+File: pic/EvaluateProcedure.png Graphic file (type png)
+
+<use pic/EvaluateProcedure.png>
+Package pdftex.def Info: pic/EvaluateProcedure.png used on input line 60.
+(pdftex.def)             Requested size: 341.43437pt x 147.67285pt.
+ [15
+
+ <./pic/EvaluateProcedure.png>])
 \openout2 = `tex/ch-experiments.aux'.
 
- (tex/ch-experiments.tex
+
+(tex/ch-experiments.tex
 Chapter 6.
-) [11
+) [16
+
 
 
 
@@ -2358,7 +2406,7 @@ Chapter 6.
 
  (tex/ch-conclusion.tex
 Chapter 7.
-) [12
+) [17
 
 
 
@@ -2372,7 +2420,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 60AB65EC56ED70532627F20EDA23540A;1775.
+(rerunfilecheck)             Checksum: 4BE38894F59A76926D175D899CDDC98E;1819.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
@@ -2382,13 +2430,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34724 strings out of 493335
- 628818 string characters out of 3136674
- 1068848 words of memory out of 3000000
- 37259 multiletter control sequences out of 15000+200000
- 79457 words of font info for 157 fonts, out of 3000000 for 9000
+ 34683 strings out of 493335
+ 628626 string characters out of 3136674
+ 1066850 words of memory out of 3000000
+ 37213 multiletter control sequences out of 15000+200000
+ 77111 words of font info for 149 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,94p,1044b,19403s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,94p,1044b,19407s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec
 -tlf.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu30.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pfb><C:/P
@@ -2418,41 +2466,38 @@ es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6b.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6c.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/arphic/bkaiu/bkaiu6e.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/arphic/bkaiu/bkaiu71.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
-hic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
-iu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
-u76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu77.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu78.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7a.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7b.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
-rphic/bkaiu/bkaiu84.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
-kaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
-aiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu89.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8a.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8b.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8d.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8f.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic
-/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/
-bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu97
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu98.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9a.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/txfonts/txsyc.pfb>
-Output written on document.pdf (20 pages, 520827 bytes).
+pe1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
+hic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
+iu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
+u77.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu78.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7a.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7b.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/arphic/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
+rphic/bkaiu/bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
+kaiu/bkaiu89.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
+aiu8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8b.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8f.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/arphic/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/arphic/bkaiu/bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/arphic/bkaiu/bkaiu97.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic
+/bkaiu/bkaiu98.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/
+bkaiu9a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb>
+Output written on document.pdf (25 pages, 1452202 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 511 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 537 words of extra memory for PDF output out of 10000 (max. 10000000)
 

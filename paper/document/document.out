@@ -10,22 +10,23 @@
 \BOOKMARK [1][-]{section.2.2}{Android testing}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.3}{test evaluation}{chapter.2}% 11
 \BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Common Sense Model}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Support Vector Machine}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Trace Collector}{}% 15
-\BOOKMARK [1][-]{section.4.1}{SpecElicitor}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{WebTraceCollector}{chapter.4}% 17
-\BOOKMARK [2][-]{subsection.4.2.1}{Framework}{section.4.2}% 18
-\BOOKMARK [2][-]{subsection.4.2.2}{Automata}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.3}{Action}{section.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.2.4}{normalization}{section.4.2}% 21
-\BOOKMARK [2][-]{subsection.4.2.5}{Algorithm}{section.4.2}% 22
-\BOOKMARK [0][-]{chapter.5}{Trace Evaluate}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Normalized word}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{SVM}{chapter.5}% 25
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 26
-\BOOKMARK [1][-]{section.6.1}{APP trace}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.2}{web trace}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.3}{label vector}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.4}{evaluate}{chapter.6}% 30
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.3.1}{SpecElicitor}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Common Sense Model}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Support Vector Machine}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{WebTraceCollector}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Framework}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Automata}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{Event}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{normalization}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.5}{Algorithm}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.5.1}{Monkey}{section.4.5}% 22
+\BOOKMARK [2][-]{subsection.4.5.2}{Depth First Search}{section.4.5}% 23
+\BOOKMARK [0][-]{chapter.5}{Trace Evaluate}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Common sense label}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Procedure}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 27
+\BOOKMARK [1][-]{section.6.1}{APP trace}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{web trace}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.3}{label vector}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.4}{evaluate}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
