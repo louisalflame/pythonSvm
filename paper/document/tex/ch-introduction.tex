@@ -1,28 +1,73 @@
 
 \chapter{Introduction}\label{ch:introduction}
 
-\section{motivation}
+\section{Motivation}
 
-介紹software testing，其中又有web testing和mobile APP testing
+Web Applications become more and more indispensable in our life.
+People can easily get informations with the development of the Internet.
+It becomes more convenient for people to search new knowledge, buy goods and chat with friends.
+People spent lots of time on the Internet for working, studying, shopping, socialozong and playing.
+As the result, more engineers tend to develop the applications on the Internet.
+On the other hand, Mobile Applications is also a choice for software developer.
+People can carry smart phone and enjoy the applications everywhere.
+Although people can visit web applications by browser on the smart phone,
+a special mobile application has a better performance.
+Companies may develop the applications on both the Internet and the mobiles.
+For instance, Google and Facebook.
 
-software變化大，需要測試確保功能正常，但製作testcase耗費時間人力
+In order to guarantee the performance and user experience of the applications,
+the testing of the applications is required.
+However, the current techniques of testing take lots of works and times.
+Because the applications are complex and dynamic,
+they have different reaction with different inputs.
+Engineers need to write the test scripts case by case according to each functions.
+they also need basic knowledge of software testing.
+To reduce the work time of testing, the automated testing become essential for engineers.
+But the challenge is it is too difficult to generate test case on black box testing.
+Without the detailed information of functions,
+We may not know how to make a test script.
 
-auto testing的好處: 節省人力 black-box testing的好處:應用到所有APP
-
-建立一個auto testing ，開發者可減輕開發成本
-
-
-\section{purpose}
-
-本篇建立了一個auto web testing的工具，和測試web,APP並驗證的framework
-
-framework將testcase取出symbolic label,train出所有APP可通用的model來evaluate all traces 
+%介紹software testing，其中又有web testing和mobile APP testing
+%software變化大，需要測試確保功能正常，但製作testcase耗費時間人力
+%auto testing的好處: 節省人力 black-box testing的好處:應用到所有APP
+%建立一個auto testing ，開發者可減輕開發成本
 
 
-\section{organization}
+\section{Purpose}
 
-第二章 related work: 其他web,APP tesing, ex: selenium,crwaljax,splinter,Jmeter,UIautomata...
-第三章 preliminaries: machine learning,, test evaluation
-第四章
-第五章
+In this paper, we propose a technique to automatically generating traces on dynamic web applications.
+The program named WebTraceCollector can collect the informations on web page and try to guess the suitable inputs.
+We construct a inputs databank with some examples of inputs,
+so the program will find a similar example as the input value of web page.
+With the suggested input values,
+the program can explore the website automatically and build the finite state machine to represent the website,
+and generate the traces for testing.
+
+
+In order to automatically evaluate traces collected from web and mobile applications,
+we propose a teachnique to transform the traces into standard format.
+We constrcut a label dictionary, which collects common sense of action and screen from applications,
+so the traces can be expressed in a standard vector of labels.
+Then, we use the method of machine learning to evaluate traces.
+We use SVM to classify the traces into passed traces and failed traces.
+
+
+%本篇建立了一個auto web testing的工具，和測試web,APP並驗證的framework
+%framework將testcase取出symbolic label,train出所有APP可通用的model來evaluate all traces 
+
+
+\section{Organization}
+
+The rest of this paper is organized as follows.
+Chapter 2 shows the related work, 
+and we introduce the tool for generating mobile traces and the method used for evaluating in Chapter 3.
+In Chapter 4, we propose a technique to generate traces on dynamic web applications.
+Chapter 5 shows the framework to evaluate traces from the web and mobiles.
+Then, the experiment results shown on the Chapte 6,
+and the conclusion in Chapter 7.
+
+%第二章 related work: 其他web,APP tesing, ex: selenium,crwaljax,splinter,Jmeter,UIautomata...
+%第三章 preliminaries: machine learning,, test evaluation
+%第四章
+%第五章
 

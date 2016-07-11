@@ -1,4 +1,3 @@
-
 \chapter{Preliminaries}\label{ch:preliminaries}
 
 
@@ -18,8 +17,8 @@ The interface of the SpecElicitor is shown in Fig[\ref{SpecElicitorInterface}].
 
 The traces made by SpecElicitor include automata, screenshots, XML files and labels.
 The automata is a json file record every states and edges on the traces.
-A state has a screenshot and a XML file dumped from the Mobile.
-A edge records the action user did such as clicking element, typing text or exiting the Application.
+A state has a screenshot and a XML file dumped from the Mobile,
+and an edge records the action user did such as clicking element, typing text or exiting the Application.
 The traces also record labels on every states and edges,
 so we can recognize how many label we focus on happened on the trace.
 An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref{SpecElicitorTraces}].
@@ -28,7 +27,7 @@ An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref
 %使用者可以在GUI介面下一邊建立APP的trace, 同時標記該畫面/動作的label
 %使用完後會產生含有 XML, 截圖, label的traces
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\graphicspath{{pic/}}
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{SpecElicitorInterface.png}
@@ -37,7 +36,7 @@ An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref
 	\end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\graphicspath{{pic/}}
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{SpecElicitorTraces.png}
@@ -48,7 +47,7 @@ An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref
 
 \clearpage
 
-\section{Common Sense Model}
+\section{Common Sense Label}
 
 將APP建立出state-base的automata,其中screen作為state,action作為edge
 

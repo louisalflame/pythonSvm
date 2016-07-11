@@ -88,9 +88,6 @@
     <requires type="editable">
       <file>bib/articles.bib</file>
       <file>bib/books.bib</file>
-      <file>bib/electronic.bib</file>
-      <file>bib/inproceedings.bib</file>
-      <file>bib/proceedings.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

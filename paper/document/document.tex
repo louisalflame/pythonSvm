@@ -6,12 +6,8 @@
 
 % Use biblatex instead of bibtex
 \usepackage[backend=bibtex, style=ieee]{biblatex}
-%% Add all bib source files
 \addbibresource{bib/articles.bib}
 \addbibresource{bib/books.bib}
-\addbibresource{bib/electronic.bib}
-\addbibresource{bib/inproceedings.bib}
-\addbibresource{bib/proceedings.bib}
 
 \usepackage{mystyle}
 
@@ -20,7 +16,7 @@
 
 % Type your personal information
 %% Chinese
-%\setUniversityZH  {國立臺灣大學} 
+\setUniversityZH  {國立臺灣大學} 
 \setCollegeZH     {電機資訊學院}
 \setInstituteZH   {電機工程學研究所}
 \setThesisTypeZH  {碩士論文}
@@ -40,8 +36,8 @@
 \setAuthorEN      {Chi-Yun Wu}
 \setAdvisorNameEN {Farn Wang}
 \setAdvisorTitleEN{Ph.D.}
-%\setGradYearEN    {2015} % The date is generated using \today
-%\setGradMonthEN   {June} % You can un-comment and specify the date
+\setGradYearEN    {2015} % The date is generated using \today
+\setGradMonthEN   {June} % You can un-comment and specify the date
 
 
 \begin{document}
@@ -87,12 +83,7 @@
 \include{tex/ch-conclusion}
 \end{doublespace}
 
-\backmatter
-% Bibliography
-%\begin{doublespace}
 %\printbibliography
-%\end{doublespace}
 
-\clearpage
-\end{CJK*}
+\clearpage\end{CJK*}
 \end{document}

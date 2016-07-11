@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  6 JUL 2016 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  12 JUL 2016 00:55
 entering extended mode
 **./document.tex
 (document.tex
@@ -1881,111 +1881,111 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 (tex/ch-traceEvaluate.aux) (tex/ch-experiments.aux) (tex/ch-conclusion.aux))
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 47.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 47
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 43.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 43
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newtx\omlntxmi.fd"
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 47
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 43
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newtx\omsntxsy.fd"
 File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 43.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newtx\untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2069,14 +2069,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'document.bbl' found.
 
 (document.bbl)
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: Reference section=0 on input line 43.
+Package biblatex Info: Reference segment=0 on input line 43.
  ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 43.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2086,9 +2086,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count394
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
 
 (document.out) (document.out)
 \@outlinefile=\write6
@@ -2138,8 +2138,8 @@ File: UTF8.chr 2015/04/18 4.8.4
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 18.0pt on input line 52.
-LaTeX Font Info:    Try loading font information for C70+bkai on input line 52.
+(Font)              scaled to size 18.0pt on input line 48.
+LaTeX Font Info:    Try loading font information for C70+bkai on input line 48.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cjk\UTF8\c70bkai.fd"
@@ -2149,9 +2149,9 @@ File: c70bkai.fd 2015/04/18 4.8.4
 File: c70bkai.fdx 2015/04/18 4.8.4
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.0pt on input line 52.
+(Font)              scaled to size 14.0pt on input line 48.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.0pt on input line 52.
+(Font)              scaled to size 16.0pt on input line 48.
  [1
 
 
@@ -2171,7 +2171,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 \include{tex/acknowledgements}
+l.57 \include{tex/acknowledgements}
                                     [1
 
 
@@ -2256,23 +2256,16 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 4.
-
-Overfull \hbox (26.3632pt too wide) in paragraph at lines 24--28
-\C70/bkai/m/n/12/7b , \C70/bkai/m/n/12/4e Œ \C70/bkai/m/n/12/7a à\T1/ntxtlf/m/n
-/12 related work: \C70/bkai/m/n/12/51 v \C70/bkai/m/n/12/4e Ö\T1/ntxtlf/m/n/12 
-web,APP tesing, ex: se-le-nium,crwaljax,splinter,Jmeter,UIautomata...
- []
-
-) [1
+[1
 
 
 
-]
+]) [2]
 \openout2 = `tex/ch-related.aux'.
 
  (tex/ch-related.tex
 Chapter 2.
-) [2
+) [3
 
 
 
@@ -2281,71 +2274,63 @@ Chapter 2.
 
  (tex/ch-preliminaries.tex
 Chapter 3.
-<pic/SpecElicitorInterface.png, id=344, 569.12625pt x 436.63126pt>
+<pic/SpecElicitorInterface.png, id=321, 569.12625pt x 436.63126pt>
 File: pic/SpecElicitorInterface.png Graphic file (type png)
 
 <use pic/SpecElicitorInterface.png>
-Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 34.
+Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 33.
 (pdftex.def)             Requested size: 341.43437pt x 261.96078pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<pic/SpecElicitorTraces.png, id=345, 685.05937pt x 593.96906pt>
+<pic/SpecElicitorTraces.png, id=322, 685.05937pt x 593.96906pt>
 File: pic/SpecElicitorTraces.png Graphic file (type png)
 
 <use pic/SpecElicitorTraces.png>
-Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 43.
+Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 42.
 (pdftex.def)             Requested size: 341.43437pt x 296.04121pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3
+ [4
 
 
 
-] [4 <./pic/SpecElicitorInterface.png> <./pic/SpecElicitorTraces.png>])
-[5
+] [5 <./pic/SpecElicitorInterface.png> <./pic/SpecElicitorTraces.png>]) [6
 
 ]
 \openout2 = `tex/ch-traceCollector.aux'.
 
  (tex/ch-traceCollector.tex
 Chapter 4.
-[6
+[7
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 55.
- [7] [8
+ [8] [9
 
-] <pic/automata_overview.png, id=379, 631.60968pt x 697.8572pt>
+] <pic/automata_overview.png, id=362, 631.60968pt x 697.8572pt>
 File: pic/automata_overview.png Graphic file (type png)
 
 <use pic/automata_overview.png>
 Package pdftex.def Info: pic/automata_overview.png used on input line 87.
 (pdftex.def)             Requested size: 256.07741pt x 282.93942pt.
 
-<pic/webTraceResult.png, id=380, 837.88031pt x 386.94562pt>
+<pic/webTraceResult.png, id=363, 837.88031pt x 386.94562pt>
 File: pic/webTraceResult.png Graphic file (type png)
 
 <use pic/webTraceResult.png>
 Package pdftex.def Info: pic/webTraceResult.png used on input line 96.
 (pdftex.def)             Requested size: 341.43437pt x 157.67451pt.
- [9
+ [10
 
- <./pic/automata_overview.png> <./pic/webTraceResult.png>] [10
+ <./pic/automata_overview.png> <./pic/webTraceResult.png>] [11
 
-] <pic/DOMvsNorDOM.png, id=394, 1018.55531pt x 459.96844pt>
+] <pic/DOMvsNorDOM.png, id=378, 1018.55531pt x 459.96844pt>
 File: pic/DOMvsNorDOM.png Graphic file (type png)
 
 <use pic/DOMvsNorDOM.png>
 Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 176.
 (pdftex.def)             Requested size: 341.43437pt x 154.19038pt.
- [11
+ [12
 
  <./pic/DOMvsNorDOM.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -2356,39 +2341,39 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 193.
 
-<pic/MonkeyAutomata.png, id=401, 1021.56656pt x 491.58656pt>
+<pic/MonkeyAutomata.png, id=384, 1021.56656pt x 491.58656pt>
 File: pic/MonkeyAutomata.png Graphic file (type png)
 
 <use pic/MonkeyAutomata.png>
 Package pdftex.def Info: pic/MonkeyAutomata.png used on input line 207.
 (pdftex.def)             Requested size: 341.43437pt x 164.29434pt.
- [12
+ [13
 
  <./pic/MonkeyAutomata.png>]
-<pic/DFSautomata.png, id=407, 1020.06094pt x 496.10344pt>
+<pic/DFSautomata.png, id=390, 1020.06094pt x 496.10344pt>
 File: pic/DFSautomata.png Graphic file (type png)
 
 <use pic/DFSautomata.png>
 Package pdftex.def Info: pic/DFSautomata.png used on input line 240.
 (pdftex.def)             Requested size: 341.43437pt x 166.05374pt.
- [13 <./pic/DFSautomata.png>])
+ [14 <./pic/DFSautomata.png>])
 \openout2 = `tex/ch-traceEvaluate.aux'.
 
 
 (tex/ch-traceEvaluate.tex
 Chapter 5.
-[14
+[15
 
 
 
 
-] <pic/EvaluateProcedure.png, id=417, 875.52094pt x 378.66469pt>
+] <pic/EvaluateProcedure.png, id=400, 875.52094pt x 378.66469pt>
 File: pic/EvaluateProcedure.png Graphic file (type png)
 
 <use pic/EvaluateProcedure.png>
 Package pdftex.def Info: pic/EvaluateProcedure.png used on input line 60.
 (pdftex.def)             Requested size: 341.43437pt x 147.67285pt.
- [15
+ [16
 
  <./pic/EvaluateProcedure.png>])
 \openout2 = `tex/ch-experiments.aux'.
@@ -2396,7 +2381,7 @@ Package pdftex.def Info: pic/EvaluateProcedure.png used on input line 60.
 
 (tex/ch-experiments.tex
 Chapter 6.
-) [16
+) [17
 
 
 
@@ -2406,21 +2391,28 @@ Chapter 6.
 
  (tex/ch-conclusion.tex
 Chapter 7.
-) [17
+) [18
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
 (tex/abstractEN.aux) (tex/ch-introduction.aux) (tex/ch-related.aux)
 (tex/ch-preliminaries.aux) (tex/ch-traceCollector.aux)
 (tex/ch-traceEvaluate.aux) (tex/ch-experiments.aux) (tex/ch-conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 4BE38894F59A76926D175D899CDDC98E;1819.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+
+
+Package rerunfilecheck Warning: File `document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `document.out':
+(rerunfilecheck)             Before: 701248559D40C31B4B9A380D51838C9F;1754
+(rerunfilecheck)             After:  A8512CBE5F0C7291672B6F99EDF56871;1754.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
@@ -2430,13 +2422,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34683 strings out of 493335
- 628626 string characters out of 3136674
- 1066850 words of memory out of 3000000
- 37213 multiletter control sequences out of 15000+200000
- 77111 words of font info for 149 fonts, out of 3000000 for 9000
+ 34545 strings out of 493335
+ 626559 string characters out of 3136674
+ 1066693 words of memory out of 3000000
+ 37097 multiletter control sequences out of 15000+200000
+ 73102 words of font info for 135 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,94p,1044b,19407s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,94p,1044b,19367s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec
 -tlf.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu30.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pfb><C:/P
@@ -2447,57 +2439,50 @@ KTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu52.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/arphic/bkaiu/bkaiu53.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/arphic/bkaiu/bkaiu54.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 arphic/bkaiu/bkaiu55.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/
-bkaiu/bkaiu56.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/b
-kaiu57.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu58.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu59.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5b.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5c.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5d.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5e.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/arphic/bkaiu/bkaiu5f.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/arphic/bkaiu/bkaiu61.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/arphic/bkaiu/bkaiu62.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
-c/bkaiu/bkaiu63.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
-/bkaiu64.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6
-5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu66.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu67.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6a.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6b.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6c.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/arphic/bkaiu/bkaiu6e.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
-hic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
-iu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
-u77.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu78.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7a.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7b.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/arphic/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
-rphic/bkaiu/bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
-kaiu/bkaiu89.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
-aiu8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8b.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8f.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/arphic/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/arphic/bkaiu/bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/arphic/bkaiu/bkaiu97.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic
-/bkaiu/bkaiu98.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/
-bkaiu9a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb>
-Output written on document.pdf (25 pages, 1452202 bytes).
+bkaiu/bkaiu57.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/b
+kaiu58.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu59.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5b.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5c.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5d.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5e.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5f.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/arphic/bkaiu/bkaiu62.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/arphic/bkaiu/bkaiu63.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/arphic/bkaiu/bkaiu64.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
+c/bkaiu/bkaiu65.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
+/bkaiu66.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6
+7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6a.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6c.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6e.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/arphic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/arphic/bkaiu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/arphic/bkaiu/bkaiu78.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
+hic/bkaiu/bkaiu7a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
+iu/bkaiu7b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
+u7d.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu88.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu89.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
+rphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
+kaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
+aiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu97.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu98.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9a.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/txfonts/txsyc.pfb>
+Output written on document.pdf (26 pages, 1404506 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
+ 598 PDF objects out of 1000 (max. 8388607)
  74 named destinations out of 1000 (max. 500000)
- 537 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 words of extra memory for PDF output out of 10000 (max. 10000000)
 
