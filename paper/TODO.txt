@@ -10,9 +10,14 @@ CONTENTS
 INTRODUCTION
 -motivation
 -purpose
+-organization
 
 RELATED WORKS
+-crawljax
+-splinter
+-jmeter
 -
+
 
 PRELIMINARIES
 -crawler, trace generator
@@ -22,22 +27,33 @@ PRELIMINARIES
 CHAPTER===
 trace generator
 -web crawler
+  -algorithm
+  -selenium executor
+  -automata
+  -traces
 -TaaD
+  -specElicitor
 
 trace evaluation
 -predict pass/fail
+-hand label
 
-trace parser
--common sense
--vector
-
-model trainging
+trace cluster
+-all apps using
+  -common sense
+  -trace parser
+  -vector
 -libsvm
-
+  -model trainging
+  -predict
 
 
 EXPERIMENTS
 
 CONCLUSION
+-furture work
 
 REFERENCE
+
+======================
+IN

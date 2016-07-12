@@ -28,36 +28,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Common Sense Label}{6}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Support Vector Machine}{6}{section.3.3}
+\contentsline {section}{\numberline {3.3}Support Vector Machine}{8}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}WebTraceCollector}{7}{chapter.4}
+\contentsline {chapter}{\numberline {4}WebTraceCollector}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Framework}{7}{section.4.1}
+\contentsline {section}{\numberline {4.1}Framework}{9}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Automata}{9}{section.4.2}
+\contentsline {section}{\numberline {4.2}Automata}{11}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Event}{11}{section.4.3}
+\contentsline {section}{\numberline {4.3}Event}{13}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}normalization}{12}{section.4.4}
+\contentsline {section}{\numberline {4.4}normalization}{14}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Algorithm}{13}{section.4.5}
+\contentsline {section}{\numberline {4.5}Algorithm}{15}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Monkey}{13}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.1}Monkey}{15}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Depth First Search}{13}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Depth First Search}{15}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Trace Evaluate}{15}{chapter.5}
+\contentsline {chapter}{\numberline {5}Trace Evaluate}{17}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Common sense label}{15}{section.5.1}
+\contentsline {section}{\numberline {5.1}Label vector}{17}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Procedure}{16}{section.5.2}
+\contentsline {section}{\numberline {5.2}Procedure}{18}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{17}{chapter.6}
+\contentsline {chapter}{\numberline {6}Experiments}{19}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Monkey}{17}{section.6.1}
+\contentsline {section}{\numberline {6.1}Monkey}{19}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Dynamic}{17}{section.6.2}
+\contentsline {section}{\numberline {6.2}Dynamic}{19}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}evaluate}{17}{section.6.3}
+\contentsline {section}{\numberline {6.3}evaluate}{19}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{18}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{20}{chapter.7}
