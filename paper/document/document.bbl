@@ -16,5 +16,326 @@
   {}
 \endgroup
 
-\sortlist[entry]{none/global/}\endsortlist
+\sortlist[entry]{none/global/}
+  \entry{WebTesting}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RF}{%
+         family={Ricca},
+         family_i={R\bibinitperiod},
+         given={Filippo},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tonella},
+         family_i={T\bibinitperiod},
+         given={Paolo},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RFTP1}
+    \strng{fullhash}{RFTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 23rd International Conference on
+  Software Engineering ICSE 2001}
+    \field{pages}{25\bibrangedash 34}
+    \field{title}{Analysis and Testing of Web Applications}
+    \field{year}{2001}
+  \endentry
+
+  \entry{WebToolsList}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{List of web testing tools}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/List_of_web_testing_tools
+    \endverb
+  \endentry
+
+  \entry{jmeter}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Apache Jmeter}
+    \verb{url}
+    \verb http://jmeter.apache.org/
+    \endverb
+  \endentry
+
+  \entry{selenium}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Selenium}
+    \verb{url}
+    \verb http://www.seleniumhq.org/
+    \endverb
+  \endentry
+
+  \entry{Teststudio}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Test studio}
+    \verb{url}
+    \verb http://www.telerik.com/teststudio
+    \endverb
+  \endentry
+
+  \entry{Smartbear}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Smart bear}
+    \verb{url}
+    \verb https://smartbear.com/product/testcomplete/overview/
+    \endverb
+  \endentry
+
+  \entry{veriweb}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Benedikt},
+         family_i={B\bibinitperiod},
+         given={Michael},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Freire},
+         family_i={F\bibinitperiod},
+         given={Juliana},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Godefroid},
+         family_i={G\bibinitperiod},
+         given={Patrice},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMFJGP1}
+    \strng{fullhash}{BMFJGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{11th Int Conf. World wide web (WWW02)}
+    \field{title}{Automatically testing dynamic web sites}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Search-BasedTesting}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MA}{%
+         family={Marchetto},
+         family_i={M\bibinitperiod},
+         given={Alessandro},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tonella},
+         family_i={T\bibinitperiod},
+         given={Paolo},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=KIFB}{%
+         family={Kessler-IRST},
+         family_i={K\bibinitperiod-I\bibinitperiod},
+         given={Fondazione\bibnamedelima Bruno},
+         given_i={F\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MATPKIFB1}
+    \strng{fullhash}{MATPKIFB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE - Search Based Software Engineering}
+    \field{pages}{3 \bibrangedash  12}
+    \field{title}{Search-Based Testing of Ajax Web Applications}
+    \field{year}{2009}
+  \endentry
+
+  \entry{crawljax}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{crawljax}
+    \verb{url}
+    \verb http://crawljax.com/apidocs/
+    \endverb
+  \endentry
+
+  \entry{OracleProblem}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BET}{%
+         family={Barr},
+         family_i={B\bibinitperiod},
+         given={Earl\bibnamedelima T.},
+         given_i={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Harman},
+         family_i={H\bibinitperiod},
+         given={Mark},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={McMinn},
+         family_i={M\bibinitperiod},
+         given={Phil},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Shahbaz},
+         family_i={S\bibinitperiod},
+         given={Muzammil},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yoo},
+         family_i={Y\bibinitperiod},
+         given={Shin},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BETHMMP+1}
+    \strng{fullhash}{BETHMMPSMYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Transactions on software Engineering}
+    \field{pages}{507\bibrangedash 525}
+    \field{title}{The Oracle Problem in Software Testing:A Survey}
+    \field{year}{2015}
+  \endentry
+
+  \entry{DetectMetamorphic}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KU}{%
+         family={Kanewala},
+         family_i={K\bibinitperiod},
+         given={Upulee},
+         given_i={U\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Bieman},
+         family_i={B\bibinitperiod},
+         given={James\bibnamedelima M.},
+         given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KUBJM1}
+    \strng{fullhash}{KUBJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE 24th International Symposium on Software Reliability
+  Enginerring ISSRE2013}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{Using Machine Learning Techniques to Detect Metamorphic
+  Relations for Programs without Test Oracles}
+    \field{year}{2013}
+  \endentry
+
+  \entry{SupportProgramEvolution}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=EMD}{%
+         family={Ernst},
+         family_i={E\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         given_i={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cockrell},
+         family_i={C\bibinitperiod},
+         given={Jake},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=GWG}{%
+         family={Griswoldand},
+         family_i={G\bibinitperiod},
+         given={William\bibnamedelima G.},
+         given_i={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Notkin},
+         family_i={N\bibinitperiod},
+         given={David},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EMDCJGWG+1}
+    \strng{fullhash}{EMDCJGWGND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEE ETransactions on Software Engineering}
+    \field{pages}{99\bibrangedash 123}
+    \field{title}{Dynamically Discovering Likely Program Invariants to Support
+  Program Evolution}
+    \field{year}{2001}
+  \endentry
+
+  \entry{SVM}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         family_i={C\bibinitperiod},
+         given={Corinna},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vapnik},
+         family_i={V\bibinitperiod},
+         given={Vladimir},
+         given_i={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCVV1}
+    \strng{fullhash}{CCVV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Machine Learning 20(3)}
+    \field{pages}{273\bibrangedash 297}
+    \field{title}{Support-Vector Networks}
+    \field{year}{1995}
+  \endentry
+
+  \entry{LIBSVM}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CCC}{%
+         family={Chang},
+         family_i={C\bibinitperiod},
+         given={Chih-Chung},
+         given_i={C\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=LCJ}{%
+         family={Lin},
+         family_i={L\bibinitperiod},
+         given={Chih-Jen},
+         given_i={C\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCCLCJ1}
+    \strng{fullhash}{CCCLCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ACM Transactions on Intelligent Systems and Technology
+  (TIST)}
+    \field{pages}{1\bibrangedash 39}
+    \field{title}{LIBSVM: A Library for Support Vector Machines}
+    \field{year}{2011}
+  \endentry
+
+  \entry{ActiveLearning}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SB}{%
+         family={Settles},
+         family_i={S\bibinitperiod},
+         given={Burr},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SB1}
+    \strng{fullhash}{SB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Machine Learning}
+    \field{pages}{201\bibrangedash 221}
+    \field{title}{Active Learning Literature Survey}
+    \field{year}{2010}
+  \endentry
+
+  \entry{popularWebs}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Popular websites in Taiwan}
+    \verb{url}
+    \verb http://www.bnext.com.tw/article/view/id/35475
+    \endverb
+  \endentry
+\endsortlist
 \endinput

@@ -1,2 +1,49 @@
 
 \chapter{Conclusion}\label{ch:conclusion}
+
+\section{Summary}
+
+In this paper, We present a tool named WebTraceCollector to automated test dynamic web pages in order to reduce human cost on testing.
+WebTraceCollector download the page source from the current web page and find the target clickable elements and input fields.
+We collects examples of input fields and construct a database.
+WebTraceCollector analyze the input fields and get the suggested value to pass through the dynamic web page.
+
+Moreover, We propose a system to automated evaluating traces and use Support Vector Machine to predict traces.
+We collects the common sense behavior of certian applications and make a keyword library.
+The system use the keyword as features and extracts the features from the traces.
+with selecting the traces as training set and building a predictive model,
+the system can automated predict traces to passed traces and failed traces.
+
+
+\section{Limination}
+
+The tool can not successfully test all websites and dynamic webpages for some reasons.
+The advertising iframes and plugins make noise on the page source and lead to wrong DOM tree
+and functions implemented by javascript may change the tags format of clickables,
+so it increase the difficulty to find the correct clickable elements and input fields.
+
+The ability of getting suggested values of input fields completely depend on the database,
+so we need more and more amounts of input examples.
+However, the dynamic webpages can be turn into a variety of styles.
+It seems too hard to handle dynamic webpages only with string comparing of input examples.
+It is important to find out other method to guess the correct input values.
+
+On the other hand, the prediction method is based on the support vector machine.
+The accuracy of prediction highly depends on the feature extracted from thr traces.
+If we can not find the precise keywords to represent the failed traces,
+it will be hard to train the SVM model and increase the accuracy.
+
+\section{Future work}
+
+In order to automated test web applications successfully,
+we need to find out other methods to filter the noise of page source
+and correctly recognize the actual elements with functions.
+To increase the ability of passing through dynamic pages,
+we not only need to add more input examples into the database,
+but also find out other methods, such as natural language processing, to guess input values more correctly.
+
+In the future works, we have to generalize more behaviors of similar applications to make the feature more precise.
+We will use other machine learning methods to predict traces, such as deep learning,
+and compare the accuracy between different methods.
+We want to find out which methods is most suitable to this automated evaluation system.
+

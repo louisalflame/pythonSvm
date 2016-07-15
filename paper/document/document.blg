@@ -1,50 +1,33 @@
-This is BibTeXu: a UTF-8 Big BibTeX version 0.99d
-Implementation:  Microsoft(R) C/C++ for Win32
-Release version: 3.71 (18 mar 2013)
-
-The 8-bit codepage and sorting file: 88591lat.csf
-The top-level auxiliary file: document.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
 The style file: biblatex.bst
-A level-1 auxilliary file: tex/acknowledgements.aux
-A level-1 auxilliary file: tex/abstractZH.aux
-A level-1 auxilliary file: tex/abstractEN.aux
-A level-1 auxilliary file: tex/ch-introduction.aux
-A level-1 auxilliary file: tex/ch-related.aux
-A level-1 auxilliary file: tex/ch-preliminaries.aux
-A level-1 auxilliary file: tex/ch-traceCollector.aux
-A level-1 auxilliary file: tex/ch-traceEvaluate.aux
-A level-1 auxilliary file: tex/ch-experiments.aux
-A level-1 auxilliary file: tex/ch-conclusion.aux
-Reallocated glb_str_ptr (elt_size=4) to 10 items from 0.
-Reallocated global_strs (elt_size=20001) to 10 items from 0.
-Reallocated glb_str_end (elt_size=4) to 10 items from 0.
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+A level-1 auxiliary file: tex/acknowledgements.aux
+A level-1 auxiliary file: tex/abstractZH.aux
+A level-1 auxiliary file: tex/abstractEN.aux
+A level-1 auxiliary file: tex/ch-introduction.aux
+A level-1 auxiliary file: tex/ch-related.aux
+A level-1 auxiliary file: tex/ch-preliminaries.aux
+A level-1 auxiliary file: tex/ch-traceCollector.aux
+A level-1 auxiliary file: tex/ch-traceEvaluation.aux
+A level-1 auxiliary file: tex/ch-experiments.aux
+A level-1 auxiliary file: tex/ch-conclusion.aux
 Database file #1: document-blx.bib
 Database file #2: bib/articles.bib
 Database file #3: bib/books.bib
-Warning--I didn't find a database entry for "haha"
+Database file #4: bib/web.bib
+Warning--entry type for "jmeter" isn't style-file defined
+--line 8 of file bib/web.bib
+Warning--entry type for "WebToolsList" isn't style-file defined
+--line 13 of file bib/web.bib
+Warning--entry type for "selenium" isn't style-file defined
+--line 23 of file bib/web.bib
+Warning--entry type for "Teststudio" isn't style-file defined
+--line 28 of file bib/web.bib
+Warning--entry type for "Smartbear" isn't style-file defined
+--line 33 of file bib/web.bib
+Warning--entry type for "crawljax" isn't style-file defined
+--line 38 of file bib/web.bib
+Warning--entry type for "popularWebs" isn't style-file defined
+--line 42 of file bib/web.bib
+Database file #5: bib/inproceedings.bib
 Biblatex version: 3.3
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-
-Here's how much of BibTeX's memory you used:
- Cites:                 1 out of 750
- Fields:               11 out of 5000
- Hash table:        34693 out of 35307
- Strings:            1187 out of 35307
- Free string pool:   8759 out of 65000
- Wizard functions:   6256 out of 9000
-(There was 1 warning)
+(There were 7 warnings)

@@ -1,17 +1,155 @@
 
 \chapter{Experiments}\label{ch:experiments}
 
-\section{Monkey}
+We construct a tool WebTraceCollector for automatic web testing,
+which can explore the website automaically and 
+analyze the DOM tree of the current web page to find the next clickable element to click,
+and propose a machine learning method to evaluate traces by SVM.
+In order to use the tool and implement the evaluation, wee need a laptop and installing some tools.
+The specification of the laptop we used is shown in Table[\ref{laptopSpec}],
+and we need to install Windows, Python 3.4.3 and MySQL database.
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{| l | l | }
+			\hline
+			Laptop & AUSU X450JN \\ \hline
+			Operating System & Windows 10 (64bit) \\ \hline
+			CPU & Intel(R) Core(TM) i5-4200 @2.8GHz \\ \hline
+			RAM & 4GB \\ \hline
+			Storage & 800G \\ \hline
+		\end{tabular}
+		\caption{ The specification of the laptop. }
+		\label{laptopSpec}
+	\end{center}
+\end{table}
+
+WebTraceCollector is constructed based on Python,
+it control the browser by the selenium library and recognize the elements of the current page by the beautifulsoup library.
+The automatic exploring mechanism highly depends on the page source downloaded from the current web page.
+If the page source ot the constructed DOM tree can not match the current page correctly,
+we can not find the correct clickable element and the testing may fail.
+Thus, it is important to check how many web applications can download page soucre and construct DOM tree accurately.
+In the experiment 1, we find 20 websites which is famous in taiwan.
+We test those websites and generate traces automatically by WebTraceCollector.
+Moreover, we want to check the ability of handling dynamic web pages.
+We choose some common web pages with lots of input fields need to be inserted to test in the experiment 2.
+In the experiment 3, we want to check the accuracy of the automatic prediction.
+We generate some traces of certain applications and use those traces to train SVM model,
+and we use this model to predict the traces of the applications.
+
+\section{Trace collection}
+
+In 20 popular applications\cite{popularWebs} that shown in Table \ref{popularWebs},
+there are forums, news, community platforms, games and blogs.
+We generate monkey traces by randomly click buttons and the length of traces is about 5.
+The reason that we do not completely explore the whole website is most of the scale of websites are too big.
+For example, a news website may have thousands of subpages and it may cost too much time to generate completely traces.
+We just want to check the DOM tree is constructed correctly, 
+so we make short traces to focus on checking the ability of clicking correct clickable elements.
+
+The result of the experiments is shown in Table[].
+There are 4 web applications that have serious problem on testing,
+and most of web applications can be successfully explored with little defects.
+There are two unkown fail happened, however it can work after restart the test.
+The problems of the fail applications are 
+too many iframes of advertising and API plugin in the webpages and buttons functions implemented by javascript.
+The iframes become noise in the page source and make the DOM tree constructed incorrectly,
+so WebTraceCollector may not find the correct clickable elements or only focus on the clickables in the advertising iframe.
+On the other hand, the button functions in the web pages may implemented by javascript.
+That means clickable elements may not be the style we thought, such as link tags or input-button tags,
+it could be images, div tags or any tags if javascript bind the mouse listener on.
+With the uncertain clickable elements, it is hard to find the correct clickable elements to explore the web and record the traces.
+WebTraceCollector will click the wrong elements with nothing happens and stay at the same page until the trace is end.
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | l | l | l | }
+			\hline
+			編號 & 網站名稱 & 網站類型 & URL \\ \hline
+			1 & Facebook & Community platform & https://www.facebook.com/ \\ \hline
+			2 & YouTube & Entertainment & https://www.youtube.com/ \\ \hline
+			3 & Yahoo & Search engine & https://tw.yahoo.com/ \\ \hline
+			4 &　Google & Search engine & https://www.google.com.tw/ \\ \hline
+			5 &　中時電子報 & News & http://www.chinatimes.com/ \\ \hline
+			6 &　露天拍賣 & Commerce & http://www.ruten.com.tw/ \\ \hline
+			7 &　聯合新聞網 & News & http://udn.com/news/index \\ \hline
+			8 &　巴哈姆特 & Forum & http://www.gamer.com.tw/ \\ \hline
+			9 &　Mobile01 & Forum & http://www.mobile01.com/ \\ \hline
+			10 & 蘋果日報　& News & http://www.appledaily.com.tw/ \\ \hline
+			11 &　百度 & Search engine & https://www.baidu.com/ \\ \hline
+			12 &　東森新聞雲 & News & http://www.ettoday.net/ \\ \hline
+			13 &　卡提諾論壇 & Forum & http://ck101.com/ \\ \hline
+			14 &　伊莉討論區 & Forum & http://www40.eyny.com/index.php \\ \hline
+			15 &　Hinet & Search engine & http://www.hinet.net/ \\ \hline
+			16 & 微軟Live.com　& Search engine & https://login.live.com/ \\ \hline
+			17 &　痞客邦 & Blog & https://www.pixnet.net/ \\ \hline
+			18 &　PChome Online & Search engine & http://pchome.com.tw/ \\ \hline
+			19 & 淘寶　& Commerce & https://world.taobao.com/ \\ \hline
+			20 & Life生活網　& Blog & http://www.life.com.tw/ \\ \hline
+		\end{tabular}
+		\caption{ The 20 popular websites. }
+		\label{popularWebs}
+	\end{center}
+\end{table}
 
 %針對20個網站做20個monkey traces的結果
 %有些網站太複雜 iframe太多,太相似
 
-\section{Dynamic}
+\clearpage
 
+\section{Dynamic webpages}
+
+In order to test the ability of explore dynamic webpages,
+we select some webpages that have lots of input fields and it need to insert correct values to pass through the web pages.
+The selected webpages are shown in Table \ref{DynamicWebs}.
+Most of the input fields in those web pages are names, years, emails and so on.
+We can see that there are 4 web pages can be successfully passed through, but 3 web pages can not.
+There are 3 reasons that can not pass through the dynamic web pages are the follows:
+\\	1. The web pages have robot checking mechanism to prevent automatic exploring.
+\\	2. The form of input fields are different to the examples in the database.
+\\	3. The input fields are out of the range of examples we collecteed.
+	
+In reason 1, the robot checking like image recognition is developed to prevent people exploring the website automatically be computer.
+It is too hard to find out the correct value by program,
+and it is unreasonable if we can easily pass through those web pages.
+If we want to test those websites,
+the reasonable way is let the developers of the websites turn off the robot ckecking.
+
+In reason 2, even though we have collect the examples of the input fields in the database, 
+it is still a hard work to find out the correct form of the values.
+For instance, we analyze the input field and find out the value should be a string of address.
+But the type of input fields can be text, checkbox or selects, 
+it is too hard to analyze user should insert the whole string of address or select each partens of area.
+
+In reason 3, the web pages can have unlimited kinds of input fields.
+Although we can add as more examples and rules in the database as we possible,
+it is still impossible to handle all kinds of input fields by only few kinds of examples.
+In future work, we can develop to find out the values by other method such as maching learning.
+
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | l | }
+			\hline
+			URL & Result \\ \hline
+			http://www.plurk.com/signup & Pass \\  \hline
+			https://ups.moe.edu.tw/Personal\_Page/index.php & Pass \\  \hline
+			https://applyweb.collegenet.com/account/new/create  & Pass \\  \hline
+			https://apply.grad.ucsd.edu/signup  & Pass \\  \hline
+			https://user.gamer.com.tw/regS1.phpt  & Fail \\  \hline
+			http://panel.pixnet.cc/signup/step2  & Fail \\  \hline   
+			https://apps.grad.uw.edu/applForAdmiss/newUserProfile.aspx?bhcp=1 & Fail \\  \hline 
+		\end{tabular}
+		\caption{ The dynamic webpages. }
+		\label{DynamicWebs}
+	\end{center}
+\end{table}
 %針對5個有inputs的網站做traces
 %有的網站可以通過 有的只能一次(註冊) 有的偶爾可以(登入) 有的不行
 
-\section{Prediction}
+
+%\section{Prediction}
 
 %對同種類的網站 APP 和WEB 做traces
 %測出其中有BUG

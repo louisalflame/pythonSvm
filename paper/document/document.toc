@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgements}{i}{chapter*.1}
+\contentsline {chapter}{誌謝}{i}{chapter*.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{摘要}{ii}{chapter*.2}
 \defcounter {refsection}{0}\relax 
@@ -18,46 +18,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Web testing}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Android testing}{3}{section.2.2}
+\contentsline {section}{\numberline {2.2}Test evaluation}{4}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}test evaluation}{3}{section.2.3}
+\contentsline {chapter}{\numberline {3}Preliminaries}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Preliminaries}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}SpecElicitor}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}SpecElicitor}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}Normalized keywords}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Common Sense Label}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Support Vector Machine}{9}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Support Vector Machine}{8}{section.3.3}
+\contentsline {chapter}{\numberline {4}WebTraceCollector}{10}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}WebTraceCollector}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Framework}{10}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Framework}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Automata}{12}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Automata}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Event}{14}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Event}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}normalization}{15}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}normalization}{14}{section.4.4}
+\contentsline {section}{\numberline {4.5}Algorithm}{16}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Algorithm}{15}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Monkey}{16}{subsection.4.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Monkey}{15}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Depth First Search}{16}{subsection.4.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Depth First Search}{15}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5}Trace Evaluation}{18}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Trace Evaluate}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Procedure}{18}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Label vector}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Feature vector}{19}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Procedure}{18}{section.5.2}
+\contentsline {section}{\numberline {5.3}Sampling traces}{21}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{19}{chapter.6}
+\contentsline {chapter}{\numberline {6}Experiments}{22}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Monkey}{19}{section.6.1}
+\contentsline {section}{\numberline {6.1}Trace collection}{23}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Dynamic}{19}{section.6.2}
+\contentsline {section}{\numberline {6.2}Dynamic webpages}{25}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}evaluate}{19}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{20}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary}{27}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Limination}{27}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Future work}{28}{section.7.3}

@@ -3,11 +3,14 @@
 \documentclass[oneside]{ntuthesis}
 
 \usepackage[utf8]{inputenc}
+\usepackage{indentfirst} 
 
 % Use biblatex instead of bibtex
 \usepackage[backend=bibtex, style=ieee]{biblatex}
 \addbibresource{bib/articles.bib}
 \addbibresource{bib/books.bib}
+\addbibresource{bib/web.bib}
+\addbibresource{bib/inproceedings.bib}
 
 \usepackage{mystyle}
 
@@ -78,12 +81,12 @@
 \include{tex/ch-related}
 \include{tex/ch-preliminaries}
 \include{tex/ch-traceCollector}
-\include{tex/ch-traceEvaluate}
+\include{tex/ch-traceEvaluation}
 \include{tex/ch-experiments}
 \include{tex/ch-conclusion}
 \end{doublespace}
 
-%\printbibliography
+\printbibliography
 
 \clearpage\end{CJK*}
 \end{document}
