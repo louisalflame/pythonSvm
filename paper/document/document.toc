@@ -50,18 +50,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Feature vector}{19}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Sampling traces}{21}{section.5.3}
+\contentsline {section}{\numberline {5.3}Sampling traces}{22}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{22}{chapter.6}
+\contentsline {chapter}{\numberline {6}Experiments}{23}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Trace collection}{23}{section.6.1}
+\contentsline {section}{\numberline {6.1}Trace collection}{24}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Dynamic webpages}{25}{section.6.2}
+\contentsline {section}{\numberline {6.2}Dynamic webpages}{27}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.7}
+\contentsline {section}{\numberline {6.3}Prediction}{29}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Summary}{27}{section.7.1}
+\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Limination}{27}{section.7.2}
+\contentsline {section}{\numberline {7.1}Summary}{32}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Future work}{28}{section.7.3}
+\contentsline {section}{\numberline {7.2}Limination}{32}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Future work}{33}{section.7.3}

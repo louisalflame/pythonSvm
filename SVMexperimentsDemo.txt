@@ -1,0 +1,603 @@
+traces/AppStore/set02/trace1~8
+==================================================================
+Ex01
+Duplicate: *=1Duplicate: *=None
+Duplicate: Train *=30
+Random   : 0.4
+Training : 660
+Testing  : 39
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (74.35897435897436, 0.25641025641025639, 0.080311457174638487)
+Precision: 0.5
+Recall   : 0.4
+Failtrain: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces
+\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\
+traces4_1': 1, 'traces\\testDemo\\set02\\traces5_0': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\
+traces4_7': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces3_1': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\traces3_3': 1, 'traces\\testDemo\\set02\\traces4_4': 1, 'traces
+\\testDemo\\set02\\traces6_0': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces
+\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1150
+Testing  : 38
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (71.05263157894737, 0.28947368421052633, 0.068297294103745715)
+Precision: 0.5714285714285714
+Recall   : 0.3333333333333333
+Failtrain: {'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces
+\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces
+\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\
+traces1_0': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'tra
+ces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces
+\\testDemo\\set02\\traces4_3': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces1_3': 1, 'traces\\testDemo\\set02\\traces4_5': 1, 'traces\\testDemo\\set02\\traces2_2': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces
+\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\
+traces4_7': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 850
+Testing  : 44
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (75.0, 0.25, 0.15555555555555556)
+Precision: 0.6363636363636364
+Recall   : 0.5
+Failtrain: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces
+\\testDemo\\set02\\traces4_2': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces
+\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\
+traces4_7': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'tra
+ces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set0
+2\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces
+\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\
+traces3_1': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces4_6': 1, 'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\traces3_3': 1, 'traces
+\\testDemo\\set02\\traces4_4': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces6_8': 1, 'traces\\testDemo\\set02\\
+traces3_4': 1}
+
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1200
+Testing  : 37
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (64.86486486486487, 0.35135135135135137, 0.046538461538461535)
+Precision: 0.5
+Recall   : 0.46153846153846156
+Failtrain: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces3_2': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces
+\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\
+traces6_5': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'tra
+ces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces
+\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces4_6': 1, 'traces\\testDemo\\set02\\traces2_0': 1, 'traces\\testDemo\\set02\\traces2_3': 1, 'traces
+\\testDemo\\set02\\traces2_1': 1, 'traces\\testDemo\\set02\\traces4_4': 1, 'traces\\testDemo\\set02\\traces3_5': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces6_8': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\
+traces3_4': 1}
+
+==================================================================
+Ex03
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 800
+Testing  : 45
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (73.33333333333333, 0.26666666666666666, 0.17097608274078863)
+Precision: 0.5294117647058824
+Recall   : 0.6923076923076923
+Failtrain: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces
+\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces5_1': 1}
+Failtest : {'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\
+traces3_2': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'tra
+ces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces
+\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\
+traces4_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces3_4': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces4_6': 1, 'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\traces2_3': 1, 'traces
+\\testDemo\\set02\\traces6_0': 1, 'traces\\testDemo\\set02\\traces4_4': 1, 'traces\\testDemo\\set02\\traces4_9': 1, 'traces\\testDemo\\set02\\
+traces3_3': 1, 'traces\\testDemo\\set02\\traces7_8': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces
+\\testDemo\\set02\\traces6_8': 1}
+
+==================================================================
+Ex04
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 900
+Testing  : 43
+Params   : -c 0.5 -g 0.0078125 -b 1
+Accuracy : (72.09302325581395, 0.27906976744186046, 0.12510822510822511)
+Precision: 0.6363636363636364
+Recall   : 0.4666666666666667
+Failtrain: {'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces1_2': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces
+\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\
+traces1_0': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'tra
+ces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set0
+2\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\
+traces3_1': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\traces2_3': 1, 'traces\\testDemo\\set02\\traces3_3': 1, 'traces
+\\testDemo\\set02\\traces4_4': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces
+\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\
+traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+
+==================================================================
+Ex05
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1250
+Testing  : 36
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.046029752066115703)
+Precision: 0.45454545454545453
+Recall   : 0.45454545454545453
+Failtrain: {'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\
+traces3_4': 1}
+Failtest : {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\
+traces2_9': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces6_8': 1, 'tra
+ces\\testDemo\\set02\\traces5_0': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces
+\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces1_2': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces2_0': 1, 'traces\\testDemo\\set02\\traces6_4': 1, 'traces\\testDemo\\set02\\traces7_2': 1, 'traces
+\\testDemo\\set02\\traces4_9': 1, 'traces\\testDemo\\set02\\traces6_3': 1, 'traces\\testDemo\\set02\\traces3_3': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+
+==================================================================
+Ex05
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1100
+Testing  : 39
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (61.53846153846154, 0.38461538461538464, 0.037765074681910385)
+Precision: 0.35294117647058826
+Recall   : 0.6
+Failtrain: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces
+\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\
+traces3_0': 1, 'traces\\testDemo\\set02\\traces3_4': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\
+traces4_3': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces1_3': 1, 'traces\\testDemo\\set02\\traces2_0': 1, 'traces\\testDemo\\set02\\traces2_3': 1, 'traces
+\\testDemo\\set02\\traces4_0': 1, 'traces\\testDemo\\set02\\traces2_1': 1, 'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\
+traces1_1': 1, 'traces\\testDemo\\set02\\traces7_8': 1, 'traces\\testDemo\\set02\\traces6_4': 1, 'traces\\testDemo\\set02\\traces4_4': 1, 'tra
+ces\\testDemo\\set02\\traces6_6': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1}
+
+==================================================================
+Ex06
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1350
+Testing  : 34
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (61.76470588235294, 0.38235294117647056, 8.8183421516754856e-05)
+Precision: 0.2857142857142857
+Recall   : 0.2
+Failtrain: {'traces\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces
+\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\
+traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+Failtest : {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\
+traces4_3': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\traces4_7': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_9': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces4_6': 1, 'traces\\testDemo\\set02\\traces4_9': 1, 'traces\\testDemo\\set02\\traces5_6': 1, 'traces
+\\testDemo\\set02\\traces5_7': 1, 'traces\\testDemo\\set02\\traces4_4': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces
+\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\
+traces4_7': 1, 'traces\\testDemo\\set02\\traces3_0': 1}
+
+==================================================================
+Ex07
+Duplicate: *=1
+Duplicate: Train *=50
+Random   : 0.4
+Training : 1100
+Testing  : 39
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (61.53846153846154, 0.38461538461538464, 0.037765074681910385)
+Precision: 0.35294117647058826
+Recall   : 0.6
+Failtrain: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces
+\\testDemo\\set02\\traces1_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\
+traces3_0': 1, 'traces\\testDemo\\set02\\traces3_4': 1}
+Failtest : {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\
+traces4_3': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces2_4': 1, 'traces\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces
+\\testDemo\\set02\\traces3_2': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces1_3': 1, 'traces\\testDemo\\set02\\traces2_0': 1, 'traces\\testDemo\\set02\\traces2_3': 1, 'traces
+\\testDemo\\set02\\traces4_0': 1, 'traces\\testDemo\\set02\\traces2_1': 1, 'traces\\testDemo\\set02\\traces2_2': 1, 'traces\\testDemo\\set02\\
+traces1_1': 1, 'traces\\testDemo\\set02\\traces7_8': 1, 'traces\\testDemo\\set02\\traces6_4': 1, 'traces\\testDemo\\set02\\traces4_4': 1, 'tra
+ces\\testDemo\\set02\\traces6_6': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces5_0': 1, 'traces
+\\testDemo\\set02\\traces6_5': 1}
+
+==================================================================
+Ex08
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1560
+Testing  : 22
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (72.72727272727273, 0.27272727272727271, 0.09765625)
+Precision: 0.5
+Recall   : 0.5
+Failtrain: {'traces\\testDemo\\set02\\traces2_9': 1, 'traces\\testDemo\\set02\\traces2_5': 1, 'traces\\testDemo\\set02\\traces1_2': 1, 'traces
+\\testDemo\\set02\\traces4_3': 1, 'traces\\testDemo\\set02\\traces6_5': 1, 'traces\\testDemo\\set02\\traces3_0': 1, 'traces\\testDemo\\set02\\
+traces2_4': 1, 'traces\\testDemo\\set02\\traces2_6': 1, 'traces\\testDemo\\set02\\traces4_2': 1, 'traces\\testDemo\\set02\\traces4_1': 1, 'tra
+ces\\testDemo\\set02\\traces3_4': 1, 'traces\\testDemo\\set02\\traces6_8': 1}
+Failtest : {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces3_2': 1, 'traces
+\\testDemo\\set02\\traces5_0': 1, 'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces3_1': 1}
+TP_traces: {'traces\\testDemo\\set02\\traces1_0': 1, 'traces\\testDemo\\set02\\traces3_1': 1, 'traces\\testDemo\\set02\\traces3_2': 1}
+FP_traces: {'traces\\testDemo\\set02\\traces7_2': 1, 'traces\\testDemo\\set02\\traces3_3': 1, 'traces\\testDemo\\set02\\traces4_4': 1}
+FN_traces: {'traces\\testDemo\\set02\\traces5_1': 1, 'traces\\testDemo\\set02\\traces4_7': 1, 'traces\\testDemo\\set02\\traces5_0': 1}
+
+==================================================================
+EX09
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1400
+Testing  : 26
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (73.07692307692308, 0.26923076923076922, 0.081203007518796999)
+Precision: 0.5
+Recall   : 0.42857142857142855
+Failtrain: {'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces2_5': 1, 'traces/testDemo/set02/traces3_0': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces4_3': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_3': 1}
+FP_traces: {'traces/testDemo/set02/traces2_2': 1, 'traces/testDemo/set02/traces6_6': 1, 'traces/testDemo/set02/traces4_4': 1}
+FN_traces: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_7': 1}
+==================================================================
+EX10
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1360
+Testing  : 27
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (74.07407407407408, 0.25925925925925924, 0.14285714285714285)
+Precision: 0.6666666666666666
+Recall   : 0.4444444444444444
+Failtrain: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces4_3': 1}
+Failtest : {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces2_5': 1}
+FP_traces: {'traces/testDemo/set02/traces1_1': 1, 'traces/testDemo/set02/traces1_3': 1}
+FN_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces6_5': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1600
+Testing  : 21
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.063581730769230765)
+Precision: 0.6
+Recall   : 0.375
+Failtrain: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces5_0': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_5': 1, 'traces/testDemo/set02/traces4_2': 1}
+FP_traces: {'traces/testDemo/set02/traces3_3': 1, 'traces/testDemo/set02/traces5_3': 1}
+FN_traces: {'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces3_2': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1640
+Testing  : 20
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (70.0, 0.29999999999999999, 0.12698412698412698)
+Precision: 0.6666666666666666
+Recall   : 0.5
+Failtrain: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_3': 1}
+TP_traces: {'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces3_2': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces4_4': 1}
+FN_traces: {'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces6_8': 1}
+==================================================================
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1520
+Testing  : 23
+Params   : -c 512.0 -g 0.0001220703125 -b 1
+Accuracy : (65.21739130434783, 0.34782608695652173, 0.0096116878123798533)
+Precision: 0.3333333333333333
+Recall   : 0.3333333333333333
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_3': 1}
+TP_traces: {'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1}
+FP_traces: {'traces/testDemo/set02/traces6_4': 1, 'traces/testDemo/set02/traces3_3': 1, 'traces/testDemo/set02/traces6_6': 1, 'traces/testDemo/set02/traces2_3': 1}
+FN_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_3': 1}
+==================================================================
+Ex12
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1720
+Testing  : 18
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.072127872127872125)
+Precision: 0.6
+Recall   : 0.42857142857142855
+Failtrain: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_3': 1}
+Failtest : {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces2_5': 1}
+FP_traces: {'traces/testDemo/set02/traces2_2': 1, 'traces/testDemo/set02/traces4_4': 1}
+FN_traces: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=40
+Random   : 0.6
+Training : 1520
+Testing  : 23
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (60.869565217391305, 0.39130434782608697, 0.012574404761904762)
+Precision: 0.42857142857142855
+Recall   : 0.375
+Failtrain: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_3': 1}
+TP_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_2': 1}
+FP_traces: {'traces/testDemo/set02/traces4_9': 1, 'traces/testDemo/set02/traces6_0': 1, 'traces/testDemo/set02/traces3_3': 1, 'traces/testDemo/set02/traces7_2': 1}
+FN_traces: {'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces4_7': 1}
+==================================================================
+Ex15
+Duplicate: *=1
+Duplicate: Train *=30
+Random   : 0.6
+Training : 1230
+Testing  : 20
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (75.0, 0.25, 0.18890633176347463)
+Precision: 0.5714285714285714
+Recall   : 0.6666666666666666
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/tra
+ces4_3': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/tra
+ces4_7': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/tra
+ces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/tra
+ces4_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces3_1': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces4_2': 1, 'traces/testDemo/set02/traces3_2': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces4_5': 1, 'traces/testDemo/set02/tra
+ces4_4': 1}
+FN_traces: {'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_1': 1}
+
+
+==================================================================
+Ex13
+Duplicate: *=1
+Duplicate: Train *=30
+Random   : 0.2
+Training : 570
+Testing  : 42
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (64.28571428571429, 0.35714285714285715, 0.062561094819159335)
+Precision: 0.3888888888888889
+Recall   : 0.6363636363636364
+Failtrain: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces4_3': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces6_5':1, 'traces/testDemo/set02/traces2_5': 1, 'traces/testDemo/set02/traces6_8': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces2_5': 1}
+FP_traces: {'traces/testDemo/set02/traces7_4': 1, 'traces/testDemo/set02/traces5_8': 1, 'traces/testDemo/set02/traces1_1': 1, 'traces/testDemo/set02/traces4_4': 1, 'traces/testDemo/set02/traces1_3': 1, 'traces/testDemo/set02/traces5_9': 1, 'traces/testDemo/set02/traces5_3': 1, 'traces/testDemo/set02/traces6_0': 1, 'traces/testDemo/set02/traces4_0':1, 'traces/testDemo/set02/traces2_8': 1, 'traces/testDemo/set02/traces4_6': 1}
+FN_traces: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1}
+==================================================================
+Ex14
+Duplicate: *=1
+Duplicate: Train *=10
+Random   : 0.2
+Training : 210
+Testing  : 40
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (60.0, 0.40000000000000002, 0.02536414045365452)
+Precision: 0.4117647058823529
+Recall   : 0.5384615384615384
+Failtrain: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces2_5': 1, 'traces/testDemo/set02/traces4_2': 1}
+Failtest : {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4':1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1,'traces/testDemo/set02/traces4_1': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces1_1': 1, 'traces/testDemo/set02/traces4_4': 1, 'traces/testDemo/set02/traces7_2': 1, 'traces/testDemo/set02/traces2_0': 1, 'traces/testDemo/set02/traces6_4': 1, 'traces/testDemo/set02/traces6_3': 1, 'traces/testDemo/set02/traces6_7': 1, 'traces/testDemo/set02/traces6_1':1, 'traces/testDemo/set02/traces5_3': 1}
+FN_traces: {'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces6_8': 1}
+==================================================================
+Duplicate: Train *=20
+Random   : 0.2
+Training : 180
+Testing  : 52
+Params   : -c 2.0 -g 0.0078125 -b 1
+Accuracy : (63.46153846153846, 0.36538461538461536, 0.0600714680253858)
+Precision: 0.391304347826087
+Recall   : 0.6428571428571429
+Failtrain: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces4_2': 1}
+Failtest : {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/traces6_8': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces6_4': 1, 'traces/testDemo/set02/traces6_2': 1, 'traces/testDemo/set02/traces7_8': 1, 'traces/testDemo/set02/traces2_0': 1, 'traces/testDemo/set02/traces4_9': 1, 'traces/testDemo/set02/traces6_3': 1, 'traces/testDemo/set02/traces6_6': 1, 'traces/testDemo/set02/traces2_3': 1, 'traces/testDemo/set02/traces3_3': 1, 'traces/testDemo/set02/traces7_2': 1, 'traces/testDemo/set02/traces1_1': 1, 'traces/testDemo/set02/traces5_4': 1, 'traces/testDemo/set02/traces4_6': 1}
+FN_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces2_5': 1}
+
+
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=20
+Random   : 0.8
+Training : 1100
+Testing  : 6
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.20000000000000001)
+Precision: 1.0
+Recall   : 0.3333333333333333
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/tra
+ces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/tra
+ces4_3': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/tra
+ces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/tra
+ces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/tra
+ces3_1': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1}
+FP_traces: {}
+FN_traces: {'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_1': 1}
+==================================================================
+Ex16
+Duplicate: *=1
+Duplicate: Train *=20
+Random   : 0.8
+Training : 1100
+Testing  : 6
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.20000000000000001)
+Precision: 1.0
+Recall   : 0.3333333333333333
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/tra
+ces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/tra
+ces4_3': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/tra
+ces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_1': 1, 'traces/testDemo/set02/tra
+ces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/tra
+ces3_1': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1}
+FP_traces: {}
+FN_traces: {'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_1': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=30
+Random   : 0.8
+Training : 1440
+Testing  : 13
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (61.53846153846154, 0.38461538461538464, 0.025000000000000001)
+Precision: 0.5
+Recall   : 0.4
+Failtrain: {'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/tra
+ces3_2': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/tra
+ces4_7': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/tra
+ces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces2_9': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/traces5_1': 1}
+TP_traces: {'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_2': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces1_1': 1}
+FN_traces: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/tra
+ces2_9': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=20
+Random   : 0.8
+Training : 880
+Testing  : 17
+Params   : -c 8.0 -g 0.0078125 -b 1
+Accuracy : (70.58823529411765, 0.29411764705882354, 0.062820512820512819)
+Precision: 0.4
+Recall   : 0.5
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/tra
+ces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/tra
+ces4_3': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/tra
+ces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/traces4_1': 1}
+Failtest : {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/tra
+ces3_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/traces2_5': 1}
+FP_traces: {'traces/testDemo/set02/traces4_9': 1, 'traces/testDemo/set02/traces6_0': 1, 'traces/testDemo/set02/tra
+ces6_1': 1}
+FN_traces: {'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_1': 1}
+==================================================================
+Ex17
+Duplicate: *=1
+Duplicate: Train *=10
+Random   : 0.8
+Training : 520
+Testing  : 9
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (77.77777777777777, 0.22222222222222221, 0.12755102040816327)
+Precision: 0.5
+Recall   : 0.5
+Failtrain: {'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/tra
+ces4_2': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/tra
+ces3_1': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/traces2_4': 1, 'traces/testDemo/set02/tra
+ces1_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/tra
+ces4_7': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces6_5': 1}
+TP_traces: {'traces/testDemo/set02/traces1_2': 1}
+FP_traces: {'traces/testDemo/set02/traces1_3': 1}
+FN_traces: {'traces/testDemo/set02/traces6_5': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=10
+Random   : 0.8
+Training : 450
+Testing  : 16
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (68.75, 0.3125, 0.054545454545454543)
+Precision: 0.5
+Recall   : 0.4
+Failtrain: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/tra
+ces4_2': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/traces4_3': 1, 'traces/testDemo/set02/tra
+ces2_4': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/tra
+ces3_1': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces4_1': 1, 'traces/testDemo/set02/traces2_5': 1}
+Failtest : {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/tra
+ces5_0': 1, 'traces/testDemo/set02/traces4_7': 1, 'traces/testDemo/set02/traces6_8': 1}
+TP_traces: {'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces4_7': 1}
+FP_traces: {'traces/testDemo/set02/traces4_9': 1, 'traces/testDemo/set02/traces2_1': 1}
+FN_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/tra
+ces6_8': 1}
+==================================================================
+Duplicate: *=1
+Duplicate: Train *=10
+Random   : 0.8
+Training : 460
+Testing  : 15
+Params   : -c 32.0 -g 0.0078125 -b 1
+Accuracy : (66.66666666666667, 0.33333333333333331, 0.083333333333333329)
+Precision: 0.6
+Recall   : 0.5
+Failtrain: {'traces/testDemo/set02/traces6_5': 1, 'traces/testDemo/set02/traces2_9': 1, 'traces/testDemo/set02/tra
+ces4_3': 1, 'traces/testDemo/set02/traces3_1': 1, 'traces/testDemo/set02/traces6_8': 1, 'traces/testDemo/set02/tra
+ces2_4': 1, 'traces/testDemo/set02/traces5_0': 1, 'traces/testDemo/set02/traces3_4': 1, 'traces/testDemo/set02/tra
+ces4_7': 1, 'traces/testDemo/set02/traces1_2': 1, 'traces/testDemo/set02/traces2_6': 1, 'traces/testDemo/set02/tra
+ces4_1': 1}
+Failtest : {'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces4_2': 1, 'traces/testDemo/set02/tra
+ces5_1': 1, 'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces3_2': 1, 'traces/testDemo/set02/tra
+ces2_5': 1}
+TP_traces: {'traces/testDemo/set02/traces1_0': 1, 'traces/testDemo/set02/traces2_5': 1, 'traces/testDemo/set02/tra
+ces3_2': 1}
+FP_traces: {'traces/testDemo/set02/traces2_1': 1, 'traces/testDemo/set02/traces3_5': 1}
+FN_traces: {'traces/testDemo/set02/traces3_0': 1, 'traces/testDemo/set02/traces5_1': 1, 'traces/testDemo/set02/tra
+ces4_2': 1}

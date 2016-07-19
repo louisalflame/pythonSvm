@@ -80,8 +80,9 @@ class WebTraceReader(TraceReader):
             traceElement = TraceElement()
             try:
                 traceElement.set_label( TraceLabel.parse( trace['label'] ) )
-            except:
-                pass
+            except Exception as e:
+                traceElement.set_label( TraceLabel.UNLABELED )
+                print (e)
 
             for index, edge in enumerate( trace['edges'] ):
                 traceElement.add_edge( self.automata.get_edge_byId( str(edge['id']) ), index )
@@ -92,30 +93,44 @@ class WebTraceReader(TraceReader):
     def parseDomLabel(self):
         LabelDictionary.parseLabel()
         labelDiction = LabelDictionary.getLabelDictionary()
+        log = open('log.txt','w')
+        for label in labelDiction['screen']:
+            log.write( str( label.getLabel() )+'\t\t ; '+str(label.getSynonyms())+'\t\t ;'+str(label.getTags()) +'\n')
+        for label in labelDiction['action']:
+            log.write( str( label.getLabel() )+'\t\t ; '+str(label.getSynonyms())+'\t\t ;'+str(label.getTags()) +'\n')
 
         for state in self.automata.get_states():
-            dom = self.getStateDom( state.get_xml() )
+            dom = self.getStateDom( state.get_xml() ).lower()
 
             for label in labelDiction['screen']:
-                check = True
-                for key in label.getLabel().split('_'):
-                    if key not in dom:
-                        check = False
+                for keywords in ( [ label.getLabel() ] + label.getSynonyms() ):
+                    check = True
+                    for key in keywords.split('_'):
+                        if key.lower() not in dom:
+                            check = False
+                            break
+                    if check:    
+                        state.add_keyword('label', label.getLabel())
+                        log.write(keywords+' in dom '+state.get_id() +'\n')
+                        log.write( state.get_id()+' : '+str(state.keywords)+'\n' )
                         break
-                if check:    
-                    state.add_keyword('label', label.getLabel())
 
         for edge in self.automata.get_edges():
-            symbol = edge.get_symbol()
+            symbol = edge.get_symbol().lower()
 
             for label in labelDiction['action']:
-                check = True
-                for key in label.getLabel().split('_'):
-                    if key not in symbol:
-                        check = False
+                for keywords in ( [ label.getLabel() ] + label.getSynonyms() ):
+                    check = True
+                    for key in keywords.split('_'):
+                        if key.lower() not in symbol:
+                            check = False
+                            break
+                    if check:    
+                        edge.add_keyword('label', label.getLabel())
                         break
-                if check:    
-                    edge.add_keyword('label', label.getLabel())
+
+        for state in self.automata.get_states():
+            log.write( state.get_id()+' : '+str(state.keywords)+'\n' )
 
     def getStateDom(self, baseDomFile):
         dom = ""

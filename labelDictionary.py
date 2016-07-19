@@ -1,9 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os, json, codecs
+import os, json, codecs, sys
 
 from tracePath import Path
+
+sys.path.insert(0, Path.TaaDSrc)
+from CommonSenseServer import CommonSenseAPI
 
 class LabelDictionary:
     _labels_action = []
@@ -13,57 +16,33 @@ class LabelDictionary:
     def parseLabel(cls):
         cls._labels_action = []
         cls._labels_screen = []
-        for dirName in [ 'file_manager', 'notepad', 'nothing_demo', None ]:
-            cls.parseLabelDir( dirName )
+        labelAPI = CommonSenseAPI()
+        for APPclass in labelAPI.getTotalClass()['totalClass']:
+            actionLabels = labelAPI.getActionLables( APPclass['id'] )
+            for i, actionLabel in enumerate( actionLabels['labels'] ):
+                l = Label()
+                l.setLabel( actionLabel['label'] )
+                l.setInfo( actionLabel['description'] )
+                l.setId( actionLabel['id'] )
+                l.addTag( APPclass['className'] )
 
-    @classmethod
-    def parseLabelDir(cls, dirName=None):
-        if not dirName:
-            labelPath = os.path.join( Path.Label, 'labels_action' )
-            if os.path.exists( labelPath ):
-                with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
-                    lines = f.readlines()
-                    cls.parseLabelsAction(lines)
+                for syn in labelAPI.getActionSynonym( actionLabel['id'] )['synonym']:
+                    l.addSynonym(syn)
 
-            labelPath = os.path.join( Path.Label, 'labels_screen' )
-            if os.path.exists( labelPath ):
-                with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
-                    lines = f.readlines()
-                    cls.parseLabelsScreen(lines)
-        else:
-            labelPath = os.path.join( Path.Label, dirName, 'labels_action' )
-            if os.path.exists( labelPath ):
-                with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
-                    lines = f.readlines()
-                    cls.parseLabelsAction(lines)
+                cls._labels_action.append( l )
 
-            labelPath = os.path.join( Path.Label, dirName, 'labels_screen' )
-            if os.path.exists( labelPath ):
-                with codecs.open( labelPath, 'r', encoding='utf-8' ) as f:
-                    lines = f.readlines()
-                    cls.parseLabelsScreen(lines)
+            screenLabels = labelAPI.getScreenLabels( APPclass['id'] )
+            for i, screenLabel in enumerate( screenLabels['labels'] ):
+                l = Label()
+                l.setLabel( screenLabel['label'] )
+                l.setInfo( screenLabel['description'] )
+                l.setId( screenLabel['id'] )
+                l.addTag( APPclass['className'] )
 
-    @classmethod
-    def parseLabelsAction(cls, lines):
-        for i, line in enumerate(lines):
-            if not line.startswith('#'):
-                key = ''.join( line.split() )
-                info = ''.join( lines[i+1][1:].split() )
-                label = Label()
-                label.setLabel(key)
-                label.setInfo(info)
-                cls._labels_action.append( label )
+                for syn in labelAPI.getScreenSynonym( screenLabel['id'] )['synonym']:
+                    l.addSynonym(syn)
 
-    @classmethod
-    def parseLabelsScreen(cls, lines):
-        for i, line in enumerate(lines):
-            if not line.startswith('#'):
-                key = ''.join( line.split() )
-                info = ''.join( lines[i+1][1:].split() )
-                label = Label()
-                label.setLabel(key)
-                label.setInfo(info)
-                cls._labels_screen.append( label )
+                cls._labels_screen.append( l )
 
     @classmethod
     def getLabelDictionary(cls):
@@ -77,10 +56,11 @@ class LabelDictionary:
 
 class Label:
     def __init__(self):
-        self._label   = ""
+        self._label    = ""
         self._synonyms = []
-        self._tags    = []
-        self._info    = ""
+        self._tags     = []
+        self._info     = ""
+        self._id       = None 
 
     def setLabel(self, label):
         self._label = label
@@ -94,6 +74,9 @@ class Label:
     def setInfo(self, info):
         self._info = info
 
+    def setId(self, Id):
+        self._id = Id
+
     def getLabel(self):
         return self._label
 
@@ -105,3 +88,6 @@ class Label:
 
     def getInfo(self):
         return self._info
+
+    def getId(self):
+        return self._id

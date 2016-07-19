@@ -87,9 +87,47 @@ WebTraceCollector will click the wrong elements with nothing happens and stay at
 			18 &　PChome Online & Search engine & http://pchome.com.tw/ \\ \hline
 			19 & 淘寶　& Commerce & https://world.taobao.com/ \\ \hline
 			20 & Life生活網　& Blog & http://www.life.com.tw/ \\ \hline
+			21 & 104人力銀行 & Survice & http://104.com.tw/ \\ \hline
+			22 & 騰訊網 　& Search Engine & http://www.qq.com/ \\ \hline
+			23 & 新浪微博　& Community platform & http://www.weibo.com/login.php \\ \hline
+			24 & 自由時報電子報　& News & http://www.ltn.com.tw/ \\ \hline
+			25 & 維基百科　& Dictionary & https://www.wikipedia.org/ \\ \hline
 		\end{tabular}
 		\caption{ The 20 popular websites. }
 		\label{popularWebs}
+	\end{center}
+\end{table}
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | l | l | l | }
+			\hline
+			26 & 博客來　& Commerce & http://www.books.com.tw/ \\ \hline
+			27 & 今日新聞網　& News & http://www.nownews.com/ \\ \hline
+			28 & 商業周刊　& News & http://www.businessweekly.com.tw/ \\ \hline
+			29 & 隨意窩Xuite　& Blog & http://xuite.net/ \\ \hline
+			30 & 1111人力銀行　& Survice & http://www.1111.com.tw/ \\ \hline
+			31 & Flickr　& Community platform & https://www.flickr.com/ \\ \hline
+			32 & Blogger　& Blog & http://www.blogger.com/ \\ \hline
+			33 & 批踢踢實業坊　& Community platform & https://www.ptt.cc/index.html \\ \hline
+			34 & FC2　& Survice & http://fc2.com/ \\ \hline
+			35 & 卡卡洛普　& Survice & http://www.gamme.com.tw/ \\ \hline
+			36 & PChome商店街　& Commerce & http://www.pcstore.com.tw/ \\ \hline
+			37 & Giga Circle　& Survice & http://tw.gigacircle.com/ \\ \hline
+			38 & 鉅亨網　& News & http://www.cnyes.com/ \\ \hline
+			39 & momo購物網　& Commerce & http://www.momoshop.com.tw/main/Main.jsp \\ \hline
+			40 & 蕃薯藤　& Search engine & http://www.yam.com/ \\ \hline
+			41 & OB嚴選　& Commerce & http://www.obdesign.com.tw/ \\ \hline
+			42 & GOMAJI　& Commerce & http://www.gomaji.com/Taipei \\ \hline
+			43 & 愛評網　& Survice & http://www.ipeen.com.tw/ \\ \hline
+			44 & 123KUBO酷播　& Entertainment & http://www.123kubo.com/ \\ \hline
+			45 & 591租屋網　& Commerce & https://www.591.com.tw/ \\ \hline
+			46 & TEEPR趣味新聞　& News & http://www.teepr.com/ \\ \hline
+			47 & KKBOX　& Entertainment & https://www.kkbox.com/tw/tc/index.html \\ \hline
+			48 & msn台灣　& Search Engine & http://www.msn.com/zh-tw/ \\ \hline
+			49 & 微軟 & Survice & https://www.microsoft.com/zh-tw/ \\ \hline
+			50 & T客邦　& Blog & http://www.techbang.com/ \\ \hline
+		\end{tabular}
 	\end{center}
 \end{table}
 
@@ -127,7 +165,6 @@ Although we can add as more examples and rules in the database as we possible,
 it is still impossible to handle all kinds of input fields by only few kinds of examples.
 In future work, we can develop to find out the values by other method such as maching learning.
 
-
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{ | l | l | }
@@ -145,12 +182,130 @@ In future work, we can develop to find out the values by other method such as ma
 		\label{DynamicWebs}
 	\end{center}
 \end{table}
+
 %針對5個有inputs的網站做traces
 %有的網站可以通過 有的只能一次(註冊) 有的偶爾可以(登入) 有的不行
 
+\clearpage
 
-%\section{Prediction}
+\section{Prediction}
 
-%對同種類的網站 APP 和WEB 做traces
-%測出其中有BUG
+In this experiment, we focus on the ability of automated predicting passed traces and failed traces.
+We select two web applications to use in our study and analysis their results.
+The first web application is a small website about restraurant with simple buttons, 
+and the second web application is a more complex website about APP store.
+Before comparing the results of predicting traces between different applications,
+we should collect the passed traces and failed traces from those web applications first.
+Thus, we generate the random traces automatically by the tool WebTraceCollector introduced above
+and select certain buttons and screens as the failed traits.
 
+The traces with the specific buttons or screens will be labeled as failed traces and the other traces will be labeled as passed traces.
+The detailed information of traces collected from the two web applications is shown in Table \ref{WebtracesProporiton} .
+We can see that the percentage of failed traces is low.
+The reason is that if the bugs are not occur at the main functionf of the applications,
+there will be only a few traces triggering the bugs.
+
+After collecting traces, the traces should be divided into training set for training SVM model and testing set.
+We randomly devide the traces into two sets,
+and repeat the experiments with different proportion of training set.
+The result of prediction traces of application 1 is shown in Table \ref{PredictResult}.
+Notice that the accuracy of prediction may not be better than just predicting every traces to pass,
+because the number of failed trace is smaller than the number of passed trace.
+
+Even though the prediction can not enhance the accuracy,
+it still can help people finding failed traces.
+The precision is the number of traces predicted failed that actually failed devided by the number of traces predicted as failed, 
+which means the accuracy of predicting failed trace.
+With the higher precision, it will be more convinced the traces predicted to be failed is actually failed.
+If the precision is high enough, it can reduce human effort by predicting the failed traces with the convinced model.
+
+The recall is the number of traces predicted failed that actually failed devided by the number of failed traces,
+which means the ability of finding the failed traces in all traces.
+With the higher recall, it will be more convinced that the system can find all the failed traces.
+If the recall is high enough, it can reduce human effort by finding the failed traces with the convinced model.
+
+We can obeserve that the accuracy of prediction in application 1 is about 0.65 ~ 0.75.
+The average of precision is about 0.5 and the average of recall is about 0.45 but larger range.
+From the result, we can say that the predictive model can find almost half of the failed traces in testing set,
+and the half of the predicted traces are actually failed.
+
+The result of prediction traces of application 2 is shown in Table \ref{PredictResult2}.
+We can obeserve that the accuracy of prediction in application 1 is about 0.75 ~ 0.85.
+The average of precision is about 0.5 and the average of recall is about 0.45 but larger range.
+However, there are models that have very low precision and recall in some iterations.
+It seems that sometimes SVM can not build a reliable model from training.
+Because the web application 2 is more complex than application 1 
+and the feature keywords is not precise enough to present the difference between passed traces and failed traces.
+It will be hard to learn the predictive model of application 2.
+The proportion of negative labels is another problem.
+Because the amount of failed traces of application 2 is less than the failed traces of application 1,
+The method of deviding traces into training set and testing set has a greater influence on learning model.
+If we can not find the most important trace for training,
+it will be difficult to learn the model and result in poor outcome.
+
+Although the results of automated prediction shown in the above experiments is not good enough to replace all human effort,
+it is still a feasible method for reducing the cost of web application testing.
+In order to increase the accuracy of automated predicting,
+the future work we need to do is to collect more keywords precisely and find other method of deviding traces into training set.
+We can select the traces to trainging set depending on which trace can maximize the feature coverage or which trace has the least confident.
+We can also use other machine learning algorithm, such as deep learning, to construct the predictice model.
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | c | c | c | c | }%對同種類的網站 APP 和WEB 做traces
+			\hline%測出其中有BUG
+			Web Application & Total traces & Pass traces & Fail traces &  Negative Proportion \\ \hline
+			Restraurant & 122 & 86 & 36 & 29.5\% \\ \hline
+			APP Store & 94 & 84 & 10 & 10.63\% \\ \hline
+		\end{tabular}
+		\caption{ The number of passed traces and failed traces. }
+		\label{WebtracesProporiton}
+	\end{center}
+\end{table}
+
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | c | c | c | c | }
+			\hline
+			Application 1 & Training & Accuracy & Precision & Recall \\ \hline
+			Repeat 1 & 0.4 & 0.7436 & 0.5  & 0.4  \\ \hline
+			Repeat 2 & 0.4 & 0.75   & 0.64 & 0.5  \\ \hline
+			Repeat 3 & 0.4 & 0.6486 & 0.5  & 0.46 \\ \hline
+			Repeat 4 & 0.4 & 0.7333 & 0.53 & 0.69 \\ \hline
+			Repeat 5 & 0.4 & 0.7209 & 0.63 & 0.46 \\ \hline
+			Repeat 6 & 0.4 & 0.6667 & 0.45 & 0.45 \\ \hline
+			Repeat 7 & 0.4 & 0.6154 & 0.35 & 0.6  \\ \hline
+			Repeat 8 & 0.6 & 0.7272 & 0.5  & 0.5  \\ \hline
+			Repeat 9 & 0.6 & 0.7307 & 0.5  & 0.43 \\ \hline
+			Repeat 10& 0.6 & 0.6667 & 0.6  & 0.43 \\ \hline
+			Repeat 11& 0.6 & 0.6087 & 0.43 & 0.38 \\ \hline
+			Repeat 12& 0.6 & 0.7407 & 0.67 & 0.45 \\ \hline
+			Repeat 13& 0.6 & 0.750  & 0.57 & 0.67 \\ \hline
+			Repeat 14& 0.6 & 0.70   & 0.67 & 0.5  \\ \hline
+		\end{tabular}
+		\caption{ The prediction of Application 1. }
+		\label{PredictResult}
+	\end{center}
+\end{table}
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{ | l | c | c | c | c | }
+			\hline
+			Application 1 & Training & Accuracy & Precision & Recall \\ \hline
+			Repeat 1 & 0.4 & 0.833  & 0.4  & 0.66  \\ \hline
+			Repeat 2 & 0.4 & 0.891  & 1.0  & 0.33  \\ \hline
+			Repeat 3 & 0.4 & 0.857  & 0.5  & 0.33  \\ \hline
+			Repeat 4 & 0.4 & 0.920  & 1.0  & 0.33  \\ \hline
+			Repeat 5 & 0.4 & 0.8787 & 0.5 & 0.25   \\ \hline
+			Repeat 6 & 0.6 & 0.85   & 0.3  & 0.5   \\ \hline
+			Repeat 7 & 0.6 & 0.88   & 0.4  & 1.0   \\ \hline
+			Repeat 8 & 0.6 & 0.666  & 0.125& 0.5   \\ \hline
+			Repeat 9 & 0.6 & 0.8    & 0.2  & 1.0   \\ \hline
+			Repeat 10& 0.6 & 0.6363 & 0.1  & 1.0   \\ \hline
+		\end{tabular}
+		\caption{ The prediction of Application 2. }
+		\label{PredictResult2}
+	\end{center}
+\end{table}

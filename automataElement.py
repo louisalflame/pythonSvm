@@ -304,9 +304,9 @@ class EdgeElement:
     def get_symbol(self):
         symbolFrom = self.stateFrom.get_symbol()
         symbolTo   = self.stateTo.get_symbol()
-        symbol = str(symbolFrom)+'=>'+str(symbolTo)+'ID:'+str(self.id)
+        symbol = str(symbolFrom)+'=>'+str(symbolTo)
 
-        for w in [ 'name', 'xpath', 'label' ]:
+        for w in [ 'id', 'name', 'xpath', 'label' ]:
             if w in self.keywords:
                 for v in self.keywords[w]:
                     symbol += str( v )
@@ -314,9 +314,9 @@ class EdgeElement:
         return symbol
 
 class TraceLabel:
-    UNLABELED = 0
-    PASS      = 1
-    UNKNOWN   = 2
+    PASS      = 0
+    FAIL      = 1
+    UNLABELED = 2
     CRASH     = 3
     WRONG     = 4
 
