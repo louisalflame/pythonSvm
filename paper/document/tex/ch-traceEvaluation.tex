@@ -78,7 +78,6 @@ we need to extract the feature by string comparing between keywords and it's syn
 
 With the keyword dictionary, we can extract the features from the traces of web applications and mobile applications
 and generate the feature vectors.
-The method of extracting feature is shown in Fig \ref{parseFeature}.
 The vector is consist of integer numbers, which means the times the specific keyword appearing in the trace,
 and the position of keywords in every vectors are stable.
 A partial of feature vectors is shown in Fig \ref{featureVectors}.
@@ -92,15 +91,6 @@ If we can not precisely represent the incorrect behavior or failure in the trace
 It will be hard to successfully extract the feature from traces.
 However, the work of collecting keywords is a heavy work and can not be quickly complete.
 We need constantly updating the keyword dictionary to increase the precision of keywords.
-
-\begin{figure}[ht]
-	\graphicspath{{pic/}}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{parseFeature.png}
-	\end{center}
-	\caption{ Extract the keyword feature of a trace. }
-	\label{parseFeature}
-\end{figure}
 
 \begin{figure}[ht]
 	\graphicspath{{pic/}}

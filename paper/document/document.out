@@ -14,21 +14,23 @@
 \BOOKMARK [1][-]{section.3.3}{Support Vector Machine}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{WebTraceCollector}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Framework}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Automata}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Webpage identification}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.3}{Event}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{normalization}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.5}{Algorithm}{chapter.4}% 20
-\BOOKMARK [2][-]{subsection.4.5.1}{Monkey}{section.4.5}% 21
-\BOOKMARK [2][-]{subsection.4.5.2}{Depth First Search}{section.4.5}% 22
-\BOOKMARK [0][-]{chapter.5}{Trace Evaluation}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Procedure}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{Feature vector}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.3}{Sampling traces}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Trace collection}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.2}{Dynamic webpages}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.3}{Prediction}{chapter.6}% 30
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 31
-\BOOKMARK [1][-]{section.7.1}{Summary}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.2}{Limination}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.3}{Future work}{chapter.7}% 34
+\BOOKMARK [1][-]{section.4.4}{Suggested value}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.5}{Normalization}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.6}{Automata and traces}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.7}{Trace collection}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.7.1}{Monkey}{section.4.7}% 23
+\BOOKMARK [2][-]{subsection.4.7.2}{Depth First Search}{section.4.7}% 24
+\BOOKMARK [0][-]{chapter.5}{Trace Evaluation}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Procedure}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Feature vector}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Sampling traces}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Trace collection}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Dynamic webpages}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{Prediction}{chapter.6}% 32
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 33
+\BOOKMARK [1][-]{section.7.1}{Summary}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.2}{Limination}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.3}{Future work}{chapter.7}% 36

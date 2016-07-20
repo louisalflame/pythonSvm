@@ -32,38 +32,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Framework}{10}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Automata}{12}{section.4.2}
+\contentsline {section}{\numberline {4.2}Webpage identification}{12}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Event}{14}{section.4.3}
+\contentsline {section}{\numberline {4.3}Event}{12}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}normalization}{15}{section.4.4}
+\contentsline {section}{\numberline {4.4}Suggested value}{15}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Algorithm}{16}{section.4.5}
+\contentsline {section}{\numberline {4.5}Normalization}{16}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Monkey}{16}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Automata and traces}{17}{section.4.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Depth First Search}{16}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.7}Trace collection}{19}{section.4.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Trace Evaluation}{18}{chapter.5}
+\contentsline {subsection}{\numberline {4.7.1}Monkey}{19}{subsection.4.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Procedure}{18}{section.5.1}
+\contentsline {subsection}{\numberline {4.7.2}Depth First Search}{19}{subsection.4.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Feature vector}{19}{section.5.2}
+\contentsline {chapter}{\numberline {5}Trace Evaluation}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Sampling traces}{22}{section.5.3}
+\contentsline {section}{\numberline {5.1}Procedure}{21}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{23}{chapter.6}
+\contentsline {section}{\numberline {5.2}Feature vector}{22}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Trace collection}{24}{section.6.1}
+\contentsline {section}{\numberline {5.3}Sampling traces}{24}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Dynamic webpages}{27}{section.6.2}
+\contentsline {chapter}{\numberline {6}Experiments}{25}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Prediction}{29}{section.6.3}
+\contentsline {section}{\numberline {6.1}Trace collection}{26}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}
+\contentsline {section}{\numberline {6.2}Dynamic webpages}{29}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Summary}{32}{section.7.1}
+\contentsline {section}{\numberline {6.3}Prediction}{31}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Limination}{32}{section.7.2}
+\contentsline {chapter}{\numberline {7}Conclusion}{34}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Future work}{33}{section.7.3}
+\contentsline {section}{\numberline {7.1}Summary}{34}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Limination}{34}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Future work}{35}{section.7.3}

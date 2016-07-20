@@ -40,7 +40,7 @@ and we use this model to predict the traces of the applications.
 
 \section{Trace collection}
 
-In 20 popular applications\cite{popularWebs} that shown in Table \ref{popularWebs},
+In 50 popular applications\cite{popularWebs} that shown in Table \ref{popularWebs},
 there are forums, news, community platforms, games and blogs.
 We generate monkey traces by randomly click buttons and the length of traces is about 5.
 The reason that we do not completely explore the whole website is most of the scale of websites are too big.
@@ -49,7 +49,7 @@ We just want to check the DOM tree is constructed correctly,
 so we make short traces to focus on checking the ability of clicking correct clickable elements.
 
 The result of the experiments is shown in Table[].
-There are 4 web applications that have serious problem on testing,
+There are few web applications that have serious problem on testing,
 and most of web applications can be successfully explored with little defects.
 There are two unkown fail happened, however it can work after restart the test.
 The problems of the fail applications are 

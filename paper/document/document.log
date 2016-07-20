@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  20 JUL 2016 02:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  21 JUL 2016 02:39
 entering extended mode
 **./document.tex
 (document.tex
@@ -2277,14 +2277,14 @@ Chapter 2.
 
  (tex/ch-preliminaries.tex
 Chapter 3.
-<pic/SpecElicitorInterface.png, id=432, 569.12625pt x 436.63126pt>
+<pic/SpecElicitorInterface.png, id=438, 569.12625pt x 436.63126pt>
 File: pic/SpecElicitorInterface.png Graphic file (type png)
 
 <use pic/SpecElicitorInterface.png>
 Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 33.
 (pdftex.def)             Requested size: 341.43437pt x 261.96078pt.
 
-<pic/SpecElicitorTraces.png, id=433, 685.05937pt x 593.96906pt>
+<pic/SpecElicitorTraces.png, id=439, 685.05937pt x 593.96906pt>
 File: pic/SpecElicitorTraces.png Graphic file (type png)
 
 <use pic/SpecElicitorTraces.png>
@@ -2304,7 +2304,10 @@ Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 42.
  (tex/ch-traceCollector.tex
 Chapter 4.
 
-LaTeX Warning: Citation 'DOM' on page 10 undefined on input line 13.
+LaTeX Warning: Citation 'DOM' on page 10 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'ajax' on page 10 undefined on input line 16.
 
 [10
 
@@ -2312,96 +2315,85 @@ LaTeX Warning: Citation 'DOM' on page 10 undefined on input line 13.
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 55.
- [11] [12
+(Font)              scaled to size 12.0pt on input line 65.
+ [11]
 
-] <pic/automata_overview.png, id=481, 631.60968pt x 697.8572pt>
-File: pic/automata_overview.png Graphic file (type png)
+LaTeX Warning: Citation 'BS4' on page 12 undefined on input line 85.
 
-<use pic/automata_overview.png>
-Package pdftex.def Info: pic/automata_overview.png used on input line 87.
-(pdftex.def)             Requested size: 256.07741pt x 282.93942pt.
+[12
 
-<pic/webTraceResult.png, id=482, 837.88031pt x 386.94562pt>
-File: pic/webTraceResult.png Graphic file (type png)
+] [13] [14]
+Overfull \hbox (3.75668pt too wide) in paragraph at lines 191--203
+ [] 
+ []
 
-<use pic/webTraceResult.png>
-Package pdftex.def Info: pic/webTraceResult.png used on input line 96.
-(pdftex.def)             Requested size: 341.43437pt x 157.67451pt.
- [13
+[15
 
- <./pic/automata_overview.png> <./pic/webTraceResult.png>] [14
-
-] <pic/DOMvsNorDOM.png, id=496, 1018.55531pt x 459.96844pt>
+] <pic/DOMvsNorDOM.png, id=506, 1018.55531pt x 459.96844pt>
 File: pic/DOMvsNorDOM.png Graphic file (type png)
 
 <use pic/DOMvsNorDOM.png>
-Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 176.
+Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 229.
 (pdftex.def)             Requested size: 341.43437pt x 154.19038pt.
- [15
+ [16 <./pic/DOMvsNorDOM.png>] [17
 
- <./pic/DOMvsNorDOM.png>]
+]
+<pic/automata_overview.png, id=518, 631.60968pt x 697.8572pt>
+File: pic/automata_overview.png Graphic file (type png)
+
+<use pic/automata_overview.png>
+Package pdftex.def Info: pic/automata_overview.png used on input line 258.
+(pdftex.def)             Requested size: 256.07741pt x 282.93942pt.
+
+<pic/webTraceResult.png, id=519, 837.88031pt x 386.94562pt>
+File: pic/webTraceResult.png Graphic file (type png)
+
+<use pic/webTraceResult.png>
+Package pdftex.def Info: pic/webTraceResult.png used on input line 267.
+(pdftex.def)             Requested size: 341.43437pt x 157.67451pt.
+ [18
+
+ <./pic/automata_overview.png> <./pic/webTraceResult.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 193.
+(Font)              scaled to size 14.4pt on input line 290.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 193.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 290.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 193.
+(Font)              scaled to size 14.4pt on input line 290.
+ [19
 
-<pic/MonkeyAutomata.png, id=502, 1021.56656pt x 491.58656pt>
-File: pic/MonkeyAutomata.png Graphic file (type png)
-
-<use pic/MonkeyAutomata.png>
-Package pdftex.def Info: pic/MonkeyAutomata.png used on input line 207.
-(pdftex.def)             Requested size: 341.43437pt x 164.29434pt.
- [16
-
- <./pic/MonkeyAutomata.png>]
-<pic/DFSautomata.png, id=508, 1020.06094pt x 496.10344pt>
-File: pic/DFSautomata.png Graphic file (type png)
-
-<use pic/DFSautomata.png>
-Package pdftex.def Info: pic/DFSautomata.png used on input line 240.
-(pdftex.def)             Requested size: 341.43437pt x 166.05374pt.
- [17 <./pic/DFSautomata.png>])
+] [20])
 \openout2 = `tex/ch-traceEvaluation.aux'.
 
-
-(tex/ch-traceEvaluation.tex
+ (tex/ch-traceEvaluation.tex
 Chapter 5.
-[18
+[21
 
 
 
 
-] <pic/EvaluateProcedure.png, id=519, 875.52094pt x 378.66469pt>
+] <pic/EvaluateProcedure.png, id=537, 875.52094pt x 378.66469pt>
 File: pic/EvaluateProcedure.png Graphic file (type png)
 
 <use pic/EvaluateProcedure.png>
 Package pdftex.def Info: pic/EvaluateProcedure.png used on input line 50.
 (pdftex.def)             Requested size: 341.43437pt x 147.67285pt.
- [19 <./pic/EvaluateProcedure.png>]
-<pic/parseFeature.png, id=526, 631.60968pt x 225.09094pt>
-File: pic/parseFeature.png Graphic file (type png)
-
-<use pic/parseFeature.png>
-Package pdftex.def Info: pic/parseFeature.png used on input line 99.
-(pdftex.def)             Requested size: 341.43437pt x 121.68123pt.
- <pic/vectors.png, id=527, 506.6428pt x 195.73125pt>
+ [22 <./pic/EvaluateProcedure.png>]
+<pic/vectors.png, id=543, 506.6428pt x 195.73125pt>
 File: pic/vectors.png Graphic file (type png)
-
-<use pic/vectors.png>
-Package pdftex.def Info: pic/vectors.png used on input line 108.
+ <use pic/vectors.png>
+Package pdftex.def Info: pic/vectors.png used on input line 98.
 (pdftex.def)             Requested size: 341.43437pt x 131.90979pt.
- [20 <./pic/parseFeature.png>] [21 <./pic/vectors.png>]
-<pic/greedySample.png, id=537, 517.935pt x 183.68625pt>
+
+[23 <./pic/vectors.png>]
+<pic/greedySample.png, id=550, 517.935pt x 183.68625pt>
 File: pic/greedySample.png Graphic file (type png)
 
 <use pic/greedySample.png>
-Package pdftex.def Info: pic/greedySample.png used on input line 147.
+Package pdftex.def Info: pic/greedySample.png used on input line 137.
 (pdftex.def)             Requested size: 341.43437pt x 121.09593pt.
-) [22
+) [24
 
  <./pic/greedySample.png>]
 \openout2 = `tex/ch-experiments.aux'.
@@ -2409,7 +2401,7 @@ Package pdftex.def Info: pic/greedySample.png used on input line 147.
 
 (tex/ch-experiments.tex
 Chapter 6.
-[23
+[25
 
 
 
@@ -2423,20 +2415,20 @@ Overfull \hbox (53.16069pt too wide) in paragraph at lines 103--131
  [] 
  []
 
-[24] [25] [26] [27
+[26] [27] [28] [29
 
-] [28] [29
+] [30] [31
 
-]) [30] [31]
+]) [32] [33]
 \openout2 = `tex/ch-conclusion.aux'.
 
  (tex/ch-conclusion.tex
 Chapter 7.
-[32
+[34
 
 
 
-]) [33]
+]) [35]
 ! Undefined control sequence.
 <argument> \bbl@main@language 
                               
@@ -2737,7 +2729,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[34
+[36
 
 
 ]
@@ -2750,7 +2742,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 993735551F51B9A2D5BA4B848F87E24C;1946.
+(rerunfilecheck)             Checksum: D271A31FF98CEB72401442F4EEEE08BE;2097.
 
 
 LaTeX Warning: There were undefined references.
@@ -2769,13 +2761,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35468 strings out of 493335
- 640959 string characters out of 3136674
+ 35471 strings out of 493335
+ 640822 string characters out of 3136674
  1085863 words of memory out of 3000000
- 37894 multiletter control sequences out of 15000+200000
- 85060 words of font info for 177 fonts, out of 3000000 for 9000
+ 37896 multiletter control sequences out of 15000+200000
+ 85358 words of font info for 178 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,94p,1044b,19740s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,94p,1044b,19740s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec
 -tlf.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu30.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pfb><C:/P
@@ -2795,65 +2787,65 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5b.pfb><C:/Program Files
 MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu5d.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/arphic/bkaiu/bkaiu5e.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/arphic/bkaiu/bkaiu5f.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/arphic/bkaiu/bkaiu61.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
-c/bkaiu/bkaiu62.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
-/bkaiu63.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6
-4.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu65.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu66.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu67.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu68.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu69.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/arphic/bkaiu/bkaiu6a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/arphic/bkaiu/bkaiu6b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/arphic/bkaiu/bkaiu6c.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
-hic/bkaiu/bkaiu6d.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
-iu/bkaiu6e.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
-u6f.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu70.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu71.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu72.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/arphic/bkaiu/bkaiu77.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/arphic/bkaiu/bkaiu78.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
-rphic/bkaiu/bkaiu79.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
-kaiu/bkaiu7a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
-aiu7b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7e.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7f.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu82.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/arphic/bkaiu/bkaiu85.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/arphic/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic
-/bkaiu/bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/
-bkaiu89.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8a
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8b.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8d.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8e.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/arphic/bkaiu/bkaiu92.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arph
-ic/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkai
-u/bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu
-97.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu98.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu99.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9a.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9e.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9f.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/arphic/bkaiu/bkaiuff.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/tex-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
-xfonts/t1xtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/
-txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pf
-b>
-Output written on document.pdf (42 pages, 1861166 bytes).
+1/arphic/bkaiu/bkaiu60.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
+c/bkaiu/bkaiu61.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
+/bkaiu62.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6
+3.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu64.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu65.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu66.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu67.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu68.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/arphic/bkaiu/bkaiu69.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/arphic/bkaiu/bkaiu6a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/arphic/bkaiu/bkaiu6b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
+hic/bkaiu/bkaiu6c.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
+iu/bkaiu6d.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
+u6e.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6f.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu71.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu72.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/arphic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/arphic/bkaiu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/arphic/bkaiu/bkaiu77.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
+rphic/bkaiu/bkaiu78.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/b
+kaiu/bkaiu79.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bk
+aiu7a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7b.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7e.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7f.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/arphic/bkaiu/bkaiu82.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/arphic/bkaiu/bkaiu85.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic
+/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/
+bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu89
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8a.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8b.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8d.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8e.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/arphic/bkaiu/bkaiu92.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arph
+ic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkai
+u/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu
+96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu97.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu98.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu99.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9e.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/arphic/bkaiu/bkaiu9f.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/arphic/bkaiu/bkaiuff.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/tex-gyre/qtmb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/te
+x-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/
+t1xtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb>
+Output written on document.pdf (44 pages, 1557553 bytes).
 PDF statistics:
- 895 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 636 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 641 words of extra memory for PDF output out of 10000 (max. 10000000)
 
