@@ -1,7 +1,7 @@
 
 \chapter{Related Works}\label{ch:related}
 
-Our purpose is to construct a automated web testing tool and evaluation method.
+Our purpose is to construct an automated web testing tool and evaluation method.
 Web testing and test evaluation have been studied many years since 2001\cite{WebTesting}.
 We survey the similar tools\cite{WebToolsList}  and researchs about testing web applications and test oracles.
 They are shown as the following.
@@ -10,13 +10,13 @@ They are shown as the following.
 
 \section{Web testing}
 
-Testing tool likes Jmeter\cite{jmeter} record the script of uset behavior and reply it on the web pages.
+Testing tools likes Jmeter\cite{jmeter} record the script of user behaviors and replay it on the web pages.
 Jmeter is not focus on functional testing but on load testing.
-It creates many threads to test the specific websites simultaneously or reply the test lots of times.
+It creates many threads to test the specific websites simultaneously or replay the test lots of times.
 It measure the performance of the web applications and the servers.
 
-Selenium\cite{selenium} is a tool which can also record test scripts with friendly interface on firefox.
-Except for recording, selenium also can assertions in the test cases.
+Selenium\cite{selenium} is a tool which can record test scripts with friendly interface on firefox.
+Except for recording, selenium also can set assertions in the test cases.
 Selenium is a powerful library for web testing.
 User can write their test scripts on most of language likes C\#, Python, Ruby, Java and Perl.
 
@@ -31,7 +31,7 @@ To testing websites used Ajax, which is based on asynchronous communication with
 Marchetto et al.\cite{Search-BasedTesting} proposed state-based testing and construct a finite state machines to explore websites.
 
 Crawljax\cite{crawljax} presented by Mesbath et al. is a java open source tool 
-which can automated explore dynamic websites and 
+which can automatically explore dynamic websites and 
 collect the invariants of the Document Object Model of the web pages to construct finite state machine.
 It records traces by Depth-first search algorithm and generates state flow graph.
 User can write own API to control test scripts or add assertions.
@@ -47,7 +47,7 @@ The test oracle should capture the properties of the system to find test cases a
 Assertions may be used to check the specified behaviors of systems at runtime.
 Barr et al.\cite{OracleProblem} gathererd the oracle problem in software testing into four categories.
 
-Kanewala et al.\cite{DetectMetamorphic} seek to find the metamorphic relations, 
+Kanewala et al.\cite{DetectMetamorphic} reasearch for finding the metamorphic relations, 
 which focus on the relations between different executions of the applications and inferred from white box inspection of the SUT,
 using machine learning techniques.
 Derived test oracle distinguishes between the correct and incorrect behaviors of the SUT based on the properties pd th system.

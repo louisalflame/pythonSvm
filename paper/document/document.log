@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  21 JUL 2016 02:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.21)  23 JUL 2016 23:02
 entering extended mode
 **./document.tex
 (document.tex
@@ -2263,172 +2263,215 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
 
 
-]) [2]
+] [2
+
+]) [3
+
+]
 \openout2 = `tex/ch-related.aux'.
 
  (tex/ch-related.tex
 Chapter 2.
-[3
+[4
 
 
 
-]) [4]
+]) [5]
 \openout2 = `tex/ch-preliminaries.aux'.
 
  (tex/ch-preliminaries.tex
 Chapter 3.
-<pic/SpecElicitorInterface.png, id=438, 569.12625pt x 436.63126pt>
+<pic/SpecElicitorInterface.png, id=460, 569.12625pt x 436.63126pt>
 File: pic/SpecElicitorInterface.png Graphic file (type png)
 
 <use pic/SpecElicitorInterface.png>
-Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 33.
-(pdftex.def)             Requested size: 341.43437pt x 261.96078pt.
+Package pdftex.def Info: pic/SpecElicitorInterface.png used on input line 35.
+(pdftex.def)             Requested size: 298.75264pt x 229.20819pt.
 
-<pic/SpecElicitorTraces.png, id=439, 685.05937pt x 593.96906pt>
+<pic/SpecElicitorTraces.png, id=461, 685.05937pt x 593.96906pt>
 File: pic/SpecElicitorTraces.png Graphic file (type png)
 
 <use pic/SpecElicitorTraces.png>
-Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 42.
-(pdftex.def)             Requested size: 341.43437pt x 296.04121pt.
- [5
+Package pdftex.def Info: pic/SpecElicitorTraces.png used on input line 44.
+(pdftex.def)             Requested size: 298.75264pt x 259.03607pt.
+ [6
 
 
 
-] [6 <./pic/SpecElicitorInterface.png> <./pic/SpecElicitorTraces.png>] [7
+] [7 <./pic/SpecElicitorInterface.png> <./pic/SpecElicitorTraces.png>] [8
 
-] [8]) [9
+]) [9
 
 ]
 \openout2 = `tex/ch-traceCollector.aux'.
 
  (tex/ch-traceCollector.tex
 Chapter 4.
-
-LaTeX Warning: Citation 'DOM' on page 10 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'ajax' on page 10 undefined on input line 16.
-
 [10
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 65.
- [11]
+(Font)              scaled to size 12.0pt on input line 68.
+ <pic/collectorFramework.png, id=493, 577.40718pt x 291.33844pt>
+File: pic/collectorFramework.png Graphic file (type png)
 
-LaTeX Warning: Citation 'BS4' on page 12 undefined on input line 85.
+<use pic/collectorFramework.png>
+Package pdftex.def Info: pic/collectorFramework.png used on input line 76.
+(pdftex.def)             Requested size: 341.43437pt x 172.28383pt.
+ [11
 
-[12
+ <./pic/collectorFramework.png>] [12]
+[13
 
-] [13] [14]
-Overfull \hbox (3.75668pt too wide) in paragraph at lines 191--203
+] [14
+
+] <pic/ClickEvent.png, id=521, 575.90157pt x 270.25969pt>
+File: pic/ClickEvent.png Graphic file (type png)
+
+<use pic/ClickEvent.png>
+Package pdftex.def Info: pic/ClickEvent.png used on input line 179.
+(pdftex.def)             Requested size: 341.43437pt x 160.23535pt.
+ [15 <./pic/ClickEvent.png>]
+Overfull \hbox (3.75668pt too wide) in paragraph at lines 216--228
  [] 
  []
 
-[15
+[16
 
-] <pic/DOMvsNorDOM.png, id=506, 1018.55531pt x 459.96844pt>
+] <pic/DOMvsNorDOM.png, id=537, 1018.55531pt x 459.96844pt>
 File: pic/DOMvsNorDOM.png Graphic file (type png)
 
 <use pic/DOMvsNorDOM.png>
-Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 229.
+Package pdftex.def Info: pic/DOMvsNorDOM.png used on input line 259.
 (pdftex.def)             Requested size: 341.43437pt x 154.19038pt.
- [16 <./pic/DOMvsNorDOM.png>] [17
+ [17 <./pic/DOMvsNorDOM.png>] [18
 
 ]
-<pic/automata_overview.png, id=518, 631.60968pt x 697.8572pt>
+<pic/automata_overview.png, id=549, 631.60968pt x 697.8572pt>
 File: pic/automata_overview.png Graphic file (type png)
 
 <use pic/automata_overview.png>
-Package pdftex.def Info: pic/automata_overview.png used on input line 258.
+Package pdftex.def Info: pic/automata_overview.png used on input line 293.
 (pdftex.def)             Requested size: 256.07741pt x 282.93942pt.
 
-<pic/webTraceResult.png, id=519, 837.88031pt x 386.94562pt>
+<pic/webTraceResult.png, id=550, 837.88031pt x 386.94562pt>
 File: pic/webTraceResult.png Graphic file (type png)
 
 <use pic/webTraceResult.png>
-Package pdftex.def Info: pic/webTraceResult.png used on input line 267.
+Package pdftex.def Info: pic/webTraceResult.png used on input line 302.
 (pdftex.def)             Requested size: 341.43437pt x 157.67451pt.
- [18
+ [19
 
  <./pic/automata_overview.png> <./pic/webTraceResult.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 290.
+(Font)              scaled to size 14.4pt on input line 325.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 290.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 325.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 290.
- [19
+(Font)              scaled to size 14.4pt on input line 325.
+ [20
 
-] [20])
+] [21])
 \openout2 = `tex/ch-traceEvaluation.aux'.
 
  (tex/ch-traceEvaluation.tex
 Chapter 5.
-[21
+<pic/Procedure.png, id=564, 598.48593pt x 243.15843pt>
+File: pic/Procedure.png Graphic file (type png)
+ <use pic/Procedure.png>
+Package pdftex.def Info: pic/Procedure.png used on input line 17.
+(pdftex.def)             Requested size: 341.43437pt x 138.72418pt.
+
+[22
 
 
 
 
-] <pic/EvaluateProcedure.png, id=537, 875.52094pt x 378.66469pt>
-File: pic/EvaluateProcedure.png Graphic file (type png)
+ <./pic/Procedure.png>]
+<pic/TraceEvaluation.png, id=570, 636.12656pt x 288.3272pt>
+File: pic/TraceEvaluation.png Graphic file (type png)
 
-<use pic/EvaluateProcedure.png>
-Package pdftex.def Info: pic/EvaluateProcedure.png used on input line 50.
-(pdftex.def)             Requested size: 341.43437pt x 147.67285pt.
- [22 <./pic/EvaluateProcedure.png>]
-<pic/vectors.png, id=543, 506.6428pt x 195.73125pt>
-File: pic/vectors.png Graphic file (type png)
- <use pic/vectors.png>
-Package pdftex.def Info: pic/vectors.png used on input line 98.
-(pdftex.def)             Requested size: 341.43437pt x 131.90979pt.
+<use pic/TraceEvaluation.png>
+Package pdftex.def Info: pic/TraceEvaluation.png used on input line 63.
+(pdftex.def)             Requested size: 341.43437pt x 154.75285pt.
+ [23
 
-[23 <./pic/vectors.png>]
-<pic/greedySample.png, id=550, 517.935pt x 183.68625pt>
-File: pic/greedySample.png Graphic file (type png)
-
-<use pic/greedySample.png>
-Package pdftex.def Info: pic/greedySample.png used on input line 137.
-(pdftex.def)             Requested size: 341.43437pt x 121.09593pt.
-) [24
-
- <./pic/greedySample.png>]
-\openout2 = `tex/ch-experiments.aux'.
-
-
-(tex/ch-experiments.tex
-Chapter 6.
-[25
-
-
+ <./pic/TraceEvaluation.png>] [24
 
 ]
-Overfull \hbox (8.26869pt too wide) in paragraph at lines 67--96
+<pic/vectors.png, id=581, 630.85687pt x 216.81pt>
+File: pic/vectors.png Graphic file (type png)
+ <use pic/vectors.png>
+Package pdftex.def Info: pic/vectors.png used on input line 113.
+(pdftex.def)             Requested size: 341.43437pt x 117.34361pt.
+
+[25 <./pic/vectors.png>]) [26
+
+]
+\openout2 = `tex/ch-experiments.aux'.
+
+ (tex/ch-experiments.tex
+Chapter 6.
+[27
+
+
+
+] <pic/appDifficulty.png, id=599, 517.18219pt x 335.00156pt>
+File: pic/appDifficulty.png Graphic file (type png)
+
+<use pic/appDifficulty.png>
+Package pdftex.def Info: pic/appDifficulty.png used on input line 68.
+(pdftex.def)             Requested size: 341.43437pt x 221.16815pt.
+
+Overfull \hbox (8.26869pt too wide) in paragraph at lines 76--105
  [] 
  []
 
 
-Overfull \hbox (53.16069pt too wide) in paragraph at lines 103--131
+Overfull \hbox (53.16069pt too wide) in paragraph at lines 112--140
  [] 
  []
 
-[26] [27] [28] [29
+[28] [29 <./pic/appDifficulty.png>] [30]
+<pic/DynamicDifficulty1.png, id=627, 392.21532pt x 78.2925pt>
+File: pic/DynamicDifficulty1.png Graphic file (type png)
 
-] [30] [31
+<use pic/DynamicDifficulty1.png>
+Package pdftex.def Info: pic/DynamicDifficulty1.png used on input line 181.
+(pdftex.def)             Requested size: 341.43437pt x 68.1593pt.
 
-]) [32] [33]
+<pic/DynamicDifficulty2.png, id=628, 241.65282pt x 112.16907pt>
+File: pic/DynamicDifficulty2.png Graphic file (type png)
+
+<use pic/DynamicDifficulty2.png>
+Package pdftex.def Info: pic/DynamicDifficulty2.png used on input line 189.
+(pdftex.def)             Requested size: 213.39568pt x 99.0565pt.
+
+<pic/DynamicDifficulty3.png, id=629, 447.92343pt x 85.82062pt>
+File: pic/DynamicDifficulty3.png Graphic file (type png)
+
+<use pic/DynamicDifficulty3.png>
+Package pdftex.def Info: pic/DynamicDifficulty3.png used on input line 197.
+(pdftex.def)             Requested size: 298.75264pt x 57.24152pt.
+ [31
+
+] [32 <./pic/DynamicDifficulty1.png> <./pic/DynamicDifficulty2.png> <./pic/Dyna
+micDifficulty3.png>] [33
+
+]) [34] [35]
 \openout2 = `tex/ch-conclusion.aux'.
 
- (tex/ch-conclusion.tex
+
+(tex/ch-conclusion.tex
 Chapter 7.
-[34
+[36
 
 
 
-]) [35]
+]) [37]
 ! Undefined control sequence.
 <argument> \bbl@main@language 
                               
@@ -2729,10 +2772,83 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[36
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (28.07437pt too wide) in paragraph at lines 90--90
+[]\T1/ntxtlf/m/it/12 Ajax: A new ap-proach to web ap-pli-ca-tions\T1/ntxtlf/m/n
+/12 . [On-line]. Avail-able: []$\T1/ntxtt/m/n/12 http : / / adaptivepath .
+ []
+
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[38
 
 
 ]
+! Undefined control sequence.
+<argument> \bbl@main@language 
+                              
+l.90 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
@@ -2742,15 +2858,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: D271A31FF98CEB72401442F4EEEE08BE;2097.
+(rerunfilecheck)             Checksum: 5BF9D4C83E34D33DED0E7C7AE673BA95;2155.
 
 
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                document
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
@@ -2761,13 +2875,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35471 strings out of 493335
- 640822 string characters out of 3136674
- 1085863 words of memory out of 3000000
- 37896 multiletter control sequences out of 15000+200000
+ 35527 strings out of 493335
+ 642059 string characters out of 3136674
+ 1086864 words of memory out of 3000000
+ 37933 multiletter control sequences out of 15000+200000
  85358 words of font info for 178 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,94p,1044b,19740s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,94p,1044b,19885s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec
 -tlf.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu30.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu4e.pfb><C:/P
@@ -2843,9 +2957,9 @@ blic/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/te
 x-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/
 t1xtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pf
 b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsyc.pfb>
-Output written on document.pdf (44 pages, 1557553 bytes).
+Output written on document.pdf (47 pages, 1564110 bytes).
 PDF statistics:
- 911 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
- 641 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 679 words of extra memory for PDF output out of 10000 (max. 10000000)
 

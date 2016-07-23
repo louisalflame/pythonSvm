@@ -1,6 +1,8 @@
 
 \chapter{Trace Evaluation}\label{ch:traceEvaluation}
 
+The framework of testing is shown in Fig \ref{Proceduree}.
+The work of testing devided into trace collection and trace evaluation.
 At last chapter, we construct a tool to generate the traces of the websites automatically.
 We use the tool SpecElicitor to help us making traces of Mobile Applications with the labels.
 Even though we can easily generate lots of traces ,
@@ -9,12 +11,23 @@ Because the traces may lead to different result by some slight difference,
 it needs people to check the traces case by case.
 We develop a method to teach computer how to learn predicting a trace.
 
+\begin{figure}[ht]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{Procedure.png}
+	\end{center}
+	\caption{ The framework of automated testing. }
+	\label{Proceduree}
+\end{figure}
+
 %自動化產生traces後，evaluate仍需要大量人力
 %為此設計一套能predict trace的framework
 
+\clearpage
+
 \section{Procedure}
 
-The testing framework is shown in Fig[\ref{EvaluateProcedure}].
+The testing framework is shown in Fig[\ref{TraceEvaluation}].
 An automated testing system can be devided into two parts,
 one is automatically generating traces anf the another one is automated predicting the traces.
 In the last chapter, we introduced a tool for automatically testing dynamic web applications.
@@ -23,7 +36,7 @@ we can collect web traces and android traces automaitcally.
 
 In order to automated evaluating traces,
 we need to construct a test oracle.
-The test oracle may distinguishes the correct and incorrect behaviors of the system under test.
+The test oracle may distinguishe the correct and incorrect behaviors of the system under test.
 The simple ways are checking the behaviors manually, inserting assertions and detecing crash, error or failure in traces.
 In our work, we use the machine learning method to achive the goal of evaluating traces automatically.
 The method of machine learning we used in this paper is Support Vector Machine,
@@ -47,11 +60,13 @@ how to select the traces as training set and testing set.
 \begin{figure}[ht]
 	\graphicspath{{pic/}}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{EvaluateProcedure.png}
+		\includegraphics[width=0.8\textwidth]{TraceEvaluation.png}
 	\end{center}
 	\caption{ The framework of testing. }
-	\label{EvaluateProcedure}
+	\label{TraceEvaluation}
 \end{figure}
+
+\clearpage
 
 \section{Feature vector}
 
@@ -97,7 +112,7 @@ We need constantly updating the keyword dictionary to increase the precision of 
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{vectors.png}
 	\end{center}
-	\caption{ The feature vectors. }
+	\caption{ Extracting the feature vectors. }
 	\label{featureVectors}
 \end{figure}
 
@@ -119,7 +134,7 @@ it can reduce the training work and the perfomance of predicting will be great.
 However, it is too hard to find out which trace has the most informative feature.
 
 In order to reduce human work,
-we use the active learning algorithm to help us find out which traces should be labeled.
+The active learning algorithm can help us find out which traces should be labeled.
 Active learning is a subfield of machine learning.
 The studies about this field are gatherd by Settles\cite{ActiveLearning}
 The active learning algorithm depends on the sampling strategy.
@@ -130,14 +145,5 @@ Greedy sampling select the trace which can maximize the feature coverage.
 Uncertainly sampling  select the trace whose prediction is the least confident.
 We will implement them to find out which sampling method is the suitable to this system in the future.
 
-
-\begin{figure}[ht]
-	\graphicspath{{pic/}}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{greedySample.png}
-	\end{center}
-	\caption{ The method to sampling traces. }
-	\label{greedySample}
-\end{figure}
 
 

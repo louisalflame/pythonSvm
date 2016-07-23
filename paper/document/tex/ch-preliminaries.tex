@@ -1,11 +1,14 @@
 \chapter{Preliminaries}\label{ch:preliminaries}
 
-In this chpater, 
+In this chapter, We not only construct a tool for automated testing,
+but also use other tools to help us to generate traces 
+and use the algorithm of machine learning to help us to evaluate traces.
+The tool and the algorithm are introduced as the followings.
 
 \section{SpecElicitor}
 
 SpecElicitor is a tool made by Yuan-Hong Lo, 
-which can help user testing Mobile Application with friendly GUI interface.
+which can help user test Mobile Application with friendly GUI interface.
 
 When user start using SpecElicitor,
 each time user do an action, such as clicking a button, on the Mobile Application, 
@@ -13,7 +16,6 @@ the tool will ask for labeling the action and the screen shown on the interface.
 By using SpecElicitor, we can choose the specified action at every step, label the meaning of the action,
 and label the exception situation if it happen and stop the trace at any time we need.
 The interface of the SpecElicitor is shown in Fig[\ref{SpecElicitorInterface}].
-
 
 The traces made by SpecElicitor include automata, screenshots, XML files and labels.
 The automata is a json file record every states and edges on the traces.
@@ -30,7 +32,7 @@ An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref
 \begin{figure}[ht]
 	\graphicspath{{pic/}}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{SpecElicitorInterface.png}
+		\includegraphics[width=0.7\textwidth]{SpecElicitorInterface.png}
 		\caption{ The GUI interface of SpecElicitor.  }
 		\label{SpecElicitorInterface}
 	\end{center}
@@ -39,7 +41,7 @@ An example trace of Recipe Application made by SpecElicitor is shown in Fig[\ref
 \begin{figure}[ht]
 	\graphicspath{{pic/}}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{SpecElicitorTraces.png}
+		\includegraphics[width=0.7\textwidth]{SpecElicitorTraces.png}
 		\caption{ An example of the traces.  }
 		\label{SpecElicitorTraces}
 	\end{center}
@@ -57,9 +59,9 @@ we transform the behaviors of applications into the common sense model and use n
 
 The keyword dictionary collects normalized keywords from several kinds of applications.
 A common sense, defined as a normalized keyword, represent a concept of a screen shown on the platform or an action for a clicking event.
-For instance, the label dictionary of File Manager application is listed in Table \ref{LabelDictionaryTable}.
-Take file manager as example, the button "REMOVE" and "DELETE" represent the same concept of behavior, removing the selected file.
-People except this two buttons have same performance when people use in the two different file manager applications.
+For instance, the keyword dictionary of FileManager application is listed in Table \ref{LabelDictionaryTable}.
+Take FileManager as example, the button "REMOVE" and "DELETE" represent the same concept of behavior, removing the selected file.
+People except this two buttons have same performance when people use in the two different FileManager applications.
 We define this concept of action and represented by a normalized keyword "delete-file".
 With the help of keyword dictionary,
 we can use the normalized keywords as features and extract the features of the traces, 
@@ -81,19 +83,9 @@ which consist of screens and actions, from different appliactions and convert th
 			Copy-query & Select-file-or-folder \\
 			Cut-query & Deselect \\
 			Paste-query & Compress-file-or-folder \\
-			Move-query & Delete-file-or-folder \\
-			Bookmark-screen & Rename-file-or-folder \\
-			Item-information & Copy-file-or-folder \\
-			  & Cut-file-or-folder \\
-			  & Paste-file-or-folder \\
-			  & Move-file-or-folder \\
-			  & Refresh \\
-			
-			%{1-2}
-			%\multicolumn{2}{c|}{ dd }  \\
-			%\cline{1-2}
+			Item-information & Copy-file-or-folder \\	
 		\end{tabular}
-		\caption{ Common sense labels of File Manager Application.  }
+		\caption{ Common sense keywords of FileManager Application.  }
 		\label{LabelDictionaryTable}
 	\end{center}
 \end{table}
@@ -115,13 +107,13 @@ which can make prediction on the testing set.
 In our work, we use the Support Vector Machine\cite{SVM} as our machine learning algorithm to solve the classification problem of traces.
 Support Vector Machine is a well-known algorithm in machine learning and widely used for classification and regression analysis.
 SVM is a supervised learning algorithm and it needs the training data labeled.
-SVM find a hyper-plane in a high dimensional space in order to seperate the instances
+SVM find a hyper-plane in a high dimensional space in order to seperate the instances.
 The optimal hyper plane has the largest margin, which means the distance between the hyper plane and the closest trainging data.
 We use the python library in LIBSVM which is provided by Chang et al \cite{LIBSVM} to implement SVM algorithm in the paper.
 
 We collect the testing traces from web and mobile applications.
 Because each instances in the data set should be formalized to a set of feature vector,
-We use the label dictionary mentioned above as the featuer vector and transform the traces to vectors consist of label features.
+We use the keyword dictionary mentioned above as the featuer vector and transform the traces to vectors consist of keyword features.
 In order to evaluate traces, we train the SVM with the labeled traces.
 Then we can predict unlabeled traces and classify them into passed traces and failed traces.
 

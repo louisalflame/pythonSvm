@@ -12,26 +12,38 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The GUI interface of SpecElicitor. \relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The GUI interface of SpecElicitor. \relax }}{7}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An example of the traces. \relax }}{6}{figure.caption.8}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces An Example of DOM tree compare with Normalize DOM tree. \relax }}{16}{figure.caption.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of the Automata. \relax }}{18}{figure.caption.14}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces An Example traces of the website. \relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces An example of the traces. \relax }}{7}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework of testing. \relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The framework of WebTraceCollector. \relax }}{11}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The feature vectors. \relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The procedure of click event. \relax }}{15}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The method to sampling traces. \relax }}{24}{figure.caption.18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An Example of DOM tree compare with Normalize DOM tree. \relax }}{17}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Overview of the Automata. \relax }}{19}{figure.caption.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An Example traces of the website. \relax }}{19}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The framework of automated testing. \relax }}{22}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The framework of testing. \relax }}{23}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Extracting the feature vectors. \relax }}{25}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Test issue of popular applications. \relax }}{29}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The example of difficulty 1: Robot checking. \relax }}{32}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The example of difficulty 2: Input fields cannot find examples in database. \relax }}{32}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The example of difficulty 3: Unsuitable example format . \relax }}{32}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

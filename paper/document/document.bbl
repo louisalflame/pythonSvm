@@ -311,6 +311,42 @@
     \field{year}{2011}
   \endentry
 
+  \entry{DOM}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PP}{%
+         family={Peter-Paul},
+         family_i={P\bibinitperiod-P\bibinitperiod},
+      }}%
+      {{hash=K}{%
+         family={Koch},
+         family_i={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PPK1}
+    \strng{fullhash}{PPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Digital Web Magazine}
+    \field{title}{The Document Object Model: an Introduction}
+    \field{year}{2001}
+  \endentry
+
+  \entry{ajax}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Ajax: A New Approach to Web Applications}
+    \verb{url}
+    \verb http://adaptivepath.org/ideas/ajax-new-approach-web-applications/
+    \endverb
+  \endentry
+
+  \entry{BS4}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Beautiful Soup document}
+    \verb{url}
+    \verb https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+    \endverb
+  \endentry
+
   \entry{ActiveLearning}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=SB}{%

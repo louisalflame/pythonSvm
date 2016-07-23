@@ -27,7 +27,11 @@ Warning--entry type for "Smartbear" isn't style-file defined
 Warning--entry type for "crawljax" isn't style-file defined
 --line 38 of file bib/web.bib
 Warning--entry type for "popularWebs" isn't style-file defined
---line 42 of file bib/web.bib
+--line 43 of file bib/web.bib
+Warning--entry type for "ajax" isn't style-file defined
+--line 49 of file bib/web.bib
+Warning--entry type for "BS4" isn't style-file defined
+--line 53 of file bib/web.bib
 Database file #5: bib/inproceedings.bib
 Biblatex version: 3.3
-(There were 7 warnings)
+(There were 9 warnings)

@@ -62,6 +62,15 @@ it could be images, div tags or any tags if javascript bind the mouse listener o
 With the uncertain clickable elements, it is hard to find the correct clickable elements to explore the web and record the traces.
 WebTraceCollector will click the wrong elements with nothing happens and stay at the same page until the trace is end.
 
+\begin{figure}[ht]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{appDifficulty.png}
+	\end{center}
+	\caption{ Test issue of popular applications. }
+	\label{appDifficulty}
+\end{figure}
+
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{ | l | l | l | l | }
@@ -142,8 +151,9 @@ In order to test the ability of explore dynamic webpages,
 we select some webpages that have lots of input fields and it need to insert correct values to pass through the web pages.
 The selected webpages are shown in Table \ref{DynamicWebs}.
 Most of the input fields in those web pages are names, years, emails and so on.
-We can see that there are 4 web pages can be successfully passed through, but 3 web pages can not.
-There are 3 reasons that can not pass through the dynamic web pages are the follows:
+We can see that there are several web pages can be successfully passed through, but few web pages can not.
+There are 3 reasons that can not pass through the dynamic web pages are the follows
+and the examples arw shown in Fig \ref{DynamicDifficulty1},\ref{DynamicDifficulty2} and \ref{DynamicDifficulty3}.
 \\	1. The web pages have robot checking mechanism to prevent automatic exploring.
 \\	2. The form of input fields are different to the examples in the database.
 \\	3. The input fields are out of the range of examples we collecteed.
@@ -165,6 +175,31 @@ Although we can add as more examples and rules in the database as we possible,
 it is still impossible to handle all kinds of input fields by only few kinds of examples.
 In future work, we can develop to find out the values by other method such as maching learning.
 
+\begin{figure}[ht]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{DynamicDifficulty1.png}
+		\caption{ The example of difficulty 1: Robot checking.  }
+		\label{DynamicDifficulty1}
+	\end{center}
+\end{figure}
+\begin{figure}[ht]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{DynamicDifficulty2.png}
+		\caption{ The example of difficulty 2: Input fields cannot find examples in database.  }
+		\label{DynamicDifficulty2}
+	\end{center}
+\end{figure}
+\begin{figure}[ht]
+	\graphicspath{{pic/}}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{DynamicDifficulty3.png}
+		\caption{ The example of difficulty 3: Unsuitable example format .  }
+		\label{DynamicDifficulty3}
+	\end{center}
+\end{figure}
+
 \begin{table}[ht]
 	\begin{center}
 		\begin{tabular}{ | l | l | }
@@ -176,7 +211,11 @@ In future work, we can develop to find out the values by other method such as ma
 			https://apply.grad.ucsd.edu/signup  & Pass \\  \hline
 			https://user.gamer.com.tw/regS1.phpt  & Fail \\  \hline
 			http://panel.pixnet.cc/signup/step2  & Fail \\  \hline   
-			https://apps.grad.uw.edu/applForAdmiss/newUserProfile.aspx?bhcp=1 & Fail \\  \hline 
+			https://apps.grad.uw.edu/applForAdmiss/newUserProfile.aspx?bhcp=1 & Fail \\  \hline
+			https://oauth.life.tw/auth?appId=1\&redirect=http & Pass \\  \hline
+			https://cart.books.com.tw/member/join\_step1 & Fail \\  \hline
+			https://login.yahoo.com/account/create?.src=flickrsignup & Pass \\  \hline
+			http://www40.eyny.com/member.php?mod=register & Fail \\  \hline
 		\end{tabular}
 		\caption{ The dynamic webpages. }
 		\label{DynamicWebs}
@@ -271,18 +310,14 @@ We can also use other machine learning algorithm, such as deep learning, to cons
 			Application 1 & Training & Accuracy & Precision & Recall \\ \hline
 			Repeat 1 & 0.4 & 0.7436 & 0.5  & 0.4  \\ \hline
 			Repeat 2 & 0.4 & 0.75   & 0.64 & 0.5  \\ \hline
-			Repeat 3 & 0.4 & 0.6486 & 0.5  & 0.46 \\ \hline
-			Repeat 4 & 0.4 & 0.7333 & 0.53 & 0.69 \\ \hline
-			Repeat 5 & 0.4 & 0.7209 & 0.63 & 0.46 \\ \hline
-			Repeat 6 & 0.4 & 0.6667 & 0.45 & 0.45 \\ \hline
-			Repeat 7 & 0.4 & 0.6154 & 0.35 & 0.6  \\ \hline
-			Repeat 8 & 0.6 & 0.7272 & 0.5  & 0.5  \\ \hline
-			Repeat 9 & 0.6 & 0.7307 & 0.5  & 0.43 \\ \hline
-			Repeat 10& 0.6 & 0.6667 & 0.6  & 0.43 \\ \hline
-			Repeat 11& 0.6 & 0.6087 & 0.43 & 0.38 \\ \hline
-			Repeat 12& 0.6 & 0.7407 & 0.67 & 0.45 \\ \hline
-			Repeat 13& 0.6 & 0.750  & 0.57 & 0.67 \\ \hline
-			Repeat 14& 0.6 & 0.70   & 0.67 & 0.5  \\ \hline
+			Repeat 3 & 0.4 & 0.7333 & 0.53 & 0.69 \\ \hline
+			Repeat 4 & 0.4 & 0.7209 & 0.63 & 0.46 \\ \hline
+			Repeat 5 & 0.4 & 0.6667 & 0.45 & 0.45 \\ \hline
+			Repeat 6 & 0.6 & 0.7272 & 0.5  & 0.5  \\ \hline
+			Repeat 7 & 0.6 & 0.7307 & 0.5  & 0.43 \\ \hline
+			Repeat 8 & 0.6 & 0.6667 & 0.6  & 0.43 \\ \hline
+			Repeat 9 & 0.6 & 0.7407 & 0.67 & 0.45 \\ \hline
+			Repeat 10& 0.6 & 0.750  & 0.57 & 0.67 \\ \hline
 		\end{tabular}
 		\caption{ The prediction of Application 1. }
 		\label{PredictResult}
