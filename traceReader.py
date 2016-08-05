@@ -27,7 +27,13 @@ class TraceReader:
     def getTraces(self):
         pass
 
-
+#=======================================================================================
+# 將 Web Traces 轉換成 automtatElement
+# 1. loadJson() 先讀取 web traces 中的 automata.json 和 traces.json
+# 2. parseAutomata() 將 automata.json 中的 state 和 edge 轉成 automtatElement
+# 3. parseTraces() 用 traceElement 紀錄 state和edge的順序關係
+# 4. parseDomLabel() 從每個state的DOM找出feature keyword
+#=======================================================================================
 class WebTraceReader(TraceReader):
     def __init__(self):
         self.automata     = None
@@ -165,6 +171,15 @@ class WebTraceReader(TraceReader):
     def getTraces(self):
         return self.traces
 
+#=======================================================================================
+# 將 TaaD Traces 轉換成 automtatElement
+# 1. loadJson() 先讀取 web traces 中的 task.json 和 edges.json
+# 2. parseSessionAutomata() 從 edges.json 中找出state和edge順序
+#    並將state和edge轉換成automataElement
+# 3. parseTraceSet() 用 task.json 找出每個trace的folder
+#    並紀錄每個state的xml檔和edge的json
+# 4. parseT3A() 讀取t3a檔，找出每個state和edge的label
+#=======================================================================================
 class TaaDTraceReader(TraceReader):
     def __init__(self):
         self.automata   = None

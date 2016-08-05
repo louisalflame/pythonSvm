@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os, json
+import os, json, enum
 
 from tracePath import Path
 from labelDictionary import LabelDictionary
@@ -128,13 +128,11 @@ class AutomataElement:
 class TraceElement:
     def __init__(self):
         # basic
-        self.label = TraceLabel.UNKNOWN
+        self.label = TraceLabel.UNLABELED
         self.states = []
         self.edges = []
         # vector
         self.keywords = {}
-        self.actions = {}
-        self.orders = {}
         # automata
         self.automata = None
 
@@ -142,8 +140,6 @@ class TraceElement:
         self.states = []
         self.edges = []
         self.keywords = {}
-        self.actions = {}
-        self.orders = {}
         self.automata = None
 
     def set_label(self, label):
@@ -161,8 +157,6 @@ class TraceElement:
 
     def remake_keywords(self):
         self.keywords = {}
-        self.actions = {}
-        self.orders = {}
         for state in self.states:
             for key, keywords in state.get_keywords().items():
                 if key not in self.keywords:
@@ -189,14 +183,6 @@ class TraceElement:
                         else:
                             self.keywords[key][keyword] = 1
 
-            edgeSymbol = edge.get_symbol()
-            if edgeSymbol in self.actions:
-                self.actions[edgeSymbol]['count'] += 1
-                self.actions[edgeSymbol]['index'].append( index )
-            elif edgeSymbol not in self.actions:
-                self.actions[edgeSymbol] = {  'count' : 1,
-                                              'index' : [ index ] }
-
     def make_vector_string(self, needs ):
         if not self.automata: 
             return ""
@@ -216,17 +202,8 @@ class TraceElement:
                 else:
                     vector.append( 0 )
 
-        # add actions
-        # for action in self.automata.get_actions():
-        #    if action in self.actions:
-        #        vector.append( self.actions[action]['count'] )
-        #    else:
-        #        vector.append( 0 )
-
-        # add orders
-
         vector = [ str(index+1)+':'+str(value) for index, value in enumerate(vector) ]
-                 # Unlabel
+
         vectorStr = str(self.label) + ' ' + ' '.join(vector) + '\n'
 
         return vectorStr
@@ -319,6 +296,7 @@ class TraceLabel:
     UNLABELED = 2
     CRASH     = 3
     WRONG     = 4
+    UNKNOWN   = 5
 
     @classmethod            
     def parse(cls, key):

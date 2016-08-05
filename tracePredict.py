@@ -2,8 +2,13 @@
 # -*- coding: utf-8 -*-
 
 import os, sys, json, codecs, yaml, math, random, copy
+
+#=================================================================
+# 需自行安裝LIBSVM https://www.csie.ntu.edu.tw/~cjlin/libsvm/
 from svmutil import svm_train, svm_predict, svm_read_problem, evaluations, svm_save_model, svm_load_model
 from grid import *
+#=================================================================
+
 from tempfile import NamedTemporaryFile
 from sklearn import preprocessing
 from sklearn.cluster import KMeans, AffinityPropagation
@@ -12,7 +17,6 @@ from sklearn.datasets import load_svmlight_file
 from sklearn.decomposition import PCA
 
 from tracePath import Path
-
 
 class SvmUtil:
     def __init__(self):
@@ -54,8 +58,8 @@ class SvmUtil:
         self.TP_traces = {}
         self.FP_traces = {}
         self.FN_traces = {}
-        pass
 
+    #可以load的file需經過ParseUtil處理過成svm_read_problem可以使用的格式
     def loadTraces(self, fname, reLoad=False):
         if not reLoad:
             self._fnames.append(fname)
@@ -142,6 +146,7 @@ class SvmUtil:
 
         return len(self._trainSet), len(self._trainLabel)
 
+    # find_parameter 是LIBSVM中的grid.py的function
     def getParams(self):
         sys.stdout = open(os.devnull, "w")
 
@@ -231,31 +236,33 @@ class SvmUtil:
         print ( "\n".join(strings) )
 
     def reset(self):
-        self._traces = []
-        self._labels = []
-        self._duplicate = None
+        self._traces         = []
+        self._labels         = []
+        self._duplicate      = None
         self._duplicateTrain = None
-        self._sampleRate  = None
-        self._tracesSet   = []
-        self._tracesLabel = []
-        self._trainSet    = []
-        self._trainLabel  = []
-        self._testSet     = []
-        self._testLabel   = []
-        self._trainFail   = {}
-        self._testFail    = {}
-        self._model       = None
-        self._param       = None
-        self._records      = []
-        self._sample       = []
-        self._accuracy     = None
-        self._predictLabel = []
-        self._precision = None 
-        self._recall    = None
-        self.TP_traces = {}
-        self.FP_traces = {}
-        self.FN_traces = {}
+        self._sampleRate     = None
+        self._tracesSet      = []
+        self._tracesLabel    = []
+        self._trainSet       = []
+        self._trainLabel     = []
+        self._testSet        = []
+        self._testLabel      = []
+        self._trainFail      = {}
+        self._testFail       = {}
+        self._model          = None
+        self._param          = None
+        self._records        = []
+        self._sample         = []
+        self._accuracy       = None
+        self._predictLabel   = []
+        self._precision      = None 
+        self._recall         = None
+        self.TP_traces       = {}
+        self.FP_traces       = {}
+        self.FN_traces       = {}
 
+#========================================================================================================
+# usility functions
 #========================================================================================================
     def getArray(self, fname):
         vectors, labels = load_svmlight_file(fname)
@@ -278,7 +285,11 @@ class SvmUtil:
             s += str(i + 1) + ':' + str(l[i]) + ' '
         return s
 
+    def saveModel(self, fname):
+        svm_save_model( fname, self._model )
 
+#========================================================================================================
+# 簡易重複執行的script
 #========================================================================================================
     def simpleRun(self, duplicate=1, sampleRaterate=0.5 , duplicateTrain=1 ):
         self.preprocessing()
@@ -297,6 +308,3 @@ class SvmUtil:
     def reload(self):
         for fname in self._fnames:
             self.loadTraces(fname, True)
-
-    def saveModel(self, fname):
-        svm_save_model( fname, self._model )
